@@ -58,3 +58,20 @@ cache/
 
 # Any files starting with = (corrupted requirements)
 =*
+
+# Virtual environment
+venv/
+
+# Ad-hoc work
+adhoc-Diagnostics/
+adhoc-results/
+
+# Config and model artifacts
+configs/
+models/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
