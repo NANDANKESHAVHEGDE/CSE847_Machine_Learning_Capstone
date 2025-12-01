@@ -1,224 +1,231 @@
-# Dynamic Pricing Model Experiments
+# Causal Inference and Predictive Modeling for Competitive Hotel Pricing
 
-Advanced hotel pricing models combining **causal inference** (2SRI) and **predictive analytics** for competitive pricing optimization.
+**CSE 847: Machine Learning - Final Project**
+
+Nandan Keshav Hegde & Adithya Hassan Hemakantharaju  
+Michigan State University
+
+---
 
 ## Project Overview
 
-This project implements two complementary approaches to hotel pricing:
-1. **Causal Inference Track**: Two-Stage Residual Insertion (2SRI) methodology following Professor Dan Zhang's framework for understanding competitive pricing dynamics
-2. **Predictive Modeling Track**: LASSO-regularized regression models optimized for forecasting accuracy
+This project implements two complementary approaches to hotel pricing analysis:
 
-## Current Status
+1. **Causal Inference Track**: Two-Stage Residual Inclusion (2SRI) methodology for understanding competitive pricing dynamics and identifying causal effects
+2. **Predictive Modeling Track**: Linear regression models with adaptive log-detrending optimized for out-of-sample forecasting accuracy
 
-**Data**: 365 days of pricing data across 1 focal hotel (14 room types) and 5 competitor hotels
+### Research Questions
 
-**Best Model Performance** (Predictive Track - Iteration 3):
-- Adjusted R² = 0.607
-- MAPE = 6.30%
-- RMSE = $21.23 (~8% of average base rate)
-- 52% of predictions within 5% error
-- 76% of predictions within 10% error
+1. **Causal**: If a competitor raises their price by $1, how much should our hotel adjust in response?
+2. **Predictive**: Given competitor prices and market conditions, what will our hotel's price be tomorrow?
 
-**Causal Models** (2SRI Track):
-- Stage 1: All 5 competitors successfully modeled (F-statistics: 13.9-48.2)
-- Stage 2: Focal hotel response with endogeneity controls
+---
+
+## Key Results
+
+### Causal Analysis (Principal Focal Hotel)
+
+| Metric | Value |
+|--------|-------|
+| Model R² | 0.512 |
+| RMSE | $23.91 |
+| Endogeneity Detected | 40% of competitors |
+| Total Competitive Effect | +1.32 (complementary pricing) |
+| Price Leader | Competitor 4 (β = 1.758**) |
+
+### Predictive Modeling (34-Hotel Portfolio)
+
+| Metric | In-Sample | Out-of-Sample (Detrended) |
+|--------|-----------|---------------------------|
+| Mean Adj R² | 0.603 | — |
+| Median CV R² | — | +0.25 |
+| Improvement | — | 147% vs direct modeling |
+| Strong Performers (R² > 0.4) | — | 7 hotels |
+
+---
 
 ## Project Structure
 
 ```
 ├── Causal-Inference/                  # 2SRI causal models
 │   ├── 04_LinearModels-Stage1-causal-Iteration1.ipynb
-│   └── 05_LinearModels_Stage2_causal-Iteration1.ipynb
+│   ├── 05_LinearModels_Stage2_causal-Iteration1.ipynb
+│   └── results/
+│       ├── stage1_linear_results/     # Stage 1 outputs (F-stats, residuals)
+│       └── stage2_2sri_results/       # Stage 2 outputs (coefficients, predictions)
+│
 ├── Predictive-Models/                 # Forecasting models
 │   ├── scripts/
 │   │   ├── 01_Lagged-Dataset-creation/      # Time series feature engineering
 │   │   ├── 02_Parametric-LR-Models/         # Linear regression variants
-│   │   └── 03_Non-Parametric-Models/        # Advanced ML models
+│   │   └── 03_Non-Parametric-Models/        # Advanced ML models (future)
 │   └── results/
+│
 ├── Utility/                           # Data preprocessing pipelines
 │   ├── Dataexplorations/
 │   │   └── 01_Data_Exploration.ipynb
 │   ├── Basic-Dataprep-imputations/
 │   └── Advanced-Dataprep-imputations/
+│
 ├── Diagnostics/                       # Data quality analysis
 │   ├── Missing_Value_pattern_recognitions.ipynb
 │   └── adhoc_diagnostics.ipynb
+│
 ├── data/
-│   ├── dataraw/                       # Original datasets
+│   ├── dataraw/                       # Original datasets (not included)
 │   ├── dataprocessed/                 # Cleaned and feature-engineered data
-│   ├── stage1_linear_results/         # 2SRI Stage 1 outputs
-│   └── stage2_2sri_results/           # 2SRI Stage 2 outputs
-├── docs/                              # Technical documentation
+│   └── full-data/                     # Portfolio-wide datasets
+│
+├── docs/                              # Technical documentation & reports
+│   ├── CSE847_Final_Report.pdf
+│   └── CSE847_Presentation.pdf
+│
 └── requirements.txt                   # Python dependencies
 ```
 
+---
+
 ## Data Overview
 
-### Focal Hotel
-- **Observations**: 5,110 across 14 room types
-- **Time Period**: 365 days (full year)
-- **Price Range**: $219 - $999
-- **Data Quality**: 100% complete, no missing values
+### Principal Focal Hotel (Causal Analysis)
+- **Observations**: 365 daily base rates
+- **Time Period**: September 2025 – September 2026
+- **Price Range**: $209 – $379
+- **Competitors**: 5 hotels with complete coverage
+- **Data Quality**: 100% complete after preprocessing
 
-### Competitor Hotels (5 properties)
-- **Observations**: 1,820 total
-- **Hotels**:
-  - Aqua Pacific Monarch
-  - Castle Kamaole Sands
-  - Courtyard by Marriott Maui Kahului Airport
-  - Kohea Kai Resort Maui
-  - Ohana Waikiki Malia
-- **Missing Rate**: <5% (manageable with imputation)
-- **Price Range**: $207-$904
+### Full Portfolio (Predictive Modeling)
+- **Hotels**: 44 total, 34 successfully modeled
+- **Average Time Series**: 507 days per hotel
+- **Average Competitors**: 7.1 per hotel
+- **Missing Data**: ~20% (handled via IterativeImputer)
 
-### Data Readiness Score: 100%
-- ✓ Sufficient temporal overlap (364 days)
-- ✓ Clean price data
-- ✓ Meaningful price correlations (0.28-0.53)
-- ✓ Multiple competitors
-- ✓ Strong instruments available
+### Data Preprocessing Pipeline
+
+1. **Missing Values**: Forward-fill + group median imputation
+2. **Outliers**: IQR-based filtering (3.0 multiplier)
+3. **Base Rates**: Daily minimum across room types
+4. **Normalization**: MAD-based cross-hotel scaling
+5. **Alignment**: Complete temporal overlap ensured
 
 ---
 
-## Track 1: Causal Inference (2SRI Methodology)
+## Methodology
 
-Following Professor Dan Zhang's Two-Stage Residual Insertion framework for identifying causal pricing effects.
+### Track 1: Two-Stage Residual Inclusion (2SRI)
 
-### Stage 1: Competitor Price Decomposition
-**Objective**: Isolate exogenous vs endogenous components of competitor pricing
+**Stage 1: Competitor Price Decomposition**
 
-**Implementation**:
-- Model each competitor's price using temporal instruments (day-of-week, seasonal patterns)
-- Extract residuals as proxies for unobserved demand shocks
-- Linear regression approach with 7 temporal features
+For each competitor c, decompose prices into predictable and simultaneous components:
 
-**Results**:
-| Competitor | R² | F-Statistic | Instrument Strength |
-|------------|-----|-------------|-------------------|
-| Aqua Pacific Monarch | 0.306 | 22.5 | Strong |
-| Castle Kamaole Sands | 0.214 | 13.9 | Strong |
-| Courtyard Marriott | 0.391 | 32.8 | Strong |
-| Kohea Kai Resort | 0.254 | 17.4 | Strong |
-| Ohana Waikiki Malia | 0.486 | 48.2 | Strong |
+```
+P_c,t = α_c + Σ γ_c,j × Z_j,t + ε_c,t
+```
 
-**Key Finding**: All instruments exceed F>10 threshold, validating 2SRI approach.
+Where Z includes 7 temporal instruments:
+- sin/cos(2π × day/7) — day-of-week cycles
+- sin/cos(2π × month/12) — monthly seasonality  
+- sin/cos(2π × week/52) — weekly patterns
+- Holiday indicator
 
-### Stage 2: Focal Hotel Response Model
-**Objective**: Estimate causal effect of competitor prices on focal hotel pricing
+**Stage 1 Results**:
 
-**Implementation**:
-- Dependent variable: Focal hotel base rate
-- Endogenous regressors: Competitor prices
-- Instruments: Stage 1 residuals
-- Controls: Temporal features
+| Competitor | R² | F-Statistic | Status |
+|------------|-----|-------------|--------|
+| Competitor 1 | 0.306 | 22.5 | Strong |
+| Competitor 2 | 0.214 | 13.9 | Strong |
+| Competitor 3 | 0.391 | 32.8 | Strong |
+| Competitor 4 | 0.254 | 17.4 | Strong |
+| Competitor 5 | 0.486 | 48.2 | Strong |
 
-**Status**: Implemented with endogeneity controls via residual insertion
+All F-statistics exceed the weak instrument threshold (F > 10).
+
+**Stage 2: Causal Estimation with Residual Inclusion**
+
+```
+P_focal,t = α + Σ β_c × P_c,t + Σ θ_c × ε̂_c,t + Σ γ_j × Z_j,t + u_t
+```
+
+- β_c = causal competitive effects (target estimates)
+- θ_c = endogeneity correction terms (significant θ confirms bias was present)
+
+**Stage 2 Results**:
+
+| Competitor | β (Causal Effect) | θ (Endogeneity) | Strategy |
+|------------|-------------------|-----------------|----------|
+| Competitor 1 | +0.563 | -0.597 | Complementary |
+| Competitor 2 | -0.862 | +1.144* | Competitive |
+| Competitor 3 | +0.105 | +0.202 | Neutral |
+| Competitor 4 | +1.758** | -1.659** | Strong Complementary |
+| Competitor 5 | -0.241 | +0.330 | Competitive |
+
+*p<0.05, **p<0.01
 
 ---
 
-## Track 2: Predictive Models
+### Track 2: Predictive Modeling with Adaptive Log-Detrending
 
-Time series forecasting models optimized for accuracy in pricing predictions.
+**Iteration 1 (Direct Modeling)**:
+- Standard regression on price levels
+- Features: Competitor lags (1-5), temporal indicators
+- Problem: Severe overfitting (Train R² = 0.69, CV R² = -0.53)
 
-### Data Preprocessing
+**Iteration 2 (Detrended Modeling)**:
+1. Calculate 30-day rolling average trend
+2. Model deviations: `dev_t = (P_t - trend_t) / trend_t`
+3. Reconstruct: `P̂_t = trend_t × (1 + dev̂_t)`
 
-**Imputation Strategies Tested**:
-1. Basic: Forward-fill + group median fallback
-2. KNN imputation
-3. MICE (Multiple Imputation by Chained Equations)
-4. Time-series specific methods
+**Result**: Median CV R² improved from -0.53 to +0.25 (147% improvement)
 
-**Feature Engineering**:
-- Lagged competitor prices (1-7 days)
-- Temporal features:
-  - Cyclical: sin/cos transformations for weeks
-  - Polynomial: week centered, squared, cubic, quartic
-- Seasonal indicators:
-  - Holiday periods (December, January, July 4th, Thanksgiving)
-  - Peak season (Summer + Winter holidays)
-  - Summer indicator
+**Time-Series Cross-Validation**:
+- Minimum training window: 300 days
+- Test window: 50 days (non-overlapping)
+- Expanding window approach
 
-### Model Evolution
+---
 
-**Iteration 1**: Baseline linear regression
-**Iteration 2**: Ridge/ElasticNet regularization
-**Iteration 3**: LASSO feature selection + OLS refit (Current Best)
+## Key Findings
 
-### Best Model Specification (Iteration 3)
+### Causal Insights
+1. **Endogeneity is real**: 40% of competitor relationships show significant simultaneity bias
+2. **Complementary pricing dominates**: Total effect = +1.32 (hotels move prices together)
+3. **Clear price leadership**: Competitor 4 drives market coordination (β = 1.758**)
 
-**Feature Selection**: LassoCV with 5-fold cross-validation
-- Input features: 22-25 candidates
-- Selected features: 11-13 (depending on imputation method)
-- Optimal alpha: 1.25 (advanced imputation)
+### Predictive Insights
+1. **Competitor lag-1 is primary driver**: Significant in 94% of hotels
+2. **Detrending is essential**: Models that fit levels fail out-of-sample
+3. **Hotel heterogeneity matters**: R² ranges from 0.18 to 0.89
 
-**Final Equation** (Advanced Imputation):
-```
-base_rate = 97.58
-           + 26.38 × cos_week ***
-           - 0.62 × week_centered ***
-           + 22.48 × is_peak_season ***
-           - 2.40 × is_holiday
-           + 0.35 × Courtyard_lag_1 ***
-           - 0.26 × Ohana_lag_3 ***
-           + 0.10 × Castle_lag_1 ***
-           + 0.02 × Kohea_lag_5 ***
-           + [3 additional competitor lags]
-```
+### Feature Importance (Portfolio-Wide)
 
-**Performance Metrics**:
-- **Adjusted R²**: 0.607
-- **RMSE**: $21.23 (7.94% of average base rate)
-- **MAPE**: 6.30%
-- **Median APE**: 4.48%
-
-**Error Distribution**:
-- 52% of predictions within 5% error
-- 76% within 10% error
-- Only 3% exceed 20% error
-
-**Key Drivers**:
-1. **Courtyard Marriott lag-1**: Strongest competitor effect (+$0.35 per dollar)
-2. **Peak Season**: Adds ~$22 to base rate
-3. **Weekly Seasonality**: Up to $26 swing via cosine term
+| Feature | Hotels with p<0.05 | Typical Effect |
+|---------|-------------------|----------------|
+| Competitor lag-1 | 94% | Primary driver |
+| Saturday | 85% | +$8–25 |
+| Friday | 79% | +$5–18 |
+| Competitor lag-2 | 82% | Secondary |
+| December | 71% | +$6–34 |
+| Summer | 65% | +$15–80 |
 
 ---
 
 ## Methodology Comparison
 
-| Aspect | Causal (2SRI) | Predictive (LASSO) |
-|--------|---------------|-------------------|
-| **Primary Goal** | Understand pricing mechanisms | Forecast future prices |
-| **Interpretation** | Causal effects | Correlational patterns |
-| **Endogeneity** | Explicitly controlled | Not directly addressed |
-| **Feature Selection** | Theory-driven | Data-driven (LASSO) |
-| **Best Use** | Strategic pricing decisions | Daily operational pricing |
-| **R²** | ~0.33 (Stage 1 avg) | 0.607 |
-| **Complexity** | Two-stage estimation | Single-stage |
+| Aspect | 2SRI (Causal) | Linear Reg (Predictive) |
+|--------|---------------|------------------------|
+| **Goal** | Unbiased coefficients | Forecast accuracy |
+| **Sample** | Full dataset | Train/test splits |
+| **Endogeneity** | Corrected via instruments | Ignored |
+| **R²** | 0.512 | 0.603 (in-sample) |
+| **Key Finding** | 40% bias detected | Detrending essential |
+| **Best Use** | Strategic decisions | Operational pricing |
 
 ---
 
-## Key Insights
-
-### Competitive Dynamics
-1. **Courtyard Marriott** is the dominant price leader (strongest coefficient across all models)
-2. **Ohana Waikiki Malia** shows negative relationship at lag-3 (possible substitution effect)
-3. Different lags matter for different competitors (1-5 day windows)
-
-### Temporal Patterns
-1. Strong **weekly seasonality** captured by cosine transformations
-2. **Peak season premium** consistently ~$20-22
-3. Holiday effects are present but less significant than peak season
-
-### Model Performance
-1. Predictive models achieve **<8% MAPE**, suitable for operational use
-2. 2SRI successfully validates instruments (all F-stats >10)
-3. Room-level correlations vary from 0.27-0.53 with competitors
-
----
-
-## Implementation Guide
+## Running the Code
 
 ### Setup
+
 ```bash
 # Create virtual environment
 python -m venv venv
@@ -233,67 +240,87 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Running Models
+### Causal Models (2SRI)
 
-**Data Exploration**:
 ```bash
-# Navigate to Utility folder
-cd Utility/Dataexplorations/
-# Open: 01_Data_Exploration.ipynb
-```
-
-**Causal Models (2SRI)**:
-```bash
-# Navigate to Causal-Inference folder
 cd Causal-Inference/
+
 # Run notebooks in order:
-# 1. 04_LinearModels-Stage1-causal-Iteration1.ipynb
-# 2. 05_LinearModels_Stage2_causal-Iteration1.ipynb
+# 1. 04_LinearModels-Stage1-causal-Iteration1.ipynb  (Stage 1: instruments)
+# 2. 05_LinearModels_Stage2_causal-Iteration1.ipynb  (Stage 2: causal effects)
 ```
 
-**Predictive Models**:
+### Predictive Models
+
 ```bash
-# Navigate to Predictive-Models
 cd Predictive-Models/scripts/
 
 # Step 1: Create lagged dataset
 cd 01_Lagged-Dataset-creation/
-# Run: lagged_data_preparation_iteration3.ipynb (or advanced imputation variant)
+# Run: lagged_data_preparation.ipynb
 
-# Step 2: Run parametric models
+# Step 2: Run linear models
 cd ../02_Parametric-LR-Models/
-# Run: In-Sample-LR-Iteration3.ipynb
+# Run: In-Sample-LR.ipynb
+# Run: Out-of-Sample-LR.ipynb (with detrending)
 ```
-
----
-
-## Next Steps & Future Work
-
-### Short-term Enhancements
-- [ ] Out-of-sample validation with train/test split
-- [ ] Non-parametric models (Random Forest, XGBoost) comparison
-- [ ] Room-type specific models for 14 segments
-- [ ] Cross-validation for temporal robustness
-
-### Medium-term Development
-- [ ] Real-time pricing API integration
-- [ ] Confidence intervals for price recommendations
-- [ ] Multi-step ahead forecasting (7-14 days)
-- [ ] Integration of external demand signals (weather, events)
-
-### Long-term Vision
-- [ ] Multi-property universal model
-- [ ] Reinforcement learning for dynamic pricing
-- [ ] A/B testing framework for price optimization
-- [ ] Human-in-the-loop pricing adjustment interface
 
 ---
 
 ## Dependencies
 
-See [requirements.txt](requirements.txt) for full list. Key packages:
-- `pandas`, `numpy`: Data manipulation
-- `scikit-learn`: ML models and preprocessing
-- `statsmodels`: Statistical inference and diagnostics
-- `matplotlib`, `seaborn`: Visualization
-- `jupyter`: Interactive notebooks
+Key packages (see `requirements.txt` for full list):
+
+```
+pandas>=1.5.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+statsmodels>=0.13.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+```
+
+---
+
+## Limitations
+
+- No demand-side data (occupancy, booking pace, local events)
+- Exclusion restriction is economically plausible but untestable
+- Competitor sets are fixed; real markets are more dynamic
+- Three hotels failed detrending due to insufficient data for 30-day rolling averages
+
+---
+
+## Future Work
+
+- [ ] Extend 2SRI causal analysis across full portfolio
+- [ ] Incorporate demand-side features (occupancy, events)
+- [ ] Non-linear Stage 1 models (Random Forest, XGBoost)
+- [ ] Dynamic competitor selection
+- [ ] Real-time pricing system integration
+
+---
+
+## References
+
+1. Terza, J. V., Basu, A., & Rathouz, P. J. (2008). Two-stage residual inclusion estimation. *Journal of Health Economics*, 27(3), 531-543.
+
+2. Staiger, D. & Stock, J. H. (1997). Instrumental variables regression with weak instruments. *Econometrica*, 65(3), 557-586.
+
+3. Athey, S. & Imbens, G. W. (2019). Machine learning methods that economists should know about. *Annual Review of Economics*, 11, 685-725.
+
+4. Bergmeir, C. & Benítez, J. M. (2012). On the use of cross-validation for time series predictor evaluation. *Information Sciences*, 191, 192-213.
+
+---
+
+## License
+
+This project was developed for CSE 847: Machine Learning at Michigan State University (Fall 2025).
+
+---
+
+## Contact
+
+- Nandan Keshav Hegde: hegdenan@msu.edu
+- Adithya Hassan Hemakantharaju: hassanad@msu.edu
