@@ -1,6 +1,6 @@
 # Causal Inference and Predictive Modeling for Competitive Hotel Pricing
 
-**CSE 847: Machine Learning - Final Project**
+**CSE 847: Machine Learning - Course Project**
 
 Nandan Keshav Hegde & Adithya Hassan Hemakantharaju  
 Michigan State University
@@ -12,7 +12,7 @@ Michigan State University
 This project implements two complementary approaches to hotel pricing analysis:
 
 1. **Causal Inference Track**: Two-Stage Residual Inclusion (2SRI) methodology for understanding competitive pricing dynamics and identifying causal effects
-2. **Predictive Modeling Track**: Linear regression models with adaptive log-detrending optimized for out-of-sample forecasting accuracy
+2. **Predictive Modeling Track**: Linear regression models with adaptive log-detrending for out-of-sample forecasting
 
 ### Research Questions
 
@@ -29,7 +29,7 @@ This project implements two complementary approaches to hotel pricing analysis:
 |--------|-------|
 | Model R² | 0.512 |
 | RMSE | $23.91 |
-| Endogeneity Detected | 40% of competitors |
+| Endogeneity Detected | 40% of competitors (2/5) |
 | Total Competitive Effect | +1.32 (complementary pricing) |
 | Price Leader | Competitor 4 (β = 1.758**) |
 
@@ -47,66 +47,39 @@ This project implements two complementary approaches to hotel pricing analysis:
 ## Project Structure
 
 ```
-├── Causal-Inference/                  # 2SRI causal models
-│   ├── 04_LinearModels-Stage1-causal-Iteration1.ipynb
-│   ├── 05_LinearModels_Stage2_causal-Iteration1.ipynb
-│   └── results/
-│       ├── stage1_linear_results/     # Stage 1 outputs (F-stats, residuals)
-│       └── stage2_2sri_results/       # Stage 2 outputs (coefficients, predictions)
+CSE847_Machine_Learning_Capstone/
 │
-├── Predictive-Models/                 # Forecasting models
+├── Causal-Inference/                    # 2SRI causal analysis
 │   ├── scripts/
-│   │   ├── 01_Lagged-Dataset-creation/      # Time series feature engineering
-│   │   ├── 02_Parametric-LR-Models/         # Linear regression variants
-│   │   └── 03_Non-Parametric-Models/        # Advanced ML models (future)
+│   │   ├── 04_LinearModels-Stage1-causal-Iteration1.ipynb   # Stage 1: Instrument validation
+│   │   └── 05_LinearModels_Stage2_causal-Iteration1.ipynb   # Stage 2: Causal estimation
+│   └── results/                         # Stage 1 & Stage 2 outputs
+│
+├── Predictive-Models/                   # In-sample linear regression
+│   ├── scripts/
+│   │   ├── 01_Lagged-Datset-creation/   # Time series feature engineering
+│   │   └── 02_Parametric-LR-Models/     # Linear regression iterations
+│   │       ├── In-Sample-LR-Iteration1.ipynb
+│   │       ├── In-Sample-LR-Iteration2.ipynb
+│   │       └── In-Sample-LR-Iteration3.ipynb
 │   └── results/
 │
-├── Utility/                           # Data preprocessing pipelines
-│   ├── Dataexplorations/
-│   │   └── 01_Data_Exploration.ipynb
-│   ├── Basic-Dataprep-imputations/
-│   └── Advanced-Dataprep-imputations/
+├── Scaled-Prediction-Models/            # Portfolio-wide out-of-sample validation
+│   ├── LR/                              # Out-of-sample linear regression
+│   │   ├── OutofSample-Iteration1-LR-Matrix-Imputations.ipynb
+│   │   ├── OutofSample-Iteration2-LR-Matrix-Imputations.ipynb
+│   │   └── OutofSample-Iteration3-LR-Matrix-Imputations.ipynb
+│   └── Imputation_quality_check.ipynb   # Matrix completion validation
 │
-├── Diagnostics/                       # Data quality analysis
-│   ├── Missing_Value_pattern_recognitions.ipynb
-│   └── adhoc_diagnostics.ipynb
+├── Utility/                             # Data preprocessing pipelines
+│   ├── Dataexplorations/                # EDA notebooks
+│   ├── Basic-Dataprep-imputations/      # Basic imputation methods
+│   ├── Advanced-Dataprep-imputations/   # Matrix completion (IterativeImputer)
+│   └── results/
 │
-├── data/
-│   ├── dataraw/                       # Original datasets (not included)
-│   ├── dataprocessed/                 # Cleaned and feature-engineered data
-│   └── full-data/                     # Portfolio-wide datasets
-│
-├── docs/                              # Technical documentation & reports
-│   ├── CSE847_Final_Report.pdf
-│   └── CSE847_Presentation.pdf
-│
-└── requirements.txt                   # Python dependencies
+├── README.md                            # This file
+└── requirements.txt                     # Python dependencies
 ```
-
----
-
-## Data Overview
-
-### Principal Focal Hotel (Causal Analysis)
-- **Observations**: 365 daily base rates
-- **Time Period**: September 2025 – September 2026
-- **Price Range**: $209 – $379
-- **Competitors**: 5 hotels with complete coverage
-- **Data Quality**: 100% complete after preprocessing
-
-### Full Portfolio (Predictive Modeling)
-- **Hotels**: 44 total, 34 successfully modeled
-- **Average Time Series**: 507 days per hotel
-- **Average Competitors**: 7.1 per hotel
-- **Missing Data**: ~20% (handled via IterativeImputer)
-
-### Data Preprocessing Pipeline
-
-1. **Missing Values**: Forward-fill + group median imputation
-2. **Outliers**: IQR-based filtering (3.0 multiplier)
-3. **Base Rates**: Daily minimum across room types
-4. **Normalization**: MAD-based cross-hotel scaling
-5. **Alignment**: Complete temporal overlap ensured
 
 ---
 
@@ -177,10 +150,30 @@ P_focal,t = α + Σ β_c × P_c,t + Σ θ_c × ε̂_c,t + Σ γ_j × Z_j,t + u_t
 
 **Result**: Median CV R² improved from -0.53 to +0.25 (147% improvement)
 
-**Time-Series Cross-Validation**:
-- Minimum training window: 300 days
-- Test window: 50 days (non-overlapping)
-- Expanding window approach
+---
+
+## Data Overview
+
+### Principal Focal Hotel (Causal Analysis)
+- **Observations**: 365 daily base rates
+- **Time Period**: September 2025 – September 2026
+- **Price Range**: $209 – $379
+- **Competitors**: 5 hotels (masked as Competitor 1-5)
+- **Data Quality**: 100% complete after preprocessing
+
+### Full Portfolio (Predictive Modeling)
+- **Hotels**: 44 total, 34 successfully modeled (masked as Hotel_01 to Hotel_44)
+- **Average Time Series**: 507 days per hotel
+- **Average Competitors**: 7.1 per hotel
+- **Missing Data**: ~20% (handled via IterativeImputer matrix completion)
+
+### Data Preprocessing Pipeline
+
+1. **Missing Values**: Forward-fill + group median imputation
+2. **Outliers**: IQR-based filtering (3.0 multiplier)
+3. **Base Rates**: Daily minimum across room types
+4. **Normalization**: MAD-based cross-hotel scaling
+5. **Alignment**: Complete temporal overlap ensured
 
 ---
 
@@ -196,23 +189,12 @@ P_focal,t = α + Σ β_c × P_c,t + Σ θ_c × ε̂_c,t + Σ γ_j × Z_j,t + u_t
 2. **Detrending is essential**: Models that fit levels fail out-of-sample
 3. **Hotel heterogeneity matters**: R² ranges from 0.18 to 0.89
 
-### Feature Importance (Portfolio-Wide)
-
-| Feature | Hotels with p<0.05 | Typical Effect |
-|---------|-------------------|----------------|
-| Competitor lag-1 | 94% | Primary driver |
-| Saturday | 85% | +$8–25 |
-| Friday | 79% | +$5–18 |
-| Competitor lag-2 | 82% | Secondary |
-| December | 71% | +$6–34 |
-| Summer | 65% | +$15–80 |
-
 ---
 
 ## Methodology Comparison
 
-| Aspect | 2SRI (Causal) | Linear Reg (Predictive) |
-|--------|---------------|------------------------|
+| Aspect | 2SRI (Causal) | Linear Regression (Predictive) |
+|--------|---------------|--------------------------------|
 | **Goal** | Unbiased coefficients | Forecast accuracy |
 | **Sample** | Full dataset | Train/test splits |
 | **Endogeneity** | Corrected via instruments | Ignored |
@@ -243,42 +225,33 @@ pip install -r requirements.txt
 ### Causal Models (2SRI)
 
 ```bash
-cd Causal-Inference/
+cd Causal-Inference/scripts/
 
 # Run notebooks in order:
 # 1. 04_LinearModels-Stage1-causal-Iteration1.ipynb  (Stage 1: instruments)
 # 2. 05_LinearModels_Stage2_causal-Iteration1.ipynb  (Stage 2: causal effects)
 ```
 
-### Predictive Models
+### Predictive Models (In-Sample)
 
 ```bash
-cd Predictive-Models/scripts/
+cd Predictive-Models/scripts/02_Parametric-LR-Models/
 
-# Step 1: Create lagged dataset
-cd 01_Lagged-Dataset-creation/
-# Run: lagged_data_preparation.ipynb
-
-# Step 2: Run linear models
-cd ../02_Parametric-LR-Models/
-# Run: In-Sample-LR.ipynb
-# Run: Out-of-Sample-LR.ipynb (with detrending)
+# Run in-sample iterations:
+# In-Sample-LR-Iteration1.ipynb
+# In-Sample-LR-Iteration2.ipynb
+# In-Sample-LR-Iteration3.ipynb
 ```
 
----
+### Portfolio Out-of-Sample Validation
 
-## Dependencies
+```bash
+cd Scaled-Prediction-Models/LR/
 
-Key packages (see `requirements.txt` for full list):
-
-```
-pandas>=1.5.0
-numpy>=1.23.0
-scikit-learn>=1.2.0
-statsmodels>=0.13.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-jupyter>=1.0.0
+# Run out-of-sample iterations:
+# OutofSample-Iteration1-LR-Matrix-Imputations.ipynb
+# OutofSample-Iteration2-LR-Matrix-Imputations.ipynb (with detrending)
+# OutofSample-Iteration3-LR-Matrix-Imputations.ipynb
 ```
 
 ---
@@ -288,17 +261,7 @@ jupyter>=1.0.0
 - No demand-side data (occupancy, booking pace, local events)
 - Exclusion restriction is economically plausible but untestable
 - Competitor sets are fixed; real markets are more dynamic
-- Three hotels failed detrending due to insufficient data for 30-day rolling averages
-
----
-
-## Future Work
-
-- [ ] Extend 2SRI causal analysis across full portfolio
-- [ ] Incorporate demand-side features (occupancy, events)
-- [ ] Non-linear Stage 1 models (Random Forest, XGBoost)
-- [ ] Dynamic competitor selection
-- [ ] Real-time pricing system integration
+- Three hotels failed detrending due to insufficient data
 
 ---
 
@@ -307,20 +270,3 @@ jupyter>=1.0.0
 1. Terza, J. V., Basu, A., & Rathouz, P. J. (2008). Two-stage residual inclusion estimation. *Journal of Health Economics*, 27(3), 531-543.
 
 2. Staiger, D. & Stock, J. H. (1997). Instrumental variables regression with weak instruments. *Econometrica*, 65(3), 557-586.
-
-3. Athey, S. & Imbens, G. W. (2019). Machine learning methods that economists should know about. *Annual Review of Economics*, 11, 685-725.
-
-4. Bergmeir, C. & Benítez, J. M. (2012). On the use of cross-validation for time series predictor evaluation. *Information Sciences*, 191, 192-213.
-
----
-
-## License
-
-This project was developed for CSE 847: Machine Learning at Michigan State University (Fall 2025).
-
----
-
-## Contact
-
-- Nandan Keshav Hegde: hegdenan@msu.edu
-- Adithya Hassan Hemakantharaju: hassanad@msu.edu
