@@ -23,17 +23,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# Jupyter
+# Jupyter checkpoints only
 .ipynb_checkpoints/
-*.ipynb
 
-# Data & Models
-data/
+# Models and logs
 models/
 logs/
-*.pkl
-*.csv
-*.json
 
 # IDE
 .vscode/
@@ -50,11 +45,5 @@ Thumbs.db
 .env
 .env.local
 
-# Keep example files
-!.env.example
-
 # Config (contains passwords)
-config.yaml
-
-# Keep example config
-!config_example.yaml
+config/
