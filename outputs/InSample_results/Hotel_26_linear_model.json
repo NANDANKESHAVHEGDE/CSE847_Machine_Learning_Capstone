@@ -1,0 +1,98 @@
+{
+  "hotel_id": "Hotel_26",
+  "intercept": 28.7499330858232,
+  "coefficients": [
+    {
+      "feature": "booking-us-kona-coast-resort-USD_lag_5",
+      "coefficient": 0.009603644981956466,
+      "p_value": 0.6087416277743476,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-king-kamehameha-s-kona-beach-USD_lag_1",
+      "coefficient": 0.07847567553635029,
+      "p_value": 0.14310993497344904,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-holiday-inn-express-suites-kailua-kona-USD_lag_2",
+      "coefficient": 0.06276337685053063,
+      "p_value": 0.5216898706947237,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kailua-kona-USD_lag_1",
+      "coefficient": -0.19667281826500452,
+      "p_value": 0.2075403973710076,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kona-coast-resort-at-keauhou-gardens-8204-USD_lag_5",
+      "coefficient": 0.11096074517347985,
+      "p_value": 0.1787028897515175,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 7.094769617429389,
+      "p_value": 0.014741748660999178,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-royal-kona-resort-USD_lag_1",
+      "coefficient": 0.5132730567345828,
+      "p_value": 8.867141998499098e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-outrigger-royal-sea-cliff-resort-USD_lag_1",
+      "coefficient": 0.08497511791680905,
+      "p_value": 0.023087906887311025,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kailua-kona-USD_lag_2",
+      "coefficient": -0.2579394367763068,
+      "p_value": 0.161375074243149,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kona-coast-resort-USD_lag_1",
+      "coefficient": 0.10017800113809938,
+      "p_value": 0.00019996799325349752,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kailua-kona-USD_lag_5",
+      "coefficient": 0.2771221743444579,
+      "p_value": 0.04788338793423568,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-castle-kona-reef-USD_lag_5",
+      "coefficient": 0.015522169621537038,
+      "p_value": 0.6873669520695227,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6514158287574429,
+    "rmse": 31.767224026797695,
+    "mape": 6.5737102923951864,
+    "n_features": 12,
+    "n_observations": 670,
+    "mean_price": 256.17164179104475
+  }
+}

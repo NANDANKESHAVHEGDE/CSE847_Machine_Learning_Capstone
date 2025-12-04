@@ -1,0 +1,35 @@
+hotel_id,cv_mean_r2,cv_std_r2,final_training_r2,n_features,status
+Hotel_01,-3.4302977449639576,6.7046395758145545,0.5034706202151095,13,Success
+Hotel_02,0.4399170707869788,0.12450329382895425,0.692859475657162,18,Success
+Hotel_03,0.5667473117129298,0.0,0.6180146044512831,23,Success
+Hotel_04,0.28904058039316755,0.40453476494883994,0.5697496826444497,22,Success
+Hotel_05,0.35011798915245734,0.5007043084819313,0.7175856684519083,26,Success
+Hotel_06,0.7087626032218886,0.0,0.8361793809692154,25,Success
+Hotel_07,0.0261573205657096,0.6573325755175886,0.42086806612531324,23,Success
+Hotel_08,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_08_lagged_dataset.csv'
+Hotel_11,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_11_lagged_dataset.csv'
+Hotel_12,0.04380081065499797,0.04890715716985106,0.23698542736651484,10,Success
+Hotel_13,,,,0,Failed: Input y contains NaN.
+Hotel_14,-2.522725993978726,3.272092174154681,0.39242127243604763,12,Success
+Hotel_15,,,,0,Failed: Input y contains NaN.
+Hotel_16,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_16_lagged_dataset.csv'
+Hotel_17,-1.6703564918453444,4.384434689426556,0.6355127726988907,30,Success
+Hotel_18,0.28723026149996966,0.0,0.26640173041910387,10,Success
+Hotel_21,0.0517578500169756,0.20994700908222347,0.4818327647231727,16,Success
+Hotel_22,0.3156689062449885,0.2992998552787587,0.5753604845430049,26,Success
+Hotel_23,-0.66016558704764,0.9275643740028042,0.43760888283856203,12,Success
+Hotel_24,-2.179788937597064,3.6419395253520066,0.4605557584562796,23,Success
+Hotel_25,0.2117048842747495,0.6429206833454362,0.681218800525172,22,Success
+Hotel_27,0.730917875351232,0.04707657418529804,0.6193189602699198,27,Success
+Hotel_31,-0.4005816631325875,1.4344633469238408,0.3817029715724948,15,Success
+Hotel_33,-0.06331655857743446,0.9123823001025322,0.3270632602961834,12,Success
+Hotel_35,0.8475683631964555,0.0,0.795260263120914,29,Success
+Hotel_36,-0.34526808172274503,0.5198777464590326,0.39185766099539976,8,Success
+Hotel_37,0.3978559242945757,0.0,0.3687185645520654,8,Success
+Hotel_38,0.5791363680904296,0.0,0.8146027162550297,28,Success
+Hotel_40,,,,0,"Failed: Input X contains NaN.
+LassoCV does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values"
+Hotel_41,0.5738166563937281,0.16700714629251384,0.6716194618648819,20,Success
+Hotel_42,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_42_lagged_dataset.csv'
+Hotel_43,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_43_lagged_dataset.csv'
+Hotel_44,,,,0,Failed: [Errno 2] No such file or directory: '..\\data\\full-data\\processed\\Hotel_44_lagged_dataset.csv'

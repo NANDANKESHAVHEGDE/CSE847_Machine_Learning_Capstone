@@ -1,0 +1,77 @@
+{
+  "hotel_id": "Hotel_05",
+  "intercept": -55.99768438582219,
+  "coefficients": [
+    {
+      "feature": "booking-us-virginian-lodge-USD_lag_5",
+      "coefficient": 0.13384975533679752,
+      "p_value": 0.0007556136559111498,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-snow-king-resort-USD_lag_4",
+      "coefficient": 0.01407190574288276,
+      "p_value": 0.6605477377779014,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-snow-king-resort-USD_lag_5",
+      "coefficient": 0.019308937301415467,
+      "p_value": 0.5503246809971841,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": -0.09270974220375222,
+      "p_value": 1.1574269787430725e-15,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-the-cloudveil-autograph-collection-USD_lag_1",
+      "coefficient": 0.04654414108006291,
+      "p_value": 0.002003870293722477,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-antler-inn-USD_lag_1",
+      "coefficient": 0.7689849083434273,
+      "p_value": 5.874522718708919e-12,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-painted-buffalo-inn-USD_lag_2",
+      "coefficient": 0.18448779482398037,
+      "p_value": 0.0002261722859049293,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 9.244959889077744,
+      "p_value": 0.48921088294577186,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-snow-king-resort-USD_lag_1",
+      "coefficient": 0.1342944612080403,
+      "p_value": 7.991367412262498e-05,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.8656024243956928,
+    "rmse": 74.60339147808075,
+    "mape": 14.080548792320108,
+    "n_features": 9,
+    "n_observations": 675,
+    "mean_price": 387.73333333333335
+  }
+}

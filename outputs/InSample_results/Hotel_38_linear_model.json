@@ -1,0 +1,140 @@
+{
+  "hotel_id": "Hotel_38",
+  "intercept": 64.23843821222889,
+  "coefficients": [
+    {
+      "feature": "booking-us-beach-house-suites-USD_lag_1",
+      "coefficient": 0.24591428819856193,
+      "p_value": 4.502607013915901e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-tradewinds-sandpiper-USD_lag_1",
+      "coefficient": 0.15719446379228846,
+      "p_value": 0.051083320801401905,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-don-cesar-USD_lag_5",
+      "coefficient": -0.07294332983065453,
+      "p_value": 0.0074988112543395505,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -34.498586181052985,
+      "p_value": 0.0007496408516365628,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-tradewinds-island-USD_lag_1",
+      "coefficient": 0.028213560432623318,
+      "p_value": 0.6164326822120765,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_5",
+      "coefficient": -0.10123821133207274,
+      "p_value": 0.015041467148499802,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 32.67738514610945,
+      "p_value": 5.72913387576442e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 34.7108455403011,
+      "p_value": 3.29745816093148e-05,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_2",
+      "coefficient": -0.2982216728259094,
+      "p_value": 4.4207082575895525e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-don-cesar-USD_lag_3",
+      "coefficient": 0.054356675465974634,
+      "p_value": 0.06508372818387928,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-saint-sherman-oaks-USD_lag_1",
+      "coefficient": 0.02074888615352733,
+      "p_value": 0.39391103755400225,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_4",
+      "coefficient": -0.1347787044164779,
+      "p_value": 0.00034135266417862573,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-sirata-beach-resort-and-conference-center-USD_lag_1",
+      "coefficient": 0.2502996440700471,
+      "p_value": 0.004990924525507962,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-beach-house-suites-USD_lag_3",
+      "coefficient": 0.3024946404091769,
+      "p_value": 8.17492599404232e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_1",
+      "coefficient": 0.21729031109065167,
+      "p_value": 0.005247859410912467,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-don-cesar-USD_lag_1",
+      "coefficient": 0.10449088509649102,
+      "p_value": 0.001995473119490141,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-beach-house-suites-USD_lag_2",
+      "coefficient": -0.359587462540584,
+      "p_value": 1.904112582599437e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-tradewinds-sandpiper-USD_lag_5",
+      "coefficient": 0.15877086720671435,
+      "p_value": 0.002944804255581281,
+      "significance": "**",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6962525832862498,
+    "rmse": 57.64697997352912,
+    "mape": 14.639058757056128,
+    "n_features": 18,
+    "n_observations": 357,
+    "mean_price": 321.64145658263305
+  }
+}

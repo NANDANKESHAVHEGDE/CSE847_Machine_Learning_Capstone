@@ -1,0 +1,63 @@
+{
+  "hotel_id": "Hotel_22",
+  "intercept": 145.4138341860766,
+  "coefficients": [
+    {
+      "feature": "booking-us-hotel-francisco-blvd-east-san-rafael-USD_lag_1",
+      "coefficient": 0.19375943618442745,
+      "p_value": 2.58234386842399e-24,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-acquahotel-USD_lag_2",
+      "coefficient": -0.15623477901647825,
+      "p_value": 1.3001865181016768e-18,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-corte-madera-USD_lag_1",
+      "coefficient": 0.06858927839881397,
+      "p_value": 0.2790922640718093,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -6.449493054337453,
+      "p_value": 1.090297047918766e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-courtyard-san-francisco-larkspur-landing-marin-county-USD_lag_3",
+      "coefficient": 0.10334758064686016,
+      "p_value": 5.359805601393755e-16,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-novato-oaks-inn-USD_lag_1",
+      "coefficient": 0.08331662344809673,
+      "p_value": 0.02436301984368385,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-mill-valley-sausalito-USD_lag_1",
+      "coefficient": 0.12849943779668394,
+      "p_value": 0.00037567132924318523,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.3965604386826216,
+    "rmse": 19.678270948255506,
+    "mape": 7.138514030299134,
+    "n_features": 7,
+    "n_observations": 670,
+    "mean_price": 209.17164179104478
+  }
+}

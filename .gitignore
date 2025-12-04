@@ -29,6 +29,16 @@ data/
 *.sqlite
 *.sql
 
+
+data/full-data/raw/
+data/full-data/processed/
+data/full-data/*.csv
+data/full-data/**/*.csv
+*.csv
+hotel_mapping.csv
+collection_summary.csv
+
+
 # Results and outputs  
 results/
 outputs/

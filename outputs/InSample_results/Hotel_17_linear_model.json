@@ -1,0 +1,322 @@
+{
+  "hotel_id": "Hotel_17",
+  "intercept": 728.066139806208,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": -105.81199387795836,
+      "p_value": 6.310844753397854e-06,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "week_centered",
+      "coefficient": 7.539189831181178,
+      "p_value": 6.621518914869426e-14,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-inn-at-sonoma-USD_lag_1",
+      "coefficient": 0.2911124280249707,
+      "p_value": 0.006039253068575654,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inn-at-sonoma-USD_lag_3",
+      "coefficient": 0.09532864096755263,
+      "p_value": 0.31128402875458705,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_3",
+      "coefficient": -0.05220000744022477,
+      "p_value": 0.29003418430053707,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": 0.00025421036876920435,
+      "p_value": 0.015378897216376326,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_2",
+      "coefficient": -0.1157051957787267,
+      "p_value": 0.08239506849993813,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-trio-healdsburg-USD_lag_2",
+      "coefficient": -0.21332471484250703,
+      "p_value": 0.00467174136108574,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -61.74889020091121,
+      "p_value": 0.0003666141221267977,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-trio-healdsburg-USD_lag_4",
+      "coefficient": -0.06221675174608442,
+      "p_value": 0.3310728291428573,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_2",
+      "coefficient": -0.10795942445601091,
+      "p_value": 0.36123394692175737,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.012931900443365934,
+      "p_value": 7.93238834394044e-08,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_1",
+      "coefficient": -0.16688224992635725,
+      "p_value": 0.00487661119397192,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inn-at-sonoma-USD_lag_4",
+      "coefficient": -0.037710668908549475,
+      "p_value": 0.6533823735482689,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-trio-healdsburg-USD_lag_1",
+      "coefficient": 0.22799505545953555,
+      "p_value": 0.0008656661364268338,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 43.02104599018875,
+      "p_value": 0.0571848312260575,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_1",
+      "coefficient": -0.046799963902794985,
+      "p_value": 0.448256120725405,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_4",
+      "coefficient": 0.12235891843467196,
+      "p_value": 0.2610181698736309,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -91.40217608054047,
+      "p_value": 4.848954489659376e-11,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-el-dorado-sonoma1-USD_lag_1",
+      "coefficient": 0.026291416650178655,
+      "p_value": 0.73256428341732,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-gaige-house-USD_lag_3",
+      "coefficient": 0.07919481545323642,
+      "p_value": 0.3556312806990902,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-gaige-house-USD_lag_2",
+      "coefficient": -0.07956495420318742,
+      "p_value": 0.41739813174347395,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-el-dorado-sonoma1-USD_lag_4",
+      "coefficient": -0.07426487207682063,
+      "p_value": 0.34585263683333645,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-vintners-inn-USD_lag_4",
+      "coefficient": 0.02867142370641917,
+      "p_value": 0.5160967329739456,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-vintners-inn-USD_lag_2",
+      "coefficient": 0.0853292849742813,
+      "p_value": 0.021642127492862838,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_5",
+      "coefficient": -0.0166441055263322,
+      "p_value": 0.7614451061102737,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_3",
+      "coefficient": -0.04910441638980871,
+      "p_value": 0.4614068432116273,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_5",
+      "coefficient": -0.14696075799544586,
+      "p_value": 0.018561301293286862,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_1",
+      "coefficient": 0.072652379420271,
+      "p_value": 0.5516265332031882,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-gaige-house-USD_lag_4",
+      "coefficient": -0.1545645404303324,
+      "p_value": 0.05747833299997216,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_3",
+      "coefficient": -0.2626506238747099,
+      "p_value": 0.03344703949152055,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_5",
+      "coefficient": -0.2501241960000619,
+      "p_value": 0.011039651791196132,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-vintners-inn-USD_lag_5",
+      "coefficient": -0.034210763227732956,
+      "p_value": 0.3518949032015425,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_4",
+      "coefficient": 0.04591079612142228,
+      "p_value": 0.3514745437125546,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-el-dorado-sonoma1-USD_lag_2",
+      "coefficient": -0.18489341295739128,
+      "p_value": 0.019387562708772683,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-vintners-inn-USD_lag_1",
+      "coefficient": 0.017996435913092503,
+      "p_value": 0.7066923145972737,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inn-at-sonoma-USD_lag_2",
+      "coefficient": -0.06493002466005432,
+      "p_value": 0.5418689798946854,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-el-dorado-sonoma1-USD_lag_5",
+      "coefficient": -0.07121526204149486,
+      "p_value": 0.3469289321482969,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-gaige-house-USD_lag_1",
+      "coefficient": -0.029326579218244442,
+      "p_value": 0.7660608612937,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-trio-healdsburg-USD_lag_3",
+      "coefficient": 0.2333872475734034,
+      "p_value": 0.0010886607046646359,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_2",
+      "coefficient": 0.07701438378870218,
+      "p_value": 0.06604413817776927,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-el-dorado-sonoma1-USD_lag_3",
+      "coefficient": -0.16072215832485182,
+      "p_value": 0.03319994126882636,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-gaige-house-USD_lag_5",
+      "coefficient": 0.10482800688141759,
+      "p_value": 0.14712150666445237,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_4",
+      "coefficient": -0.08344714238311732,
+      "p_value": 0.15695487693967008,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5921096006407498,
+    "rmse": 68.11171564081181,
+    "mape": 11.463492153825213,
+    "n_features": 44,
+    "n_observations": 593,
+    "mean_price": 436.5379426644182
+  }
+}

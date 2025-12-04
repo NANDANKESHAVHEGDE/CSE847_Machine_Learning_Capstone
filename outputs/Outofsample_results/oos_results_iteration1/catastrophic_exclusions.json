@@ -1,0 +1,9 @@
+{
+  "excluded_hotels": [
+    "Hotel_26",
+    "Hotel_32",
+    "Hotel_34"
+  ],
+  "reason": "Training R\u00b2 < 0.10 - No learnable relationship with competitors",
+  "recommendation": "Use alternative predictors (occupancy, events, seasonality) for these hotels"
+}

@@ -1,0 +1,21 @@
+{
+  "hotel_id": "Hotel_37",
+  "intercept": 105.027907983318,
+  "coefficients": [
+    {
+      "feature": "booking-us-hotel-main-street-waterville-USD_lag_1",
+      "coefficient": 0.39752306546850263,
+      "p_value": 2.590931644494264e-07,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.23953644804019936,
+    "rmse": 30.621712439797488,
+    "mape": 12.24277095878529,
+    "n_features": 1,
+    "n_observations": 393,
+    "mean_price": 162.14758269720102
+  }
+}

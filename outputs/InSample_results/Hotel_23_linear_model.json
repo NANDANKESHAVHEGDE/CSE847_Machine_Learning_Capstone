@@ -1,0 +1,203 @@
+{
+  "hotel_id": "Hotel_23",
+  "intercept": 38.28622062004036,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": 16.883504204277326,
+      "p_value": 1.6153350526517207e-10,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-sugar-beach-resort-USD_lag_5",
+      "coefficient": -0.05110093700243887,
+      "p_value": 0.01606518618890081,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-maui-beach-USD_lag_5",
+      "coefficient": 0.25546488672660517,
+      "p_value": 0.008307420813373954,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-castle-kamaole-sands-USD_lag_4",
+      "coefficient": -0.12116734093599119,
+      "p_value": 0.008671682310842426,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aston-kaanapali-shores-USD_lag_1",
+      "coefficient": 0.19289657871128862,
+      "p_value": 1.096777858689677e-19,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -16.121572800334064,
+      "p_value": 4.353522441033593e-07,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-maui-wailea-USD_lag_5",
+      "coefficient": -0.0444160117777495,
+      "p_value": 0.005853347093971199,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.0010389422451625879,
+      "p_value": 6.585727510950213e-08,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-maui-beach-USD_lag_2",
+      "coefficient": 0.06534157340741709,
+      "p_value": 0.5106923782386747,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-maui-coast-USD_lag_1",
+      "coefficient": 0.045144554199503584,
+      "p_value": 0.011689872522768329,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_5",
+      "coefficient": -0.05324237968514073,
+      "p_value": 0.20034350587023142,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 15.436871368291143,
+      "p_value": 4.735424580500357e-13,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_3",
+      "coefficient": -0.025218141435992686,
+      "p_value": 0.45615615359418293,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kaanapali-beach-USD_lag_5",
+      "coefficient": 0.03954374316553064,
+      "p_value": 0.03165018676965714,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aston-at-the-maui-banyan-USD_lag_5",
+      "coefficient": 0.02198415848719676,
+      "p_value": 0.5345181716243277,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-castle-kamaole-sands-USD_lag_1",
+      "coefficient": -0.273709519605422,
+      "p_value": 0.0004484017502994333,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-sugar-beach-resort-USD_lag_1",
+      "coefficient": -0.039664519560569905,
+      "p_value": 0.09315998384059572,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-maui-wailea-USD_lag_1",
+      "coefficient": -0.028464328253185015,
+      "p_value": 0.03903712739702898,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kaanapali-beach-USD_lag_4",
+      "coefficient": 0.009500476713454081,
+      "p_value": 0.6391154581683867,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-maui-beach-USD_lag_4",
+      "coefficient": 0.128190187292894,
+      "p_value": 0.25086555636032093,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-castle-kamaole-sands-USD_lag_5",
+      "coefficient": -0.05386770591800627,
+      "p_value": 0.1662135526083438,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kaanapali-beach-USD_lag_2",
+      "coefficient": 0.025829919928202813,
+      "p_value": 0.10663903689524057,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_4",
+      "coefficient": -0.04313404783085861,
+      "p_value": 0.2594946303415695,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kohea-kai-resort-maui-USD_lag_1",
+      "coefficient": 0.06390122243235224,
+      "p_value": 4.27356064717825e-31,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aston-at-the-maui-banyan-USD_lag_4",
+      "coefficient": 0.018826265448924073,
+      "p_value": 0.5904513050736202,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-maui-beach-USD_lag_3",
+      "coefficient": 0.057335368790453756,
+      "p_value": 0.5766870340614467,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-maui-beach-USD_lag_1",
+      "coefficient": 0.8341212186916693,
+      "p_value": 2.0136849894538106e-22,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7015462532759751,
+    "rmse": 21.28283778949394,
+    "mape": 5.247987450683232,
+    "n_features": 27,
+    "n_observations": 676,
+    "mean_price": 304.0739644970414
+  }
+}

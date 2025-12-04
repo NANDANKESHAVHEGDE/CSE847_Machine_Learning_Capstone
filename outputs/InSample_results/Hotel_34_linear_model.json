@@ -1,0 +1,98 @@
+{
+  "hotel_id": "Hotel_34",
+  "intercept": 173.85939557111084,
+  "coefficients": [
+    {
+      "feature": "booking-us-hotel-park-city-autograph-collection-USD_lag_2",
+      "coefficient": -0.13679911439076597,
+      "p_value": 0.013840825501194328,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-escala-lodges-USD_lag_3",
+      "coefficient": 0.0688920954146845,
+      "p_value": 0.009660339388906473,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-pendry-park-city-USD_lag_4",
+      "coefficient": 0.02717700390575961,
+      "p_value": 0.6275560161140132,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-escala-lodges-USD_lag_1",
+      "coefficient": 0.09855688523182993,
+      "p_value": 2.2231713658454856e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-steineriksenlodgedeervalley-USD_lag_5",
+      "coefficient": 0.04056549972194266,
+      "p_value": 0.1183216299050638,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hotel-park-city-autograph-collection-USD_lag_3",
+      "coefficient": -0.1442972431866623,
+      "p_value": 0.011170513939959435,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-escala-lodges-USD_lag_4",
+      "coefficient": 0.05113451773571952,
+      "p_value": 0.03969354219556575,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-escala-lodges-USD_lag_5",
+      "coefficient": 0.04189933055427405,
+      "p_value": 0.10879139343879532,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-escala-lodges-USD_lag_2",
+      "coefficient": 0.03069690571077656,
+      "p_value": 0.20434336421792587,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-pendry-park-city-USD_lag_1",
+      "coefficient": 0.1580514310331116,
+      "p_value": 3.8320529205701395e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 93.26476201285878,
+      "p_value": 1.2908939653321634e-19,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 55.35749939951199,
+      "p_value": 0.0006121264624042874,
+      "significance": "***",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.48099462009663896,
+    "rmse": 174.93881393451923,
+    "mape": 60164086340873.55,
+    "n_features": 12,
+    "n_observations": 603,
+    "mean_price": 329.58706467661693
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "hotel_id": "Hotel_36",
+  "intercept": 36.92944712847428,
+  "coefficients": [
+    {
+      "feature": "booking-us-the-hostel-USD_lag_1",
+      "coefficient": 0.13562205419850007,
+      "p_value": 0.001164421192483198,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-hostel-USD_lag_5",
+      "coefficient": 0.05367404124848469,
+      "p_value": 0.1621152564145384,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -7.950679660674668,
+      "p_value": 0.00896629903943216,
+      "significance": "**",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -14.181651956654886,
+      "p_value": 2.1124914305781222e-14,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-motel-6-jackson-USD_lag_1",
+      "coefficient": 0.20211854127870973,
+      "p_value": 8.19100545821803e-48,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.64635858413269,
+    "rmse": 29.66930236997863,
+    "mape": 25.646250628805056,
+    "n_features": 5,
+    "n_observations": 675,
+    "mean_price": 124.71703703703703
+  }
+}

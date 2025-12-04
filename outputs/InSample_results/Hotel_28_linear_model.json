@@ -1,0 +1,259 @@
+{
+  "hotel_id": "Hotel_28",
+  "intercept": 379.5252081324713,
+  "coefficients": [
+    {
+      "feature": "week_centered",
+      "coefficient": 4.891531495500892,
+      "p_value": 0.5085033243718686,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-at-roomie-EUR_lag_5",
+      "coefficient": -0.34111474655277313,
+      "p_value": 0.26277041972562687,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-restaurant-seebichl-EUR_lag_5",
+      "coefficient": 0.009954641566175213,
+      "p_value": 0.9497555701771792,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gamshof-EUR_lag_1",
+      "coefficient": 1.2583892103633334,
+      "p_value": 0.03386124088238523,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-roomie-EUR_lag_3",
+      "coefficient": -0.2567855441262374,
+      "p_value": 0.3647813763734439,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": 0.002355746179194055,
+      "p_value": 0.030702115896496098,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": 6.44230708416358,
+      "p_value": 0.5618861578338803,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-at-gasthof-eggerwirt-EUR_lag_5",
+      "coefficient": -0.12080227744506539,
+      "p_value": 0.31402747620713645,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.009618871236807673,
+      "p_value": 0.4368535181299297,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -55.94199385411212,
+      "p_value": 0.020436361810060935,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-at-roomie-EUR_lag_1",
+      "coefficient": 1.3725029943021505,
+      "p_value": 2.7407907908450085e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-garni-entstrasser-EUR_lag_4",
+      "coefficient": 0.19907771414638228,
+      "p_value": 0.23957055331478538,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 353.7421338106083,
+      "p_value": 0.03999588723503684,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 32.47194330524637,
+      "p_value": 0.6173384910698605,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-at-gasthof-eggerwirt-EUR_lag_4",
+      "coefficient": -0.06402331179148352,
+      "p_value": 0.6391839315842651,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-pension-hinterseer-EUR_lag_1",
+      "coefficient": -1.7639438795536038,
+      "p_value": 0.001652865525841843,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": -2.3737635180667835,
+      "p_value": 0.04270649422681015,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-at-restaurant-seebichl-EUR_lag_1",
+      "coefficient": -0.22724996834950198,
+      "p_value": 0.4730682988867959,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gamshof-EUR_lag_5",
+      "coefficient": 0.008448633397640393,
+      "p_value": 0.9702223753092077,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gasthof-eggerwirt-EUR_lag_1",
+      "coefficient": -0.2244879398521608,
+      "p_value": 0.2203177056084087,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-pension-hinterseer-EUR_lag_5",
+      "coefficient": 0.33504579489505176,
+      "p_value": 0.16378613737813097,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-restaurant-seebichl-EUR_lag_2",
+      "coefficient": 0.05143533532639531,
+      "p_value": 0.6694930226261195,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-garni-entstrasser-EUR_lag_5",
+      "coefficient": 0.174014461493001,
+      "p_value": 0.21939200490545674,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-pension-hinterseer-EUR_lag_2",
+      "coefficient": 0.07325318768512908,
+      "p_value": 0.7649243440870321,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-restaurant-seebichl-EUR_lag_4",
+      "coefficient": 0.0899449156134964,
+      "p_value": 0.2890737652210349,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-pension-hinterseer-EUR_lag_3",
+      "coefficient": 0.36643831533145127,
+      "p_value": 0.14620137305792857,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-garni-entstrasser-EUR_lag_1",
+      "coefficient": 0.3953508006016403,
+      "p_value": 0.10322184879079134,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-restaurant-seebichl-EUR_lag_3",
+      "coefficient": 0.1134570151825536,
+      "p_value": 0.31662203999190464,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gasthof-eggerwirt-EUR_lag_3",
+      "coefficient": 0.1753991598401769,
+      "p_value": 0.3882781873759348,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-garni-entstrasser-EUR_lag_2",
+      "coefficient": -0.06922940449059789,
+      "p_value": 0.7461183755494996,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gasthof-eggerwirt-EUR_lag_2",
+      "coefficient": -0.013453454218703354,
+      "p_value": 0.9393023487304353,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-pension-hinterseer-EUR_lag_4",
+      "coefficient": 0.10518747860254675,
+      "p_value": 0.6111923948485198,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-at-gamshof-EUR_lag_3",
+      "coefficient": -0.2364231646179282,
+      "p_value": 0.3604817599111596,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 73.53379652947815,
+      "p_value": 0.006703720140348079,
+      "significance": "**",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-at-garni-entstrasser-EUR_lag_3",
+      "coefficient": -0.4077921475487561,
+      "p_value": 0.08165814149488654,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7815239088074029,
+    "rmse": 40.52506022220098,
+    "mape": 18.126807003871388,
+    "n_features": 35,
+    "n_observations": 595,
+    "mean_price": 112.84873949579831
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "hotel_id": "Hotel_31",
+  "intercept": 54.22651182518004,
+  "coefficients": [
+    {
+      "feature": "booking-us-palm-mountain-resort-spa-USD_lag_2",
+      "coefficient": -0.2310820336894917,
+      "p_value": 0.11127265175709793,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_1",
+      "coefficient": 0.33073294328851943,
+      "p_value": 8.86882513967042e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_4",
+      "coefficient": 0.09120702145561418,
+      "p_value": 0.20668481703007302,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_1",
+      "coefficient": 0.10008219715048257,
+      "p_value": 0.24301934803098502,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": -0.00021441645801096077,
+      "p_value": 0.004858530239373267,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-best-western-las-brisas-palm-springs-USD_lag_4",
+      "coefficient": -0.1560036746812412,
+      "p_value": 0.21553447715617202,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-las-brisas-palm-springs-USD_lag_2",
+      "coefficient": -0.057235314240475316,
+      "p_value": 0.6917906541460521,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.002576087426333833,
+      "p_value": 0.0004844936639547649,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-ace-and-swim-club-USD_lag_2",
+      "coefficient": -0.21449902502110835,
+      "p_value": 0.055694109261822576,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_1",
+      "coefficient": 0.14418594115424488,
+      "p_value": 0.05262503587058271,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 1.2494741937462184,
+      "p_value": 0.9524754752341543,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_2",
+      "coefficient": -0.25382834422736394,
+      "p_value": 0.005265375639566102,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_3",
+      "coefficient": 0.06607909857444921,
+      "p_value": 0.28568670309002564,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_5",
+      "coefficient": 0.25536244275446685,
+      "p_value": 7.686102366719723e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_3",
+      "coefficient": 0.13521093990171473,
+      "p_value": 0.058397244066609066,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 17.45581551989053,
+      "p_value": 0.19185219355302552,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-ace-and-swim-club-USD_lag_1",
+      "coefficient": 0.3991203778652649,
+      "p_value": 0.0011549930918606356,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palm-mountain-resort-spa-USD_lag_4",
+      "coefficient": -0.09008278505743125,
+      "p_value": 0.4083478758803838,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ace-and-swim-club-USD_lag_4",
+      "coefficient": -0.2138187636336854,
+      "p_value": 0.016183333785882693,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_4",
+      "coefficient": -0.08214763370547687,
+      "p_value": 0.09559341480471076,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_2",
+      "coefficient": 0.2112669102008869,
+      "p_value": 0.007336349525018925,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": -72.34928442985165,
+      "p_value": 0.008149297736413097,
+      "significance": "**",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5015035867853135,
+    "rmse": 121.42535062997143,
+    "mape": 28.189713047631482,
+    "n_features": 22,
+    "n_observations": 676,
+    "mean_price": 272.8801775147929
+  }
+}

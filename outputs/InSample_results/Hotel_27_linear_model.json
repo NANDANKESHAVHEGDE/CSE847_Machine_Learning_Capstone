@@ -1,0 +1,126 @@
+{
+  "hotel_id": "Hotel_27",
+  "intercept": 189.60474911088855,
+  "coefficients": [
+    {
+      "feature": "booking-us-indigo-traverse-city-USD_lag_1",
+      "coefficient": 0.044038617048381884,
+      "p_value": 0.29449789053772824,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_4",
+      "coefficient": -0.09203066048185128,
+      "p_value": 0.04368525078029992,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-west-bay-beach-a-delamar-resort-USD_lag_1",
+      "coefficient": 0.1712754314972762,
+      "p_value": 0.00027934428426552475,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.0015086141287151574,
+      "p_value": 0.0003547287008467869,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_5",
+      "coefficient": -0.1277783580959517,
+      "p_value": 0.009127017509352303,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 6.670112170107563,
+      "p_value": 0.34397439806932606,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-hampton-inn-traverse-city-USD_lag_1",
+      "coefficient": 0.6951014716215012,
+      "p_value": 1.3187283763028132e-13,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -59.52070880042333,
+      "p_value": 4.081895996688946e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -54.53627991669655,
+      "p_value": 5.040996629996141e-08,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-indigo-traverse-city-USD_lag_4",
+      "coefficient": -0.1144929238399237,
+      "p_value": 0.0005775965503107598,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-west-bay-beach-a-delamar-resort-USD_lag_2",
+      "coefficient": -0.1811459453136401,
+      "p_value": 5.094085279414224e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-traverse-city-USD_lag_2",
+      "coefficient": -0.5151975347742944,
+      "p_value": 2.748006327782048e-08,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-beach-resort-traverse-city-USD_lag_3",
+      "coefficient": 0.27091705036434255,
+      "p_value": 0.010477665314896948,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_3",
+      "coefficient": 0.11041363259420633,
+      "p_value": 0.05570906800148445,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-beach-resort-traverse-city-USD_lag_5",
+      "coefficient": 0.20169794621650242,
+      "p_value": 0.03441058476126478,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 9.320874562952618,
+      "p_value": 0.5370380732099398,
+      "significance": "",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7395033813387935,
+    "rmse": 58.13403012777421,
+    "mape": 14.802121077441635,
+    "n_features": 16,
+    "n_observations": 425,
+    "mean_price": 255.56470588235294
+  }
+}

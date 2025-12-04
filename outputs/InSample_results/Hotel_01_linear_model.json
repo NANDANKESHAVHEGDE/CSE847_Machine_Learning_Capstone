@@ -1,0 +1,42 @@
+{
+  "hotel_id": "Hotel_01",
+  "intercept": -63.777689954649496,
+  "coefficients": [
+    {
+      "feature": "booking-us-hampton-inn-suites-rockland-USD_lag_5",
+      "coefficient": 0.2015833509779152,
+      "p_value": 0.033778162528495054,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-16-bay-view-USD_lag_1",
+      "coefficient": 0.20859766832252502,
+      "p_value": 0.0019747074522555677,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-whitehall-USD_lag_1",
+      "coefficient": 0.6408516199557183,
+      "p_value": 2.666353532046928e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-16-bay-view-USD_lag_5",
+      "coefficient": 0.12532067227378846,
+      "p_value": 0.06150714909158061,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7379048414815685,
+    "rmse": 48.70186984298813,
+    "mape": 12.143462423891355,
+    "n_features": 4,
+    "n_observations": 554,
+    "mean_price": 266.47292418772565
+  }
+}

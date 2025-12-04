@@ -1,0 +1,91 @@
+{
+  "hotel_id": "Hotel_21",
+  "intercept": -4.680660413286137,
+  "coefficients": [
+    {
+      "feature": "week_quartic",
+      "coefficient": 7.039288407709835e-05,
+      "p_value": 0.0009361425861000636,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.001458928025298316,
+      "p_value": 0.00014390837227404467,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 6.130417483489717,
+      "p_value": 0.1496044321961876,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-oasis-hotel-waikiki-USD_lag_1",
+      "coefficient": 0.19654430542520446,
+      "p_value": 0.0006076323500221849,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-la-croix-USD_lag_1",
+      "coefficient": 0.16417204671949945,
+      "p_value": 0.22819732412125637,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ohana-east-oahu-USD_lag_1",
+      "coefficient": 0.11155376190182503,
+      "p_value": 0.1571170704578072,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ohana-waikiki-malia-USD_lag_1",
+      "coefficient": 0.1289101359240865,
+      "p_value": 0.2065642013145006,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aqua-palms-spa-USD_lag_1",
+      "coefficient": 0.293768641108725,
+      "p_value": 0.0010301461069338522,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-doubletree-alana-waikiki-USD_lag_1",
+      "coefficient": 0.1045273984326548,
+      "p_value": 0.15055472461117325,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ramada-plaza-waikiki-USD_lag_1",
+      "coefficient": 0.043612380322124306,
+      "p_value": 0.6181147717445798,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-castle-queen-kapiolani-USD_lag_1",
+      "coefficient": 0.08088047078708198,
+      "p_value": 0.19109109812837777,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.47012096859002706,
+    "rmse": 45.05789047203026,
+    "mape": 10.847054814925242,
+    "n_features": 11,
+    "n_observations": 640,
+    "mean_price": 281.85625
+  }
+}

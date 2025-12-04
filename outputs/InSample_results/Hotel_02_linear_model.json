@@ -1,0 +1,98 @@
+{
+  "hotel_id": "Hotel_02",
+  "intercept": 128.24349057219547,
+  "coefficients": [
+    {
+      "feature": "week_centered",
+      "coefficient": 0.10286199978642656,
+      "p_value": 0.04550714536287925,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-suites-albany-USD_lag_5",
+      "coefficient": -0.15568874756463208,
+      "p_value": 5.93884103652906e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-super-8-melrose-mn-USD_lag_2",
+      "coefficient": -0.4734747858556006,
+      "p_value": 0.03484929500006385,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hotel-st-joseph-east-minnesota-street-USD_lag_2",
+      "coefficient": -0.16042098466506796,
+      "p_value": 0.13506581455965844,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-suites-albany-USD_lag_1",
+      "coefficient": 0.08812489882207297,
+      "p_value": 0.26094190091124736,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -7.036616043571636,
+      "p_value": 5.357491277861387e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": -0.008071026337699757,
+      "p_value": 4.151369545597586e-05,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-super-8-melrose-mn-USD_lag_4",
+      "coefficient": -0.20386599518227716,
+      "p_value": 0.2709221586717442,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-suites-albany-USD_lag_4",
+      "coefficient": -0.060977262939055234,
+      "p_value": 0.4609618387098058,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-super-8-melrose-mn-USD_lag_1",
+      "coefficient": 0.1373722153153568,
+      "p_value": 0.5839898810662469,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hotel-st-joseph-east-minnesota-street-USD_lag_1",
+      "coefficient": 0.0565959476964238,
+      "p_value": 0.5602781607889757,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-avon-308-blattner-drive-USD_lag_1",
+      "coefficient": 0.26485172871915336,
+      "p_value": 0.05569916193521883,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.4649624434576204,
+    "rmse": 11.317197223647826,
+    "mape": 9.230958071557918,
+    "n_features": 12,
+    "n_observations": 425,
+    "mean_price": 86.15764705882353
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "hotel_id": "Hotel_41",
+  "intercept": 205.20512520814367,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": 41.081088013898274,
+      "p_value": 1.0237140290068347e-10,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-the-prospect-berkshires-USD_lag_4",
+      "coefficient": -0.0698585731698954,
+      "p_value": 0.12595494929283355,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -11.116863807523838,
+      "p_value": 0.1263967123249962,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-the-prospect-berkshires-USD_lag_1",
+      "coefficient": 0.3037649680013558,
+      "p_value": 1.12853848687262e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-suites-by-marriott-williamstown-USD_lag_1",
+      "coefficient": 0.11303467679482306,
+      "p_value": 0.021369042462031147,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_4",
+      "coefficient": -0.06825282558636328,
+      "p_value": 0.18054923673521406,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-williams-inn-williamstown-USD_lag_4",
+      "coefficient": -0.050313954132627584,
+      "p_value": 0.29733080277501844,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inness-accord-USD_lag_3",
+      "coefficient": 0.05610397366450739,
+      "p_value": 0.00021225305631881935,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -41.107596214309815,
+      "p_value": 0.00984858198710764,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -29.919607659939487,
+      "p_value": 2.0668881618787283e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": 0.09040457131354962,
+      "p_value": 0.09298500442211673,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-williams-inn-williamstown-USD_lag_1",
+      "coefficient": 0.13009475081127242,
+      "p_value": 0.003501078909026761,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-berkshire-valley-inn-williamstown-USD_lag_1",
+      "coefficient": 0.32311916263276175,
+      "p_value": 0.0004517799979664499,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_2",
+      "coefficient": -0.1644372264084857,
+      "p_value": 0.0010938381462179303,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-prospect-berkshires-USD_lag_3",
+      "coefficient": -0.06536671731205786,
+      "p_value": 0.1930592305208173,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_5",
+      "coefficient": -0.046330990248961965,
+      "p_value": 0.10240769039262447,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-suites-by-marriott-williamstown-USD_lag_3",
+      "coefficient": 0.09304038025210075,
+      "p_value": 0.015738447863099643,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-prospect-berkshires-USD_lag_2",
+      "coefficient": -0.21481717076340978,
+      "p_value": 0.0001590630838580225,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7559405161548298,
+    "rmse": 33.58984745043413,
+    "mape": 7.600908671468891,
+    "n_features": 18,
+    "n_observations": 425,
+    "mean_price": 311.2823529411765
+  }
+}

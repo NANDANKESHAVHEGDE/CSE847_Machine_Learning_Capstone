@@ -1,0 +1,133 @@
+{
+  "hotel_id": "Hotel_20",
+  "intercept": 149.73172387059617,
+  "coefficients": [
+    {
+      "feature": "booking-us-16-bay-view-USD_lag_4",
+      "coefficient": 0.05601967752526599,
+      "p_value": 0.450130179496938,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-camden-maine-stay-inn-USD_lag_1",
+      "coefficient": 0.3264308527823854,
+      "p_value": 0.15321010225188714,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lord-camden-inn-USD_lag_2",
+      "coefficient": -0.019933079375925145,
+      "p_value": 0.8009039672770808,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_5",
+      "coefficient": 0.0027188249622613347,
+      "p_value": 0.909882659236142,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 8.50701500406206,
+      "p_value": 0.36175377619642,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_2",
+      "coefficient": 0.02226347942384696,
+      "p_value": 0.38854850329646795,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-camden-maine-stay-inn-USD_lag_3",
+      "coefficient": -0.030393760573630635,
+      "p_value": 0.8400019328653875,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -0.7395062848724194,
+      "p_value": 0.9510197925147684,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-camden-maine-stay-inn-USD_lag_5",
+      "coefficient": -0.1826108207554562,
+      "p_value": 0.024388647267040743,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": -0.353994332336256,
+      "p_value": 0.005976566316792395,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-16-bay-view-USD_lag_3",
+      "coefficient": 0.20008075195083566,
+      "p_value": 0.15884334542013012,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_4",
+      "coefficient": 0.008626323655808038,
+      "p_value": 0.7708081747984585,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-country-inn-at-camden-rockport-USD_lag_1",
+      "coefficient": 2.4682478461470834,
+      "p_value": 0.0024208692427058463,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hideaway-inn-maine-USD_lag_1",
+      "coefficient": -0.22129363284354903,
+      "p_value": 0.019064629422677493,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lord-camden-inn-USD_lag_3",
+      "coefficient": -0.2756034830830276,
+      "p_value": 0.054364720263480784,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_1",
+      "coefficient": -0.09488509638006089,
+      "p_value": 0.040336979840339605,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-camden-maine-stay-inn-USD_lag_2",
+      "coefficient": -0.36154968255003084,
+      "p_value": 0.1664111454205418,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5268278338124763,
+    "rmse": 32.81503720426734,
+    "mape": 6.137603629375431,
+    "n_features": 17,
+    "n_observations": 192,
+    "mean_price": 410.09375
+  }
+}

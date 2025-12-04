@@ -1,0 +1,70 @@
+{
+  "hotel_id": "Hotel_07",
+  "intercept": 29.402444719012006,
+  "coefficients": [
+    {
+      "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_5",
+      "coefficient": 0.1423592858827113,
+      "p_value": 0.020269785814322667,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -7.19068587442788,
+      "p_value": 0.0005748278532642892,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_3",
+      "coefficient": 0.1915157576420918,
+      "p_value": 0.0016557998277951396,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -13.047375329116877,
+      "p_value": 8.05304580773819e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-towneplace-suites-by-marriott-denver-south-lone-tree-USD_lag_3",
+      "coefficient": 0.05105203500115922,
+      "p_value": 0.4822147815670611,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-springhill-suites-denver-parker-USD_lag_1",
+      "coefficient": 0.3231261471260151,
+      "p_value": 1.9864944435854078e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-inn-and-suites-of-castle-rock-USD_lag_1",
+      "coefficient": 0.04851003116268793,
+      "p_value": 0.44128972760089014,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_1",
+      "coefficient": 0.35968664584148446,
+      "p_value": 0.000218526794601779,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7266973952343911,
+    "rmse": 21.99218022320014,
+    "mape": 8.762234925870219,
+    "n_features": 8,
+    "n_observations": 675,
+    "mean_price": 163.21777777777777
+  }
+}

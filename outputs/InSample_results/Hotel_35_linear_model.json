@@ -1,0 +1,119 @@
+{
+  "hotel_id": "Hotel_35",
+  "intercept": 184.57707866343785,
+  "coefficients": [
+    {
+      "feature": "booking-us-inn-of-the-six-mountains-USD_lag_1",
+      "coefficient": 0.17361620135284392,
+      "p_value": 1.8024878164199482e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kimpton-taconic-hotel-USD_lag_1",
+      "coefficient": 0.061839977216384595,
+      "p_value": 0.004429098972412076,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-kimpton-taconic-hotel-USD_lag_2",
+      "coefficient": -0.044210586943013074,
+      "p_value": 0.0685347443844674,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-talta-lodge-USD_lag_3",
+      "coefficient": 0.11929960103076775,
+      "p_value": 0.00011966736086585276,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-equinox-resort-USD_lag_1",
+      "coefficient": 0.02675872752036865,
+      "p_value": 0.1964311618314477,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palmer-house-manchester-center-USD_lag_2",
+      "coefficient": -0.06439716396670327,
+      "p_value": 0.5759894736321375,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-town-country-resort-at-stowe-USD_lag_1",
+      "coefficient": 0.1525660619601983,
+      "p_value": 1.8693766374887964e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -15.49143460923384,
+      "p_value": 0.00010062842681949297,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-manchester-manchester-vt-USD_lag_1",
+      "coefficient": -0.03096430249460359,
+      "p_value": 0.558580770275403,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-talta-lodge-USD_lag_1",
+      "coefficient": 0.001808309369796308,
+      "p_value": 0.9636983508201737,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bromley-view-inn-USD_lag_2",
+      "coefficient": -0.2912413178473182,
+      "p_value": 0.000334069649060803,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palmer-house-manchester-center-USD_lag_5",
+      "coefficient": -0.11153476927157537,
+      "p_value": 0.1702784482864117,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-talta-lodge-USD_lag_5",
+      "coefficient": 0.131834284490719,
+      "p_value": 3.454881845289119e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-manchester-manchester-vt-USD_lag_5",
+      "coefficient": -0.08064783756714128,
+      "p_value": 0.21183581048336875,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-palmer-house-manchester-center-USD_lag_4",
+      "coefficient": -0.16455395880281332,
+      "p_value": 0.0005406895662892759,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6528214744948694,
+    "rmse": 32.62652537628175,
+    "mape": 11.121791355978381,
+    "n_features": 15,
+    "n_observations": 393,
+    "mean_price": 214.52162849872772
+  }
+}

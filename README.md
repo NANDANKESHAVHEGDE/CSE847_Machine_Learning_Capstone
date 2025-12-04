@@ -47,7 +47,7 @@ This project implements two complementary approaches to hotel pricing analysis:
 ## Project Structure
 
 ```
-CSE847_Machine_Learning_Capstone/
+MSU-CSE847-Course-Project/
 │
 ├── Causal-Inference/                    # 2SRI causal analysis
 │   ├── scripts/
@@ -55,27 +55,38 @@ CSE847_Machine_Learning_Capstone/
 │   │   └── 05_LinearModels_Stage2_causal-Iteration1.ipynb   # Stage 2: Causal estimation
 │   └── results/                         # Stage 1 & Stage 2 outputs
 │
-├── Predictive-Models/                   # In-sample linear regression
-│   ├── scripts/
-│   │   ├── 01_Lagged-Datset-creation/   # Time series feature engineering
-│   │   └── 02_Parametric-LR-Models/     # Linear regression iterations
-│   │       ├── In-Sample-LR-Iteration1.ipynb
-│   │       ├── In-Sample-LR-Iteration2.ipynb
-│   │       └── In-Sample-LR-Iteration3.ipynb
-│   └── results/
-│
-├── Scaled-Prediction-Models/            # Portfolio-wide out-of-sample validation
-│   ├── LR/                              # Out-of-sample linear regression
-│   │   ├── OutofSample-Iteration1-LR-Matrix-Imputations.ipynb
-│   │   ├── OutofSample-Iteration2-LR-Matrix-Imputations.ipynb
-│   │   └── OutofSample-Iteration3-LR-Matrix-Imputations.ipynb
+├── Scaled-Prediction-Models/            # Portfolio-wide modeling
+│   ├── LR/                              # Linear regression models
+│   │   ├── InSample-LR-Matrix-Imputations.ipynb             # In-sample (Table 4)
+│   │   ├── OutofSample-Iteration1-LR-Matrix-Imputations.ipynb  # OOS direct modeling
+│   │   └── OutofSample-Iteration2-LR-Matrix-Imputations.ipynb  # OOS detrended
 │   └── Imputation_quality_check.ipynb   # Matrix completion validation
+│
+├── outputs/                             # All model outputs and results
+│   ├── InSample_results/                # In-sample LR results (Table 4)
+│   │   ├── linear_regression_summary.csv    # Portfolio summary (34 hotels)
+│   │   ├── all_linear_models.json           # All models combined
+│   │   └── Hotel_XX_linear_model.json       # Individual hotel results (38 files)
+│   ├── Outofsample_results/             # Out-of-sample CV results
+│   │   ├── oos_results_iteration1/          # Direct modeling (Median CV R²=-0.53)
+│   │   └── oos_results_iteration2/          # Detrended (Median CV R²=+0.25)
+│   └── plots/                           # Report figures
+│       ├── fig1_instrument_strength.png
+│       ├── fig2_competitive_effects.png
+│       ├── fig3_oos_comparison.png
+│       ├── fig4_endogeneity_detection.png
+│       ├── fig5_2sri_flowchart.png
+│       └── fig6_performance_distribution.png
 │
 ├── Utility/                             # Data preprocessing pipelines
 │   ├── Dataexplorations/                # EDA notebooks
 │   ├── Basic-Dataprep-imputations/      # Basic imputation methods
-│   ├── Advanced-Dataprep-imputations/   # Matrix completion (IterativeImputer)
-│   └── results/
+│   └── Advanced-Dataprep-imputations/   # Matrix completion (IterativeImputer)
+│
+├── data/                                # Data directory (not tracked)
+│   └── full-data/
+│       ├── raw/                         # Original data (gitignored)
+│       └── processed/                   # Preprocessed data (gitignored)
 │
 ├── README.md                            # This file
 └── requirements.txt                     # Python dependencies
@@ -137,6 +148,11 @@ P_focal,t = α + Σ β_c × P_c,t + Σ θ_c × ε̂_c,t + Σ γ_j × Z_j,t + u_t
 ---
 
 ### Track 2: Predictive Modeling with Adaptive Log-Detrending
+
+**In-Sample (Table 4)**:
+- LassoCV feature selection + OLS with HC1 robust standard errors
+- 34 hotels successfully modeled (4 excluded due to data quality)
+- Mean Adjusted R² = 0.603, Mean MAPE = 12.05%
 
 **Iteration 1 (Direct Modeling)**:
 - Standard regression on price levels
@@ -232,26 +248,17 @@ cd Causal-Inference/scripts/
 # 2. 05_LinearModels_Stage2_causal-Iteration1.ipynb  (Stage 2: causal effects)
 ```
 
-### Predictive Models (In-Sample)
-
-```bash
-cd Predictive-Models/scripts/02_Parametric-LR-Models/
-
-# Run in-sample iterations:
-# In-Sample-LR-Iteration1.ipynb
-# In-Sample-LR-Iteration2.ipynb
-# In-Sample-LR-Iteration3.ipynb
-```
-
-### Portfolio Out-of-Sample Validation
+### Predictive Models
 
 ```bash
 cd Scaled-Prediction-Models/LR/
 
-# Run out-of-sample iterations:
-# OutofSample-Iteration1-LR-Matrix-Imputations.ipynb
-# OutofSample-Iteration2-LR-Matrix-Imputations.ipynb (with detrending)
-# OutofSample-Iteration3-LR-Matrix-Imputations.ipynb
+# In-sample modeling:
+# InSample-LR-Matrix-Imputations.ipynb
+
+# Out-of-sample validation:
+# OutofSample-Iteration1-LR-Matrix-Imputations.ipynb  (direct)
+# OutofSample-Iteration2-LR-Matrix-Imputations.ipynb  (detrended)
 ```
 
 ---

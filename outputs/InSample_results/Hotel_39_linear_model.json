@@ -1,0 +1,245 @@
+{
+  "hotel_id": "Hotel_39",
+  "intercept": 1606.8977847489452,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": 508.76353722369635,
+      "p_value": 0.0035938318605814247,
+      "significance": "**",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-hk-conrad-hong-kong-HKD_lag_3",
+      "coefficient": 0.03863245972632175,
+      "p_value": 0.4715666529772188,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-the-murray-hong-kong-a-niccolo-HKD_lag_2",
+      "coefficient": -0.009184817375729404,
+      "p_value": 0.7649212665126179,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_2",
+      "coefficient": -0.02838792855526046,
+      "p_value": 0.08692873753306417,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_4",
+      "coefficient": -0.02994080047055616,
+      "p_value": 0.027865794395947805,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-langham-HKD_lag_4",
+      "coefficient": -0.1054185024463318,
+      "p_value": 0.13961089396914622,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-kowloon-shangri-la-HKD_lag_5",
+      "coefficient": -0.14827226229437726,
+      "p_value": 0.00011655437290162545,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_1",
+      "coefficient": -0.035666190455570596,
+      "p_value": 0.05259218563481978,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_3",
+      "coefficient": 0.026754563768525995,
+      "p_value": 0.002452040713344529,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.01593013084664005,
+      "p_value": 1.304957994313373e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_1",
+      "coefficient": 0.024801782148832975,
+      "p_value": 0.03667650575230339,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -84.02216001467197,
+      "p_value": 0.26878502842917995,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-hk-conrad-hong-kong-HKD_lag_2",
+      "coefficient": 0.0809650045577586,
+      "p_value": 0.25224155189235675,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_5",
+      "coefficient": 0.024729666279026372,
+      "p_value": 0.005811622133761671,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_4",
+      "coefficient": 0.0345930398968146,
+      "p_value": 0.0019021788499755418,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-conrad-hong-kong-HKD_lag_1",
+      "coefficient": 0.12085596283327704,
+      "p_value": 0.055171825194883485,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-regent-hong-kong-HKD_lag_5",
+      "coefficient": 0.05068191470365657,
+      "p_value": 0.09643407896393237,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 65.06964219599207,
+      "p_value": 0.1415950460301144,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-hk-langham-HKD_lag_2",
+      "coefficient": -0.045466735131661995,
+      "p_value": 0.49119000578002203,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-kowloon-shangri-la-HKD_lag_1",
+      "coefficient": -0.026436414217720996,
+      "p_value": 0.6124229397082703,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-conrad-hong-kong-HKD_lag_4",
+      "coefficient": 0.06588281218851305,
+      "p_value": 0.2144517577129802,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-the-jervois-HKD_lag_2",
+      "coefficient": 0.024870726667954753,
+      "p_value": 0.609426314992668,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": 0.6899893794862214,
+      "p_value": 0.0025670033175087597,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-hk-kowloon-shangri-la-HKD_lag_3",
+      "coefficient": -0.01884407645609984,
+      "p_value": 0.7483545378439288,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_3",
+      "coefficient": -0.013724077600542398,
+      "p_value": 0.2942765756199016,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-langham-HKD_lag_1",
+      "coefficient": -0.06661776538065245,
+      "p_value": 0.5608146840064666,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-langham-HKD_lag_3",
+      "coefficient": -0.07669525136136349,
+      "p_value": 0.45087303389732214,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-regent-hong-kong-HKD_lag_2",
+      "coefficient": -0.025050294422426088,
+      "p_value": 0.3579667330416766,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-conrad-hong-kong-HKD_lag_5",
+      "coefficient": 0.04483571091014482,
+      "p_value": 0.35698255529874234,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_2",
+      "coefficient": 0.023182545632335134,
+      "p_value": 0.015132653676437867,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-the-murray-hong-kong-a-niccolo-HKD_lag_1",
+      "coefficient": -0.012666023196486397,
+      "p_value": 0.7061885570643509,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_5",
+      "coefficient": -0.024844901338541045,
+      "p_value": 0.14334798903203808,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-hk-hyatt-regency-hong-kong-tsim-sha-tsui-HKD_lag_5",
+      "coefficient": 0.11513770210027809,
+      "p_value": 0.05215681770774589,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.18040743532928727,
+    "rmse": 408.8607047919853,
+    "mape": 8.860612648529763,
+    "n_features": 33,
+    "n_observations": 350,
+    "mean_price": 2610.5142857142855
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "hotel_id": "Hotel_12",
+  "intercept": 189.3504684840487,
+  "coefficients": [
+    {
+      "feature": "booking-us-residence-inn-denver-city-center-USD_lag_1",
+      "coefficient": 0.06947527004623597,
+      "p_value": 0.21819620942856566,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-ramble-USD_lag_2",
+      "coefficient": -0.3904074554809962,
+      "p_value": 0.00022402814303942804,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-denver-downtown-convention-center-USD_lag_4",
+      "coefficient": -0.24901389447824746,
+      "p_value": 0.0008152910183521897,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.0013479127896697755,
+      "p_value": 0.0028901944750507115,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-the-source-USD_lag_2",
+      "coefficient": 0.3399166976490614,
+      "p_value": 0.06801209961851863,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-ramble-USD_lag_1",
+      "coefficient": -0.3113625679925736,
+      "p_value": 0.023652717596450275,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-source-USD_lag_1",
+      "coefficient": 0.09519967737360542,
+      "p_value": 0.521620755950499,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-source-USD_lag_3",
+      "coefficient": 0.20031088641758946,
+      "p_value": 0.17487238448720033,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-home2-suites-by-hilton-denver-downtown-convention-center-USD_lag_5",
+      "coefficient": 0.3050279426159236,
+      "p_value": 0.00018160124006152132,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-cambria-suites-denver-downtown-rino-USD_lag_1",
+      "coefficient": 0.6818647804102036,
+      "p_value": 0.0018721649688586768,
+      "significance": "**",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.4940030415909443,
+    "rmse": 73.54874256529261,
+    "mape": 19.722274112374688,
+    "n_features": 10,
+    "n_observations": 439,
+    "mean_price": 219.44419134396355
+  }
+}

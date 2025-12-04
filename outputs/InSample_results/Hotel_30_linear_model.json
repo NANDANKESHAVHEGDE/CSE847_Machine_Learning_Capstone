@@ -1,0 +1,49 @@
+{
+  "hotel_id": "Hotel_30",
+  "intercept": 38.8636528390776,
+  "coefficients": [
+    {
+      "feature": "booking-fr-villa-sorel-EUR_lag_1",
+      "coefficient": 0.2939293593955132,
+      "p_value": 3.96885866774464e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -8.961697141429598,
+      "p_value": 1.1453141911876524e-05,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-fr-villa-sorel-EUR_lag_5",
+      "coefficient": 0.20696804661864052,
+      "p_value": 3.671401776138286e-08,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-fr-ibis-styles-paris-boulogne-marcel-sembat-EUR_lag_1",
+      "coefficient": 0.0787084170090805,
+      "p_value": 0.177795248625499,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-fr-villa-sorel-EUR_lag_2",
+      "coefficient": 0.0565725282500769,
+      "p_value": 0.17066270748495715,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.2966790077562672,
+    "rmse": 36.772397218292156,
+    "mape": 18.940239786051833,
+    "n_features": 5,
+    "n_observations": 675,
+    "mean_price": 123.18666666666667
+  }
+}

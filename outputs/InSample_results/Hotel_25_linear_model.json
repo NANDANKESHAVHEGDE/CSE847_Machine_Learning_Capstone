@@ -1,0 +1,315 @@
+{
+  "hotel_id": "Hotel_25",
+  "intercept": -1381.06544309496,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": 16.10566702975757,
+      "p_value": 1.1611776512344754e-06,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-grand-victorian-inn-USD_lag_1",
+      "coefficient": 3.938722097107912,
+      "p_value": 6.548390784212723e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_1",
+      "coefficient": 0.009658383041408605,
+      "p_value": 0.8350733302795923,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": 8.924090395324074,
+      "p_value": 0.0037643462969384465,
+      "significance": "**",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_4",
+      "coefficient": -0.1295497096300998,
+      "p_value": 0.2947919095487761,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lodge-of-the-ozarks-USD_lag_2",
+      "coefficient": 0.253893970839071,
+      "p_value": 0.07573273503564437,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_5",
+      "coefficient": 0.392382734379023,
+      "p_value": 0.0011585798117507234,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_1",
+      "coefficient": 0.09808617265165692,
+      "p_value": 0.40081247448042256,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.0012166100608840065,
+      "p_value": 1.3506039013375038e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_3",
+      "coefficient": 0.027382221839521954,
+      "p_value": 0.3094472846602916,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lodge-of-the-ozarks-USD_lag_5",
+      "coefficient": -0.2538391308877474,
+      "p_value": 0.011171212761593169,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_5",
+      "coefficient": 0.02719388583802104,
+      "p_value": 0.326054772797003,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-victorian-inn-USD_lag_4",
+      "coefficient": -0.4488828342840421,
+      "p_value": 0.4696849085955027,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_3",
+      "coefficient": -0.16528608491896118,
+      "p_value": 0.00037263100869339665,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-victorian-inn-USD_lag_3",
+      "coefficient": 2.0934019327003837,
+      "p_value": 0.021159307973455888,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_5",
+      "coefficient": 0.11167010176249174,
+      "p_value": 0.14023789392394184,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -15.669485960037969,
+      "p_value": 9.856984459440478e-10,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 5.064583861684675,
+      "p_value": 0.0286453476961286,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_1",
+      "coefficient": 0.2098352256963354,
+      "p_value": 0.03210562718193371,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_2",
+      "coefficient": -0.1315311302863167,
+      "p_value": 0.02936976849064583,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-victorian-inn-USD_lag_5",
+      "coefficient": 3.3082562862920635,
+      "p_value": 7.422345305315903e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_3",
+      "coefficient": 0.29871104421248934,
+      "p_value": 0.00018878131195522988,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_4",
+      "coefficient": -0.08242774591646265,
+      "p_value": 0.35596384404191983,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_5",
+      "coefficient": -0.33490697509788864,
+      "p_value": 8.620210864710647e-10,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_1",
+      "coefficient": 0.031618276345774125,
+      "p_value": 0.7047109191960419,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_2",
+      "coefficient": -0.2936049684257356,
+      "p_value": 0.011804374990470282,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_5",
+      "coefficient": 0.21904199831024565,
+      "p_value": 0.0017122482606134679,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_1",
+      "coefficient": 0.12421566669987881,
+      "p_value": 0.41928458730822626,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lodge-of-the-ozarks-USD_lag_3",
+      "coefficient": 0.25574134776946367,
+      "p_value": 0.007092806838129134,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_2",
+      "coefficient": 0.05768691238945858,
+      "p_value": 0.3884055170803099,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-lodge-of-the-ozarks-USD_lag_1",
+      "coefficient": 0.10449649113554588,
+      "p_value": 0.44222694496552517,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_1",
+      "coefficient": 0.20176690904062664,
+      "p_value": 0.005577434493857416,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_1",
+      "coefficient": 0.03948772810415854,
+      "p_value": 0.4565851670901838,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_2",
+      "coefficient": -0.3089179298391166,
+      "p_value": 0.029608944361686394,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_3",
+      "coefficient": -0.11073381646597641,
+      "p_value": 0.04238932256126846,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_3",
+      "coefficient": 0.08034511872410402,
+      "p_value": 0.10330707026161849,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_4",
+      "coefficient": -0.03245097761119106,
+      "p_value": 0.5348114780937633,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_4",
+      "coefficient": -0.06853719120916375,
+      "p_value": 0.0870091056264201,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_2",
+      "coefficient": -0.16474885616454438,
+      "p_value": 0.07706965493492464,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_1",
+      "coefficient": 0.015669982123952975,
+      "p_value": 0.5380054132547316,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-grand-victorian-inn-USD_lag_2",
+      "coefficient": 0.11712627446719337,
+      "p_value": 0.9234988291249597,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_2",
+      "coefficient": -0.1734173429677114,
+      "p_value": 0.028481563744067535,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_4",
+      "coefficient": -0.10740142366150209,
+      "p_value": 0.17181291092779793,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6250991856134485,
+    "rmse": 24.46951758656221,
+    "mape": 10.660341820551974,
+    "n_features": 43,
+    "n_observations": 669,
+    "mean_price": 174.38565022421525
+  }
+}

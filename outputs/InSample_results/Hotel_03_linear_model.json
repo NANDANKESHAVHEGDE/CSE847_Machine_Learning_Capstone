@@ -1,0 +1,70 @@
+{
+  "hotel_id": "Hotel_03",
+  "intercept": 89.06697451868916,
+  "coefficients": [
+    {
+      "feature": "week_centered",
+      "coefficient": -0.5753845881219748,
+      "p_value": 0.0029427076593469994,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -15.639376661733396,
+      "p_value": 0.09572635636377427,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-jackson-hole-USD_lag_1",
+      "coefficient": 0.25832605784820084,
+      "p_value": 1.943741855028758e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-homewood-suites-by-hilton-r-jackson-USD_lag_5",
+      "coefficient": 0.10058614953576236,
+      "p_value": 0.03154814230274616,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -23.499536744871214,
+      "p_value": 0.0063180442464948975,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-the-white-buffalo-club-USD_lag_1",
+      "coefficient": 0.03977948140192922,
+      "p_value": 0.2632196098687155,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-painted-buffalo-inn-USD_lag_2",
+      "coefficient": 0.15215167540343152,
+      "p_value": 0.003411597274968822,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 81.32166365494861,
+      "p_value": 4.376258752418307e-06,
+      "significance": "***",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.8372885580978318,
+    "rmse": 66.26702692345856,
+    "mape": 14.953600231733338,
+    "n_features": 8,
+    "n_observations": 396,
+    "mean_price": 314.6363636363636
+  }
+}

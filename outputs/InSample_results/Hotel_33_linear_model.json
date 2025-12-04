@@ -1,0 +1,84 @@
+{
+  "hotel_id": "Hotel_33",
+  "intercept": 175.2956041155209,
+  "coefficients": [
+    {
+      "feature": "booking-us-residence-inn-by-marriott-fredericksburg-USD_lag_5",
+      "coefficient": -0.02663663922920033,
+      "p_value": 0.1807709944958713,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_4",
+      "coefficient": -0.09141430830012634,
+      "p_value": 0.0016206968396494357,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -6.665957771226087,
+      "p_value": 0.0005475878097808933,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-fredericksburg-1080-hospitality-USD_lag_2",
+      "coefficient": -0.21054708095146096,
+      "p_value": 0.006697642467796439,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_5",
+      "coefficient": -0.031603720726691924,
+      "p_value": 0.4319849045056978,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hyatt-place-fredericksburg-at-mary-washington-USD_lag_5",
+      "coefficient": -0.06386948194321268,
+      "p_value": 0.005756000223628208,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hilton-garden-inn-fredericksburg-USD_lag_1",
+      "coefficient": 0.055209064254895655,
+      "p_value": 0.4204267128592446,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fredericksburg-hospitality-lane-USD_lag_1",
+      "coefficient": 0.04089900531531696,
+      "p_value": 0.4776834101581705,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_2",
+      "coefficient": -0.11786145857718035,
+      "p_value": 1.6140468712029507e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fredericksburg-1080-hospitality-USD_lag_1",
+      "coefficient": 0.41456865332068643,
+      "p_value": 0.0025138015313542696,
+      "significance": "**",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.2463671187520382,
+    "rmse": 27.80391636145819,
+    "mape": 9.554961332261671,
+    "n_features": 10,
+    "n_observations": 675,
+    "mean_price": 149.6977777777778
+  }
+}

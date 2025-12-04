@@ -1,0 +1,252 @@
+{
+  "hotel_id": "Hotel_18",
+  "intercept": 271.84510349985516,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": -27.073894571015494,
+      "p_value": 0.16067452586607944,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_5",
+      "coefficient": -0.7803937968839657,
+      "p_value": 0.006611447224781985,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_centered",
+      "coefficient": -1.030044647232396,
+      "p_value": 8.071207594076861e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-academycourt-bessemer-USD_lag_2",
+      "coefficient": 1.3048686725250487,
+      "p_value": 0.003894615202817088,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-bessemer-USD_lag_2",
+      "coefficient": -0.2038104856684422,
+      "p_value": 0.0056033033748476265,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": 3.4814237819465525e-05,
+      "p_value": 0.5201388292327536,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_1",
+      "coefficient": -0.085218063199531,
+      "p_value": 0.21690724378111859,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_3",
+      "coefficient": 0.09924423375972506,
+      "p_value": 0.29823460008220304,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -21.06046371869485,
+      "p_value": 0.013357026242740745,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_4",
+      "coefficient": -0.026167744654134163,
+      "p_value": 0.5992485523759975,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -6.1094136415337434,
+      "p_value": 0.5937733999658592,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_3",
+      "coefficient": -0.08112661334631611,
+      "p_value": 0.23988168702626378,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 1.5653097743574362,
+      "p_value": 0.8539970660768545,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -62.51314937057547,
+      "p_value": 5.049743572999671e-07,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_1",
+      "coefficient": 3.487853217257251,
+      "p_value": 0.00029536709870629747,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_5",
+      "coefficient": -0.07813137462291726,
+      "p_value": 0.08581109254150332,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-bessemer-USD_lag_5",
+      "coefficient": -0.08936433574444828,
+      "p_value": 0.2352264142697763,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_4",
+      "coefficient": -1.7110498123910625,
+      "p_value": 0.007595304537442257,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_4",
+      "coefficient": -0.02913178850800937,
+      "p_value": 0.7487764008467439,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-academycourt-bessemer-USD_lag_3",
+      "coefficient": -0.63246583429495,
+      "p_value": 0.17271784436676663,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_3",
+      "coefficient": -0.9279711755668517,
+      "p_value": 0.048597283124994804,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-academycourt-bessemer-USD_lag_5",
+      "coefficient": -0.8334882902485855,
+      "p_value": 0.026907110548855914,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-academycourt-bessemer-USD_lag_1",
+      "coefficient": -1.8920740508544642,
+      "p_value": 0.001357482111233886,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_3",
+      "coefficient": 2.1697248715824258,
+      "p_value": 0.008569784718338688,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_5",
+      "coefficient": 0.8034222472323526,
+      "p_value": 0.19435344019894207,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_1",
+      "coefficient": 0.3173541271350323,
+      "p_value": 0.0028860119914826867,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_4",
+      "coefficient": 0.5056767607619613,
+      "p_value": 0.18705168206398226,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_5",
+      "coefficient": 0.09143059370394667,
+      "p_value": 0.33895636315945377,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_2",
+      "coefficient": 0.09411209796482221,
+      "p_value": 0.29468594108599533,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-bessemer-USD_lag_1",
+      "coefficient": -0.0044084870735756,
+      "p_value": 0.9654381031998887,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-plus-bessemer-USD_lag_3",
+      "coefficient": -0.11965051057827417,
+      "p_value": 0.11451874873015401,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_2",
+      "coefficient": -3.7463393862211234,
+      "p_value": 2.033335867137421e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-academycourt-bessemer-USD_lag_4",
+      "coefficient": 0.5197111417980932,
+      "p_value": 0.05515709572191775,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_2",
+      "coefficient": -0.7809988501999104,
+      "p_value": 0.0980418481682394,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5430134607596344,
+    "rmse": 35.91329805574238,
+    "mape": 23.45973416309159,
+    "n_features": 34,
+    "n_observations": 369,
+    "mean_price": 99.01084010840108
+  }
+}

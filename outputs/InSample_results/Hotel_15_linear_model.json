@@ -1,0 +1,203 @@
+{
+  "hotel_id": "Hotel_15",
+  "intercept": 492.1255615678248,
+  "coefficients": [
+    {
+      "feature": "booking-us-the-lodge-at-flying-horse-USD_lag_3",
+      "coefficient": -0.39069039475664263,
+      "p_value": 0.10024487654588848,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-cheyenne-mountain-resort-USD_lag_2",
+      "coefficient": 0.01988032911169682,
+      "p_value": 0.868432171805347,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": 0.0007113605817761148,
+      "p_value": 2.5295195140800306e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-polaris-colorado-springs-USD_lag_3",
+      "coefficient": 0.34926244014466357,
+      "p_value": 0.13310113536383283,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-flying-horse-USD_lag_5",
+      "coefficient": -0.7045484062004226,
+      "p_value": 0.000618206342135676,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-lodge-at-flying-horse-USD_lag_1",
+      "coefficient": -0.42179017635657967,
+      "p_value": 0.06796201493951651,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-cheyenne-mountain-resort-USD_lag_1",
+      "coefficient": 0.1281904068427156,
+      "p_value": 0.37195533418193905,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-mining-exchange-a-wyndham-grand-amp-spa-USD_lag_5",
+      "coefficient": -0.1990571762420541,
+      "p_value": 0.2412353166314244,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-mining-exchange-a-wyndham-grand-amp-spa-USD_lag_3",
+      "coefficient": -0.0509494894789658,
+      "p_value": 0.785339537888009,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-polaris-colorado-springs-USD_lag_2",
+      "coefficient": 0.4493965953219592,
+      "p_value": 0.014709857763217083,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-polaris-colorado-springs-USD_lag_5",
+      "coefficient": 0.34343274307991967,
+      "p_value": 0.16508905654053352,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-colorado-springs-1-lake-avenue-USD_lag_4",
+      "coefficient": -0.3675130659681115,
+      "p_value": 0.0009826419370086417,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-mining-exchange-a-wyndham-grand-amp-spa-USD_lag_2",
+      "coefficient": -0.0749870118393582,
+      "p_value": 0.7076865558191219,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-cheyenne-mountain-resort-USD_lag_5",
+      "coefficient": 0.02373213523124617,
+      "p_value": 0.8495420189065093,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 111.30300697522647,
+      "p_value": 0.02272183978401742,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": 100.093924192236,
+      "p_value": 0.0545739437149896,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -1509.0461538763054,
+      "p_value": 2.4771449283944147e-34,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-polaris-colorado-springs-USD_lag_1",
+      "coefficient": 0.6002235500624402,
+      "p_value": 0.00013888976401791128,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-mining-exchange-a-wyndham-grand-amp-spa-USD_lag_1",
+      "coefficient": -0.03136549178961461,
+      "p_value": 0.842734016107305,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": 0.19604614316631183,
+      "p_value": 1.5185697378794888e-31,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "week_centered",
+      "coefficient": -126.79709086078302,
+      "p_value": 7.252749685578648e-32,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -82.71883351806324,
+      "p_value": 0.01045643830373295,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -99.98753090033395,
+      "p_value": 0.016422657963032338,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-cheyenne-mountain-resort-USD_lag_3",
+      "coefficient": 0.030969961922525782,
+      "p_value": 0.8016569309854212,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-cheyenne-mountain-resort-USD_lag_4",
+      "coefficient": 0.0003223168726378539,
+      "p_value": 0.9979109505304012,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-colorado-springs-1-lake-avenue-USD_lag_2",
+      "coefficient": -0.4169276619503707,
+      "p_value": 0.0001979159230747923,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-polaris-colorado-springs-USD_lag_4",
+      "coefficient": 0.39771377951892983,
+      "p_value": 0.10385939635342353,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6816936787952592,
+    "rmse": 126.2408360470764,
+    "mape": 64092001939646.5,
+    "n_features": 27,
+    "n_observations": 400,
+    "mean_price": 119.6
+  }
+}

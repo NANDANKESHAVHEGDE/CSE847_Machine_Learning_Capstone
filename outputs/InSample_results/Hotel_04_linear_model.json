@@ -1,0 +1,112 @@
+{
+  "hotel_id": "Hotel_04",
+  "intercept": -55.14215346112452,
+  "coefficients": [
+    {
+      "feature": "booking-us-econo-lodge-flagstaff-USD_lag_4",
+      "coefficient": -0.03693633514684755,
+      "p_value": 0.13322522785216076,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-best-western-pony-soldier-USD_lag_1",
+      "coefficient": 0.4129604774517141,
+      "p_value": 0.08186783703419115,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.00034378975154194266,
+      "p_value": 0.047981142575327394,
+      "significance": "*",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-high-country-motor-lodge-USD_lag_1",
+      "coefficient": -0.2403597053960226,
+      "p_value": 1.1536572016988531e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -2.4448403259953895,
+      "p_value": 0.5778111266822599,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-econo-lodge-flagstaff-USD_lag_2",
+      "coefficient": 0.08143077124507611,
+      "p_value": 6.553284412282794e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-flagstaff-travelodge-USD",
+      "coefficient": 1.1915151407781146,
+      "p_value": 2.720541673533957e-09,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 14.362854952529204,
+      "p_value": 8.171745110550622e-05,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -2.7827416477666476,
+      "p_value": 0.2139727899640106,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-best-western-pony-soldier-USD_lag_2",
+      "coefficient": 0.1087316433421143,
+      "p_value": 0.11732514416741256,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-high-country-motor-lodge-USD_lag_5",
+      "coefficient": 0.10463732868860294,
+      "p_value": 0.015801753096346533,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-high-country-motor-lodge-USD_lag_3",
+      "coefficient": 0.06634181287069714,
+      "p_value": 0.0033007865011879757,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-econo-lodge-flagstaff-USD_lag_5",
+      "coefficient": -0.02027884276408959,
+      "p_value": 0.3797196280287807,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 9.046034041245063,
+      "p_value": 0.14989991693657057,
+      "significance": "",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.8942237942475125,
+    "rmse": 29.396232219427112,
+    "mape": 11.354531039366911,
+    "n_features": 14,
+    "n_observations": 620,
+    "mean_price": 143.36129032258066
+  }
+}

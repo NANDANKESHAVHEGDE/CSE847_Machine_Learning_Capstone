@@ -1,0 +1,98 @@
+{
+  "hotel_id": "Hotel_19",
+  "intercept": -684.0188936259485,
+  "coefficients": [
+    {
+      "feature": "booking-us-the-francis-USD_lag_5",
+      "coefficient": 0.860383641497598,
+      "p_value": 3.2005391443307627e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inn-on-carleton-USD_lag_4",
+      "coefficient": -0.12297991739421305,
+      "p_value": 0.11405662123850968,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-inn-on-carleton-USD_lag_1",
+      "coefficient": -0.21408149260660025,
+      "p_value": 0.08482212013622759,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-francis-USD_lag_2",
+      "coefficient": 0.8677880239489364,
+      "p_value": 3.5103748083790165e-05,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -187.50854915568468,
+      "p_value": 0.00015095021381547754,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -796.392999502076,
+      "p_value": 0.006309734767887259,
+      "significance": "**",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-portland-regency-USD_lag_3",
+      "coefficient": 0.03507441874789907,
+      "p_value": 0.5695222819067715,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-nonantum-resort-USD_lag_2",
+      "coefficient": -0.1474938667534221,
+      "p_value": 0.10721190276134838,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-nonantum-resort-USD_lag_4",
+      "coefficient": -0.26207320936845435,
+      "p_value": 0.0065846941118941,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-francis-USD_lag_4",
+      "coefficient": 0.43407478261174537,
+      "p_value": 0.01658507583405801,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-nonantum-resort-USD_lag_3",
+      "coefficient": -0.21102873504165864,
+      "p_value": 0.04177488726004131,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-nonantum-resort-USD_lag_5",
+      "coefficient": -0.19302983129502907,
+      "p_value": 0.04218739581032375,
+      "significance": "*",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.6831346345473621,
+    "rmse": 34.31881786648754,
+    "mape": 8.638633833712355,
+    "n_features": 12,
+    "n_observations": 48,
+    "mean_price": 282.5416666666667
+  }
+}

@@ -1,0 +1,4419 @@
+[
+  {
+    "hotel_id": "Hotel_01",
+    "intercept": -63.777689954649496,
+    "coefficients": [
+      {
+        "feature": "booking-us-hampton-inn-suites-rockland-USD_lag_5",
+        "coefficient": 0.2015833509779152,
+        "p_value": 0.033778162528495054,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-16-bay-view-USD_lag_1",
+        "coefficient": 0.20859766832252502,
+        "p_value": 0.0019747074522555677,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-whitehall-USD_lag_1",
+        "coefficient": 0.6408516199557183,
+        "p_value": 2.666353532046928e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-16-bay-view-USD_lag_5",
+        "coefficient": 0.12532067227378846,
+        "p_value": 0.06150714909158061,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7379048414815685,
+      "rmse": 48.70186984298813,
+      "mape": 12.143462423891355,
+      "n_features": 4,
+      "n_observations": 554,
+      "mean_price": 266.47292418772565
+    }
+  },
+  {
+    "hotel_id": "Hotel_02",
+    "intercept": 128.24349057219547,
+    "coefficients": [
+      {
+        "feature": "week_centered",
+        "coefficient": 0.10286199978642656,
+        "p_value": 0.04550714536287925,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-suites-albany-USD_lag_5",
+        "coefficient": -0.15568874756463208,
+        "p_value": 5.93884103652906e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-super-8-melrose-mn-USD_lag_2",
+        "coefficient": -0.4734747858556006,
+        "p_value": 0.03484929500006385,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hotel-st-joseph-east-minnesota-street-USD_lag_2",
+        "coefficient": -0.16042098466506796,
+        "p_value": 0.13506581455965844,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-suites-albany-USD_lag_1",
+        "coefficient": 0.08812489882207297,
+        "p_value": 0.26094190091124736,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -7.036616043571636,
+        "p_value": 5.357491277861387e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": -0.008071026337699757,
+        "p_value": 4.151369545597586e-05,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-super-8-melrose-mn-USD_lag_4",
+        "coefficient": -0.20386599518227716,
+        "p_value": 0.2709221586717442,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-suites-albany-USD_lag_4",
+        "coefficient": -0.060977262939055234,
+        "p_value": 0.4609618387098058,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-super-8-melrose-mn-USD_lag_1",
+        "coefficient": 0.1373722153153568,
+        "p_value": 0.5839898810662469,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hotel-st-joseph-east-minnesota-street-USD_lag_1",
+        "coefficient": 0.0565959476964238,
+        "p_value": 0.5602781607889757,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-avon-308-blattner-drive-USD_lag_1",
+        "coefficient": 0.26485172871915336,
+        "p_value": 0.05569916193521883,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.4649624434576204,
+      "rmse": 11.317197223647826,
+      "mape": 9.230958071557918,
+      "n_features": 12,
+      "n_observations": 425,
+      "mean_price": 86.15764705882353
+    }
+  },
+  {
+    "hotel_id": "Hotel_03",
+    "intercept": 89.06697451868916,
+    "coefficients": [
+      {
+        "feature": "week_centered",
+        "coefficient": -0.5753845881219748,
+        "p_value": 0.0029427076593469994,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -15.639376661733396,
+        "p_value": 0.09572635636377427,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-jackson-hole-USD_lag_1",
+        "coefficient": 0.25832605784820084,
+        "p_value": 1.943741855028758e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-homewood-suites-by-hilton-r-jackson-USD_lag_5",
+        "coefficient": 0.10058614953576236,
+        "p_value": 0.03154814230274616,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -23.499536744871214,
+        "p_value": 0.0063180442464948975,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-the-white-buffalo-club-USD_lag_1",
+        "coefficient": 0.03977948140192922,
+        "p_value": 0.2632196098687155,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-painted-buffalo-inn-USD_lag_2",
+        "coefficient": 0.15215167540343152,
+        "p_value": 0.003411597274968822,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 81.32166365494861,
+        "p_value": 4.376258752418307e-06,
+        "significance": "***",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.8372885580978318,
+      "rmse": 66.26702692345856,
+      "mape": 14.953600231733338,
+      "n_features": 8,
+      "n_observations": 396,
+      "mean_price": 314.6363636363636
+    }
+  },
+  {
+    "hotel_id": "Hotel_04",
+    "intercept": -55.14215346112452,
+    "coefficients": [
+      {
+        "feature": "booking-us-econo-lodge-flagstaff-USD_lag_4",
+        "coefficient": -0.03693633514684755,
+        "p_value": 0.13322522785216076,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-pony-soldier-USD_lag_1",
+        "coefficient": 0.4129604774517141,
+        "p_value": 0.08186783703419115,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": -0.00034378975154194266,
+        "p_value": 0.047981142575327394,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-high-country-motor-lodge-USD_lag_1",
+        "coefficient": -0.2403597053960226,
+        "p_value": 1.1536572016988531e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": -2.4448403259953895,
+        "p_value": 0.5778111266822599,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-econo-lodge-flagstaff-USD_lag_2",
+        "coefficient": 0.08143077124507611,
+        "p_value": 6.553284412282794e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-flagstaff-travelodge-USD",
+        "coefficient": 1.1915151407781146,
+        "p_value": 2.720541673533957e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 14.362854952529204,
+        "p_value": 8.171745110550622e-05,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -2.7827416477666476,
+        "p_value": 0.2139727899640106,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-best-western-pony-soldier-USD_lag_2",
+        "coefficient": 0.1087316433421143,
+        "p_value": 0.11732514416741256,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-high-country-motor-lodge-USD_lag_5",
+        "coefficient": 0.10463732868860294,
+        "p_value": 0.015801753096346533,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-high-country-motor-lodge-USD_lag_3",
+        "coefficient": 0.06634181287069714,
+        "p_value": 0.0033007865011879757,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-econo-lodge-flagstaff-USD_lag_5",
+        "coefficient": -0.02027884276408959,
+        "p_value": 0.3797196280287807,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 9.046034041245063,
+        "p_value": 0.14989991693657057,
+        "significance": "",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.8942237942475125,
+      "rmse": 29.396232219427112,
+      "mape": 11.354531039366911,
+      "n_features": 14,
+      "n_observations": 620,
+      "mean_price": 143.36129032258066
+    }
+  },
+  {
+    "hotel_id": "Hotel_05",
+    "intercept": -55.99768438582219,
+    "coefficients": [
+      {
+        "feature": "booking-us-virginian-lodge-USD_lag_5",
+        "coefficient": 0.13384975533679752,
+        "p_value": 0.0007556136559111498,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-snow-king-resort-USD_lag_4",
+        "coefficient": 0.01407190574288276,
+        "p_value": 0.6605477377779014,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-snow-king-resort-USD_lag_5",
+        "coefficient": 0.019308937301415467,
+        "p_value": 0.5503246809971841,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": -0.09270974220375222,
+        "p_value": 1.1574269787430725e-15,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-the-cloudveil-autograph-collection-USD_lag_1",
+        "coefficient": 0.04654414108006291,
+        "p_value": 0.002003870293722477,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-antler-inn-USD_lag_1",
+        "coefficient": 0.7689849083434273,
+        "p_value": 5.874522718708919e-12,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-painted-buffalo-inn-USD_lag_2",
+        "coefficient": 0.18448779482398037,
+        "p_value": 0.0002261722859049293,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 9.244959889077744,
+        "p_value": 0.48921088294577186,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-snow-king-resort-USD_lag_1",
+        "coefficient": 0.1342944612080403,
+        "p_value": 7.991367412262498e-05,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.8656024243956928,
+      "rmse": 74.60339147808075,
+      "mape": 14.080548792320108,
+      "n_features": 9,
+      "n_observations": 675,
+      "mean_price": 387.73333333333335
+    }
+  },
+  {
+    "hotel_id": "Hotel_06",
+    "intercept": 100.73965297322373,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": -37.101845337648236,
+        "p_value": 8.337771636745969e-13,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-sedona-1200-highway-69a-USD_lag_1",
+        "coefficient": 0.14646519799601287,
+        "p_value": 0.000919443172764118,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-sedona-village-of-oak-creek-USD",
+        "coefficient": 0.7873584804482954,
+        "p_value": 1.060053938052907e-22,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-sedona-real-inn-amp-suites-USD_lag_1",
+        "coefficient": 0.10998361851281983,
+        "p_value": 0.03483640842713131,
+        "significance": "*",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7309039530044521,
+      "rmse": 42.04308069774099,
+      "mape": 9.124443566161064,
+      "n_features": 4,
+      "n_observations": 373,
+      "mean_price": 327.33780160857907
+    }
+  },
+  {
+    "hotel_id": "Hotel_07",
+    "intercept": 29.402444719012006,
+    "coefficients": [
+      {
+        "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_5",
+        "coefficient": 0.1423592858827113,
+        "p_value": 0.020269785814322667,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -7.19068587442788,
+        "p_value": 0.0005748278532642892,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_3",
+        "coefficient": 0.1915157576420918,
+        "p_value": 0.0016557998277951396,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -13.047375329116877,
+        "p_value": 8.05304580773819e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-towneplace-suites-by-marriott-denver-south-lone-tree-USD_lag_3",
+        "coefficient": 0.05105203500115922,
+        "p_value": 0.4822147815670611,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-springhill-suites-denver-parker-USD_lag_1",
+        "coefficient": 0.3231261471260151,
+        "p_value": 1.9864944435854078e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-inn-and-suites-of-castle-rock-USD_lag_1",
+        "coefficient": 0.04851003116268793,
+        "p_value": 0.44128972760089014,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-laquinta-by-wyndham-parker-USD_lag_1",
+        "coefficient": 0.35968664584148446,
+        "p_value": 0.000218526794601779,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7266973952343911,
+      "rmse": 21.99218022320014,
+      "mape": 8.762234925870219,
+      "n_features": 8,
+      "n_observations": 675,
+      "mean_price": 163.21777777777777
+    }
+  },
+  {
+    "hotel_id": "Hotel_09",
+    "intercept": 639.239719543777,
+    "coefficients": [
+      {
+        "feature": "booking-us-the-press-autograph-collection-USD_lag_5",
+        "coefficient": -0.009335207181554894,
+        "p_value": 0.8751890364549352,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-portland-regency-USD_lag_2",
+        "coefficient": -0.08669657025475885,
+        "p_value": 0.4116951357006019,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-portland-downtown-47-waterfront-USD_lag_4",
+        "coefficient": -0.11761470088909831,
+        "p_value": 0.12414741642746566,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-portland-regency-USD_lag_5",
+        "coefficient": -0.2021403247659772,
+        "p_value": 0.0009695519832146824,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-portland-regency-USD_lag_1",
+        "coefficient": -0.07955856765270011,
+        "p_value": 0.23941978500967065,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -116.35238026792914,
+        "p_value": 0.04009091906307005,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-inn-by-the-sea-me-USD_lag_2",
+        "coefficient": -0.08567850053459977,
+        "p_value": 0.13948270330540966,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -352.30059983240517,
+        "p_value": 0.069653278864057,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-portland-regency-USD_lag_3",
+        "coefficient": -0.08312259019604376,
+        "p_value": 0.2385113092628265,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_2",
+        "coefficient": -0.0852508223640922,
+        "p_value": 0.42235372816898276,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_4",
+        "coefficient": -0.05948044036689712,
+        "p_value": 0.4897315680410197,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-portland-downtown-47-waterfront-USD_lag_2",
+        "coefficient": -0.02683794077709689,
+        "p_value": 0.81238813505912,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-by-the-sea-me-USD_lag_4",
+        "coefficient": -0.008173785359250937,
+        "p_value": 0.7945215748104812,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-by-the-sea-me-USD_lag_1",
+        "coefficient": -0.03613562349276596,
+        "p_value": 0.260928742355949,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.8210448696166577,
+      "rmse": 24.853026585442844,
+      "mape": 2.812865389914201,
+      "n_features": 14,
+      "n_observations": 39,
+      "mean_price": 568.974358974359
+    }
+  },
+  {
+    "hotel_id": "Hotel_10",
+    "intercept": 209.54884514272536,
+    "coefficients": [
+      {
+        "feature": "week_centered",
+        "coefficient": -0.044441598008223795,
+        "p_value": 0.5261016283171469,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-es-palau-fugit-EUR_lag_2",
+        "coefficient": -0.014482105072638508,
+        "p_value": 0.2307981987976323,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-nord-1901-EUR_lag_4",
+        "coefficient": -0.00692993572740897,
+        "p_value": 0.5387732965631036,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-lacomuna-city-oasis-EUR_lag_2",
+        "coefficient": -0.25031974163080084,
+        "p_value": 0.018470397865240212,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-apartament-home-bike-girona-EUR_lag_3",
+        "coefficient": 0.041611423499898825,
+        "p_value": 0.06406895447373773,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-palau-fugit-EUR_lag_4",
+        "coefficient": -0.012278587807763554,
+        "p_value": 0.2819837094566334,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": -3.4883142825510416e-06,
+        "p_value": 0.8804080579104914,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-es-palau-fugit-EUR_lag_1",
+        "coefficient": -0.01810487162084417,
+        "p_value": 0.10937777574322545,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-cort-reial-7-EUR_lag_5",
+        "coefficient": 0.05661660770426346,
+        "p_value": 0.024103848253424584,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -3.558905667041962,
+        "p_value": 0.0018486575044499387,
+        "significance": "**",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-es-nord-1901-EUR_lag_3",
+        "coefficient": 0.013319788776226884,
+        "p_value": 0.24980680259847776,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-nord-1901-EUR_lag_1",
+        "coefficient": 0.03673949818586237,
+        "p_value": 0.001437116864258295,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-bravissimo-calderers-12-EUR_lag_3",
+        "coefficient": -0.06712008801325396,
+        "p_value": 0.05908801137120984,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 4.537572197335436,
+        "p_value": 0.05330247050790661,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-es-apartament-home-bike-girona-EUR_lag_1",
+        "coefficient": 0.19193770966946525,
+        "p_value": 5.02427883808102e-16,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-lacomuna-city-oasis-EUR_lag_4",
+        "coefficient": -0.10056869681150694,
+        "p_value": 0.2985129671593034,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -2.441846605570584,
+        "p_value": 0.12338944281680411,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-es-flateli-barca-11-EUR_lag_2",
+        "coefficient": 0.05311468058049114,
+        "p_value": 0.5611378844178032,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-cort-reial-7-EUR_lag_3",
+        "coefficient": -0.05238974519814514,
+        "p_value": 0.13692514368409475,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-nord-1901-EUR_lag_2",
+        "coefficient": 5.589390854359843e-05,
+        "p_value": 0.9959860401706013,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": -0.012370436363725043,
+        "p_value": 0.35347860417017496,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-es-nord-1901-EUR_lag_5",
+        "coefficient": 0.010962056546549486,
+        "p_value": 0.2909148257378734,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-cort-reial-7-EUR_lag_1",
+        "coefficient": -0.08539360581022795,
+        "p_value": 0.010813953849817561,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-barca-11-EUR_lag_4",
+        "coefficient": 0.10127003465032094,
+        "p_value": 0.16180447207338078,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-bravissimo-calderers-12-EUR_lag_5",
+        "coefficient": -0.17929483008755662,
+        "p_value": 4.6380320465272006e-10,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-bravissimo-calderers-12-EUR_lag_1",
+        "coefficient": -0.30914267560738856,
+        "p_value": 1.541811753982974e-15,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-barca-11-EUR_lag_3",
+        "coefficient": 0.0838540592044986,
+        "p_value": 0.3314953549036689,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-apartament-home-bike-girona-EUR_lag_5",
+        "coefficient": 0.09735322185562062,
+        "p_value": 9.631447900460835e-08,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-palau-fugit-EUR_lag_5",
+        "coefficient": -0.0034347212772324774,
+        "p_value": 0.75942628496628,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-palau-fugit-EUR_lag_3",
+        "coefficient": -0.0018619370920472727,
+        "p_value": 0.8703312737439423,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-barca-11-EUR_lag_1",
+        "coefficient": 0.37894354371118616,
+        "p_value": 1.0454848992341087e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-es-flateli-barca-11-EUR_lag_5",
+        "coefficient": 0.12036486687016905,
+        "p_value": 0.05512614204867335,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": -6.29884573549186,
+        "p_value": 0.01124162561043851,
+        "significance": "*",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7938605719400202,
+      "rmse": 8.664158646851927,
+      "mape": 3.3130717761717374,
+      "n_features": 33,
+      "n_observations": 602,
+      "mean_price": 164.18272425249168
+    }
+  },
+  {
+    "hotel_id": "Hotel_12",
+    "intercept": 189.3504684840487,
+    "coefficients": [
+      {
+        "feature": "booking-us-residence-inn-denver-city-center-USD_lag_1",
+        "coefficient": 0.06947527004623597,
+        "p_value": 0.21819620942856566,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-ramble-USD_lag_2",
+        "coefficient": -0.3904074554809962,
+        "p_value": 0.00022402814303942804,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-denver-downtown-convention-center-USD_lag_4",
+        "coefficient": -0.24901389447824746,
+        "p_value": 0.0008152910183521897,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": -0.0013479127896697755,
+        "p_value": 0.0028901944750507115,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-the-source-USD_lag_2",
+        "coefficient": 0.3399166976490614,
+        "p_value": 0.06801209961851863,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-ramble-USD_lag_1",
+        "coefficient": -0.3113625679925736,
+        "p_value": 0.023652717596450275,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-source-USD_lag_1",
+        "coefficient": 0.09519967737360542,
+        "p_value": 0.521620755950499,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-source-USD_lag_3",
+        "coefficient": 0.20031088641758946,
+        "p_value": 0.17487238448720033,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-home2-suites-by-hilton-denver-downtown-convention-center-USD_lag_5",
+        "coefficient": 0.3050279426159236,
+        "p_value": 0.00018160124006152132,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-cambria-suites-denver-downtown-rino-USD_lag_1",
+        "coefficient": 0.6818647804102036,
+        "p_value": 0.0018721649688586768,
+        "significance": "**",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.4940030415909443,
+      "rmse": 73.54874256529261,
+      "mape": 19.722274112374688,
+      "n_features": 10,
+      "n_observations": 439,
+      "mean_price": 219.44419134396355
+    }
+  },
+  {
+    "hotel_id": "Hotel_14",
+    "intercept": 14.342374414396076,
+    "coefficients": [
+      {
+        "feature": "week_centered",
+        "coefficient": -0.057015756452431635,
+        "p_value": 0.6653185614456483,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-aqua-pacific-monarch-USD_lag_1",
+        "coefficient": 0.057316913602446506,
+        "p_value": 0.24018951812283584,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": 3.639723966683775e-05,
+        "p_value": 0.04084856010987112,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": 1.5278596208244384,
+        "p_value": 0.7372021505366966,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_5",
+        "coefficient": -0.04889832899889557,
+        "p_value": 0.24709587124878352,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_3",
+        "coefficient": -0.1137792072172863,
+        "p_value": 0.021780645082166348,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_5",
+        "coefficient": 0.014478699804451878,
+        "p_value": 0.6155509343818641,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-pacific-monarch-USD_lag_3",
+        "coefficient": 0.01027625746066052,
+        "p_value": 0.8480468476432313,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_3",
+        "coefficient": 0.0104899681158101,
+        "p_value": 0.7688994161560133,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 7.531753987129466,
+        "p_value": 0.0015655510049115814,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-aqua-pacific-monarch-USD_lag_4",
+        "coefficient": 0.07366732823171462,
+        "p_value": 0.1476674287336807,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kamaole-sands-USD_lag_1",
+        "coefficient": 0.3929006636665636,
+        "p_value": 3.7851604000264133e-13,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_1",
+        "coefficient": -0.0708631463241966,
+        "p_value": 0.11761381257849966,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-pacific-monarch-USD_lag_5",
+        "coefficient": 0.0922985339286746,
+        "p_value": 0.037055946265648926,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-pacific-monarch-USD_lag_2",
+        "coefficient": 0.024189373810299397,
+        "p_value": 0.6582478267867067,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_2",
+        "coefficient": 0.09213066709253544,
+        "p_value": 0.04765019567042689,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kamaole-sands-USD_lag_5",
+        "coefficient": 0.035010634297757214,
+        "p_value": 0.453020688048583,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_2",
+        "coefficient": -0.04972849900202947,
+        "p_value": 0.27463232494530154,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_1",
+        "coefficient": 0.1585428468487363,
+        "p_value": 1.6489727400322617e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_4",
+        "coefficient": -0.09247785076280463,
+        "p_value": 0.03425235659818583,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kohea-kai-resort-maui-USD_lag_1",
+        "coefficient": 0.06904715495291994,
+        "p_value": 5.9729954620728374e-36,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": -0.2501811013406918,
+        "p_value": 0.9272183659404127,
+        "significance": "",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6326113682701433,
+      "rmse": 24.56807987436081,
+      "mape": 6.632690515011025,
+      "n_features": 22,
+      "n_observations": 676,
+      "mean_price": 279.11686390532543
+    }
+  },
+  {
+    "hotel_id": "Hotel_17",
+    "intercept": 728.066139806208,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": -105.81199387795836,
+        "p_value": 6.310844753397854e-06,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "week_centered",
+        "coefficient": 7.539189831181178,
+        "p_value": 6.621518914869426e-14,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-inn-at-sonoma-USD_lag_1",
+        "coefficient": 0.2911124280249707,
+        "p_value": 0.006039253068575654,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-at-sonoma-USD_lag_3",
+        "coefficient": 0.09532864096755263,
+        "p_value": 0.31128402875458705,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bodega-bay-lodge-USD_lag_3",
+        "coefficient": -0.05220000744022477,
+        "p_value": 0.29003418430053707,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": 0.00025421036876920435,
+        "p_value": 0.015378897216376326,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_2",
+        "coefficient": -0.1157051957787267,
+        "p_value": 0.08239506849993813,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-trio-healdsburg-USD_lag_2",
+        "coefficient": -0.21332471484250703,
+        "p_value": 0.00467174136108574,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -61.74889020091121,
+        "p_value": 0.0003666141221267977,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-trio-healdsburg-USD_lag_4",
+        "coefficient": -0.06221675174608442,
+        "p_value": 0.3310728291428573,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_2",
+        "coefficient": -0.10795942445601091,
+        "p_value": 0.36123394692175737,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": -0.012931900443365934,
+        "p_value": 7.93238834394044e-08,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-bodega-bay-lodge-USD_lag_1",
+        "coefficient": -0.16688224992635725,
+        "p_value": 0.00487661119397192,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-at-sonoma-USD_lag_4",
+        "coefficient": -0.037710668908549475,
+        "p_value": 0.6533823735482689,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-trio-healdsburg-USD_lag_1",
+        "coefficient": 0.22799505545953555,
+        "p_value": 0.0008656661364268338,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 43.02104599018875,
+        "p_value": 0.0571848312260575,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_1",
+        "coefficient": -0.046799963902794985,
+        "p_value": 0.448256120725405,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_4",
+        "coefficient": 0.12235891843467196,
+        "p_value": 0.2610181698736309,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -91.40217608054047,
+        "p_value": 4.848954489659376e-11,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-el-dorado-sonoma1-USD_lag_1",
+        "coefficient": 0.026291416650178655,
+        "p_value": 0.73256428341732,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-gaige-house-USD_lag_3",
+        "coefficient": 0.07919481545323642,
+        "p_value": 0.3556312806990902,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-gaige-house-USD_lag_2",
+        "coefficient": -0.07956495420318742,
+        "p_value": 0.41739813174347395,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-el-dorado-sonoma1-USD_lag_4",
+        "coefficient": -0.07426487207682063,
+        "p_value": 0.34585263683333645,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-vintners-inn-USD_lag_4",
+        "coefficient": 0.02867142370641917,
+        "p_value": 0.5160967329739456,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-vintners-inn-USD_lag_2",
+        "coefficient": 0.0853292849742813,
+        "p_value": 0.021642127492862838,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bodega-bay-lodge-USD_lag_5",
+        "coefficient": -0.0166441055263322,
+        "p_value": 0.7614451061102737,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_3",
+        "coefficient": -0.04910441638980871,
+        "p_value": 0.4614068432116273,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_5",
+        "coefficient": -0.14696075799544586,
+        "p_value": 0.018561301293286862,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_1",
+        "coefficient": 0.072652379420271,
+        "p_value": 0.5516265332031882,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-gaige-house-USD_lag_4",
+        "coefficient": -0.1545645404303324,
+        "p_value": 0.05747833299997216,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_3",
+        "coefficient": -0.2626506238747099,
+        "p_value": 0.03344703949152055,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-lodge-at-healdsburg-tapestry-collection-by-hilton-USD_lag_5",
+        "coefficient": -0.2501241960000619,
+        "p_value": 0.011039651791196132,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-vintners-inn-USD_lag_5",
+        "coefficient": -0.034210763227732956,
+        "p_value": 0.3518949032015425,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bodega-bay-lodge-USD_lag_4",
+        "coefficient": 0.04591079612142228,
+        "p_value": 0.3514745437125546,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-el-dorado-sonoma1-USD_lag_2",
+        "coefficient": -0.18489341295739128,
+        "p_value": 0.019387562708772683,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-vintners-inn-USD_lag_1",
+        "coefficient": 0.017996435913092503,
+        "p_value": 0.7066923145972737,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-at-sonoma-USD_lag_2",
+        "coefficient": -0.06493002466005432,
+        "p_value": 0.5418689798946854,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-el-dorado-sonoma1-USD_lag_5",
+        "coefficient": -0.07121526204149486,
+        "p_value": 0.3469289321482969,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-gaige-house-USD_lag_1",
+        "coefficient": -0.029326579218244442,
+        "p_value": 0.7660608612937,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-trio-healdsburg-USD_lag_3",
+        "coefficient": 0.2333872475734034,
+        "p_value": 0.0010886607046646359,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bodega-bay-lodge-USD_lag_2",
+        "coefficient": 0.07701438378870218,
+        "p_value": 0.06604413817776927,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-el-dorado-sonoma1-USD_lag_3",
+        "coefficient": -0.16072215832485182,
+        "p_value": 0.03319994126882636,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-gaige-house-USD_lag_5",
+        "coefficient": 0.10482800688141759,
+        "p_value": 0.14712150666445237,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-dr-wilkinson-39-s-hot-srpings-resort-USD_lag_4",
+        "coefficient": -0.08344714238311732,
+        "p_value": 0.15695487693967008,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5921096006407498,
+      "rmse": 68.11171564081181,
+      "mape": 11.463492153825213,
+      "n_features": 44,
+      "n_observations": 593,
+      "mean_price": 436.5379426644182
+    }
+  },
+  {
+    "hotel_id": "Hotel_18",
+    "intercept": 271.84510349985516,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": -27.073894571015494,
+        "p_value": 0.16067452586607944,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_5",
+        "coefficient": -0.7803937968839657,
+        "p_value": 0.006611447224781985,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_centered",
+        "coefficient": -1.030044647232396,
+        "p_value": 8.071207594076861e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-academycourt-bessemer-USD_lag_2",
+        "coefficient": 1.3048686725250487,
+        "p_value": 0.003894615202817088,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-bessemer-USD_lag_2",
+        "coefficient": -0.2038104856684422,
+        "p_value": 0.0056033033748476265,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": 3.4814237819465525e-05,
+        "p_value": 0.5201388292327536,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_1",
+        "coefficient": -0.085218063199531,
+        "p_value": 0.21690724378111859,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_3",
+        "coefficient": 0.09924423375972506,
+        "p_value": 0.29823460008220304,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -21.06046371869485,
+        "p_value": 0.013357026242740745,
+        "significance": "*",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_4",
+        "coefficient": -0.026167744654134163,
+        "p_value": 0.5992485523759975,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": -6.1094136415337434,
+        "p_value": 0.5937733999658592,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_3",
+        "coefficient": -0.08112661334631611,
+        "p_value": 0.23988168702626378,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 1.5653097743574362,
+        "p_value": 0.8539970660768545,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -62.51314937057547,
+        "p_value": 5.049743572999671e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_1",
+        "coefficient": 3.487853217257251,
+        "p_value": 0.00029536709870629747,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_5",
+        "coefficient": -0.07813137462291726,
+        "p_value": 0.08581109254150332,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-bessemer-USD_lag_5",
+        "coefficient": -0.08936433574444828,
+        "p_value": 0.2352264142697763,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_4",
+        "coefficient": -1.7110498123910625,
+        "p_value": 0.007595304537442257,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_4",
+        "coefficient": -0.02913178850800937,
+        "p_value": 0.7487764008467439,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-academycourt-bessemer-USD_lag_3",
+        "coefficient": -0.63246583429495,
+        "p_value": 0.17271784436676663,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_3",
+        "coefficient": -0.9279711755668517,
+        "p_value": 0.048597283124994804,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-academycourt-bessemer-USD_lag_5",
+        "coefficient": -0.8334882902485855,
+        "p_value": 0.026907110548855914,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-academycourt-bessemer-USD_lag_1",
+        "coefficient": -1.8920740508544642,
+        "p_value": 0.001357482111233886,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_3",
+        "coefficient": 2.1697248715824258,
+        "p_value": 0.008569784718338688,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_5",
+        "coefficient": 0.8034222472323526,
+        "p_value": 0.19435344019894207,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_1",
+        "coefficient": 0.3173541271350323,
+        "p_value": 0.0028860119914826867,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_4",
+        "coefficient": 0.5056767607619613,
+        "p_value": 0.18705168206398226,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-and-suites-by-marriott-birmingham-bessemer-USD_lag_5",
+        "coefficient": 0.09143059370394667,
+        "p_value": 0.33895636315945377,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-bessemer-birmingham-USD_lag_2",
+        "coefficient": 0.09411209796482221,
+        "p_value": 0.29468594108599533,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-bessemer-USD_lag_1",
+        "coefficient": -0.0044084870735756,
+        "p_value": 0.9654381031998887,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-bessemer-USD_lag_3",
+        "coefficient": -0.11965051057827417,
+        "p_value": 0.11451874873015401,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bessemer-1000-shiloh-lane-USD_lag_2",
+        "coefficient": -3.7463393862211234,
+        "p_value": 2.033335867137421e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-academycourt-bessemer-USD_lag_4",
+        "coefficient": 0.5197111417980932,
+        "p_value": 0.05515709572191775,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-woodspring-suites-birmingham-bessemer-USD_lag_2",
+        "coefficient": -0.7809988501999104,
+        "p_value": 0.0980418481682394,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5430134607596344,
+      "rmse": 35.91329805574238,
+      "mape": 23.45973416309159,
+      "n_features": 34,
+      "n_observations": 369,
+      "mean_price": 99.01084010840108
+    }
+  },
+  {
+    "hotel_id": "Hotel_19",
+    "intercept": -684.0188936259485,
+    "coefficients": [
+      {
+        "feature": "booking-us-the-francis-USD_lag_5",
+        "coefficient": 0.860383641497598,
+        "p_value": 3.2005391443307627e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-on-carleton-USD_lag_4",
+        "coefficient": -0.12297991739421305,
+        "p_value": 0.11405662123850968,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inn-on-carleton-USD_lag_1",
+        "coefficient": -0.21408149260660025,
+        "p_value": 0.08482212013622759,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-francis-USD_lag_2",
+        "coefficient": 0.8677880239489364,
+        "p_value": 3.5103748083790165e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -187.50854915568468,
+        "p_value": 0.00015095021381547754,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -796.392999502076,
+        "p_value": 0.006309734767887259,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-portland-regency-USD_lag_3",
+        "coefficient": 0.03507441874789907,
+        "p_value": 0.5695222819067715,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_2",
+        "coefficient": -0.1474938667534221,
+        "p_value": 0.10721190276134838,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_4",
+        "coefficient": -0.26207320936845435,
+        "p_value": 0.0065846941118941,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-francis-USD_lag_4",
+        "coefficient": 0.43407478261174537,
+        "p_value": 0.01658507583405801,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_3",
+        "coefficient": -0.21102873504165864,
+        "p_value": 0.04177488726004131,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-nonantum-resort-USD_lag_5",
+        "coefficient": -0.19302983129502907,
+        "p_value": 0.04218739581032375,
+        "significance": "*",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6831346345473621,
+      "rmse": 34.31881786648754,
+      "mape": 8.638633833712355,
+      "n_features": 12,
+      "n_observations": 48,
+      "mean_price": 282.5416666666667
+    }
+  },
+  {
+    "hotel_id": "Hotel_20",
+    "intercept": 149.73172387059617,
+    "coefficients": [
+      {
+        "feature": "booking-us-16-bay-view-USD_lag_4",
+        "coefficient": 0.05601967752526599,
+        "p_value": 0.450130179496938,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-camden-maine-stay-inn-USD_lag_1",
+        "coefficient": 0.3264308527823854,
+        "p_value": 0.15321010225188714,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lord-camden-inn-USD_lag_2",
+        "coefficient": -0.019933079375925145,
+        "p_value": 0.8009039672770808,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_5",
+        "coefficient": 0.0027188249622613347,
+        "p_value": 0.909882659236142,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 8.50701500406206,
+        "p_value": 0.36175377619642,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_2",
+        "coefficient": 0.02226347942384696,
+        "p_value": 0.38854850329646795,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-camden-maine-stay-inn-USD_lag_3",
+        "coefficient": -0.030393760573630635,
+        "p_value": 0.8400019328653875,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -0.7395062848724194,
+        "p_value": 0.9510197925147684,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-camden-maine-stay-inn-USD_lag_5",
+        "coefficient": -0.1826108207554562,
+        "p_value": 0.024388647267040743,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": -0.353994332336256,
+        "p_value": 0.005976566316792395,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-16-bay-view-USD_lag_3",
+        "coefficient": 0.20008075195083566,
+        "p_value": 0.15884334542013012,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_4",
+        "coefficient": 0.008626323655808038,
+        "p_value": 0.7708081747984585,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-country-inn-at-camden-rockport-USD_lag_1",
+        "coefficient": 2.4682478461470834,
+        "p_value": 0.0024208692427058463,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hideaway-inn-maine-USD_lag_1",
+        "coefficient": -0.22129363284354903,
+        "p_value": 0.019064629422677493,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lord-camden-inn-USD_lag_3",
+        "coefficient": -0.2756034830830276,
+        "p_value": 0.054364720263480784,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-relais-amp-chateaux-camden-harbour-inn-USD_lag_1",
+        "coefficient": -0.09488509638006089,
+        "p_value": 0.040336979840339605,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-camden-maine-stay-inn-USD_lag_2",
+        "coefficient": -0.36154968255003084,
+        "p_value": 0.1664111454205418,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5268278338124763,
+      "rmse": 32.81503720426734,
+      "mape": 6.137603629375431,
+      "n_features": 17,
+      "n_observations": 192,
+      "mean_price": 410.09375
+    }
+  },
+  {
+    "hotel_id": "Hotel_21",
+    "intercept": -4.680660413286137,
+    "coefficients": [
+      {
+        "feature": "week_quartic",
+        "coefficient": 7.039288407709835e-05,
+        "p_value": 0.0009361425861000636,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": 0.001458928025298316,
+        "p_value": 0.00014390837227404467,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 6.130417483489717,
+        "p_value": 0.1496044321961876,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-oasis-hotel-waikiki-USD_lag_1",
+        "coefficient": 0.19654430542520446,
+        "p_value": 0.0006076323500221849,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-la-croix-USD_lag_1",
+        "coefficient": 0.16417204671949945,
+        "p_value": 0.22819732412125637,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-east-oahu-USD_lag_1",
+        "coefficient": 0.11155376190182503,
+        "p_value": 0.1571170704578072,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_1",
+        "coefficient": 0.1289101359240865,
+        "p_value": 0.2065642013145006,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-palms-spa-USD_lag_1",
+        "coefficient": 0.293768641108725,
+        "p_value": 0.0010301461069338522,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-doubletree-alana-waikiki-USD_lag_1",
+        "coefficient": 0.1045273984326548,
+        "p_value": 0.15055472461117325,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ramada-plaza-waikiki-USD_lag_1",
+        "coefficient": 0.043612380322124306,
+        "p_value": 0.6181147717445798,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-queen-kapiolani-USD_lag_1",
+        "coefficient": 0.08088047078708198,
+        "p_value": 0.19109109812837777,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.47012096859002706,
+      "rmse": 45.05789047203026,
+      "mape": 10.847054814925242,
+      "n_features": 11,
+      "n_observations": 640,
+      "mean_price": 281.85625
+    }
+  },
+  {
+    "hotel_id": "Hotel_22",
+    "intercept": 145.4138341860766,
+    "coefficients": [
+      {
+        "feature": "booking-us-hotel-francisco-blvd-east-san-rafael-USD_lag_1",
+        "coefficient": 0.19375943618442745,
+        "p_value": 2.58234386842399e-24,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-acquahotel-USD_lag_2",
+        "coefficient": -0.15623477901647825,
+        "p_value": 1.3001865181016768e-18,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-corte-madera-USD_lag_1",
+        "coefficient": 0.06858927839881397,
+        "p_value": 0.2790922640718093,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -6.449493054337453,
+        "p_value": 1.090297047918766e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-courtyard-san-francisco-larkspur-landing-marin-county-USD_lag_3",
+        "coefficient": 0.10334758064686016,
+        "p_value": 5.359805601393755e-16,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-plus-novato-oaks-inn-USD_lag_1",
+        "coefficient": 0.08331662344809673,
+        "p_value": 0.02436301984368385,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-mill-valley-sausalito-USD_lag_1",
+        "coefficient": 0.12849943779668394,
+        "p_value": 0.00037567132924318523,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.3965604386826216,
+      "rmse": 19.678270948255506,
+      "mape": 7.138514030299134,
+      "n_features": 7,
+      "n_observations": 670,
+      "mean_price": 209.17164179104478
+    }
+  },
+  {
+    "hotel_id": "Hotel_23",
+    "intercept": 38.28622062004036,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": 16.883504204277326,
+        "p_value": 1.6153350526517207e-10,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-sugar-beach-resort-USD_lag_5",
+        "coefficient": -0.05110093700243887,
+        "p_value": 0.01606518618890081,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-maui-beach-USD_lag_5",
+        "coefficient": 0.25546488672660517,
+        "p_value": 0.008307420813373954,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kamaole-sands-USD_lag_4",
+        "coefficient": -0.12116734093599119,
+        "p_value": 0.008671682310842426,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aston-kaanapali-shores-USD_lag_1",
+        "coefficient": 0.19289657871128862,
+        "p_value": 1.096777858689677e-19,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -16.121572800334064,
+        "p_value": 4.353522441033593e-07,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-maui-wailea-USD_lag_5",
+        "coefficient": -0.0444160117777495,
+        "p_value": 0.005853347093971199,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": 0.0010389422451625879,
+        "p_value": 6.585727510950213e-08,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-maui-beach-USD_lag_2",
+        "coefficient": 0.06534157340741709,
+        "p_value": 0.5106923782386747,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-maui-coast-USD_lag_1",
+        "coefficient": 0.045144554199503584,
+        "p_value": 0.011689872522768329,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_5",
+        "coefficient": -0.05324237968514073,
+        "p_value": 0.20034350587023142,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 15.436871368291143,
+        "p_value": 4.735424580500357e-13,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_3",
+        "coefficient": -0.025218141435992686,
+        "p_value": 0.45615615359418293,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kaanapali-beach-USD_lag_5",
+        "coefficient": 0.03954374316553064,
+        "p_value": 0.03165018676965714,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aston-at-the-maui-banyan-USD_lag_5",
+        "coefficient": 0.02198415848719676,
+        "p_value": 0.5345181716243277,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kamaole-sands-USD_lag_1",
+        "coefficient": -0.273709519605422,
+        "p_value": 0.0004484017502994333,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-sugar-beach-resort-USD_lag_1",
+        "coefficient": -0.039664519560569905,
+        "p_value": 0.09315998384059572,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-maui-wailea-USD_lag_1",
+        "coefficient": -0.028464328253185015,
+        "p_value": 0.03903712739702898,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kaanapali-beach-USD_lag_4",
+        "coefficient": 0.009500476713454081,
+        "p_value": 0.6391154581683867,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-maui-beach-USD_lag_4",
+        "coefficient": 0.128190187292894,
+        "p_value": 0.25086555636032093,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kamaole-sands-USD_lag_5",
+        "coefficient": -0.05386770591800627,
+        "p_value": 0.1662135526083438,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kaanapali-beach-USD_lag_2",
+        "coefficient": 0.025829919928202813,
+        "p_value": 0.10663903689524057,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-by-marriott-maui-kahului-airport-USD_lag_4",
+        "coefficient": -0.04313404783085861,
+        "p_value": 0.2594946303415695,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kohea-kai-resort-maui-USD_lag_1",
+        "coefficient": 0.06390122243235224,
+        "p_value": 4.27356064717825e-31,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aston-at-the-maui-banyan-USD_lag_4",
+        "coefficient": 0.018826265448924073,
+        "p_value": 0.5904513050736202,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-maui-beach-USD_lag_3",
+        "coefficient": 0.057335368790453756,
+        "p_value": 0.5766870340614467,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-maui-beach-USD_lag_1",
+        "coefficient": 0.8341212186916693,
+        "p_value": 2.0136849894538106e-22,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7015462532759751,
+      "rmse": 21.28283778949394,
+      "mape": 5.247987450683232,
+      "n_features": 27,
+      "n_observations": 676,
+      "mean_price": 304.0739644970414
+    }
+  },
+  {
+    "hotel_id": "Hotel_24",
+    "intercept": -36.34984795479829,
+    "coefficients": [
+      {
+        "feature": "booking-us-ewa-waikiki-USD_lag_3",
+        "coefficient": -0.1919673141372905,
+        "p_value": 1.1641993656228269e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-white-sands-honolulu-USD_lag_5",
+        "coefficient": 0.05241400584979101,
+        "p_value": 0.11332256625348777,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-aloha-surf-spa-USD_lag_1",
+        "coefficient": 0.0683531814769651,
+        "p_value": 0.13712255485026512,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-waikiki-sand-villa-USD_lag_3",
+        "coefficient": -0.0853797604677724,
+        "p_value": 0.0005086600588075403,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-east-oahu-USD_lag_1",
+        "coefficient": 0.09945040729824825,
+        "p_value": 0.14156262904231928,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 10.81180584598815,
+        "p_value": 1.2445934079971007e-09,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-white-sands-honolulu-USD_lag_1",
+        "coefficient": 0.13786905896380813,
+        "p_value": 0.0206580864786998,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ohana-waikiki-malia-USD_lag_1",
+        "coefficient": 0.10407376613997739,
+        "p_value": 0.07802070068130335,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-aqua-aloha-surf-spa-USD_lag_5",
+        "coefficient": 0.09575566877934541,
+        "p_value": 0.04139054854283489,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-waikiki-resort-USD_lag_1",
+        "coefficient": 0.15927391853433884,
+        "p_value": 9.408053573693093e-05,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5501878373293949,
+      "rmse": 30.20459514702224,
+      "mape": 18.36530840960665,
+      "n_features": 10,
+      "n_observations": 609,
+      "mean_price": 115.42857142857143
+    }
+  },
+  {
+    "hotel_id": "Hotel_25",
+    "intercept": -1381.06544309496,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": 16.10566702975757,
+        "p_value": 1.1611776512344754e-06,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-grand-victorian-inn-USD_lag_1",
+        "coefficient": 3.938722097107912,
+        "p_value": 6.548390784212723e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_1",
+        "coefficient": 0.009658383041408605,
+        "p_value": 0.8350733302795923,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": 8.924090395324074,
+        "p_value": 0.0037643462969384465,
+        "significance": "**",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_4",
+        "coefficient": -0.1295497096300998,
+        "p_value": 0.2947919095487761,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lodge-of-the-ozarks-USD_lag_2",
+        "coefficient": 0.253893970839071,
+        "p_value": 0.07573273503564437,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_5",
+        "coefficient": 0.392382734379023,
+        "p_value": 0.0011585798117507234,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_1",
+        "coefficient": 0.09808617265165692,
+        "p_value": 0.40081247448042256,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": 0.0012166100608840065,
+        "p_value": 1.3506039013375038e-06,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_3",
+        "coefficient": 0.027382221839521954,
+        "p_value": 0.3094472846602916,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lodge-of-the-ozarks-USD_lag_5",
+        "coefficient": -0.2538391308877474,
+        "p_value": 0.011171212761593169,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_5",
+        "coefficient": 0.02719388583802104,
+        "p_value": 0.326054772797003,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-victorian-inn-USD_lag_4",
+        "coefficient": -0.4488828342840421,
+        "p_value": 0.4696849085955027,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_3",
+        "coefficient": -0.16528608491896118,
+        "p_value": 0.00037263100869339665,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-victorian-inn-USD_lag_3",
+        "coefficient": 2.0934019327003837,
+        "p_value": 0.021159307973455888,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_5",
+        "coefficient": 0.11167010176249174,
+        "p_value": 0.14023789392394184,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -15.669485960037969,
+        "p_value": 9.856984459440478e-10,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 5.064583861684675,
+        "p_value": 0.0286453476961286,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_1",
+        "coefficient": 0.2098352256963354,
+        "p_value": 0.03210562718193371,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_2",
+        "coefficient": -0.1315311302863167,
+        "p_value": 0.02936976849064583,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-victorian-inn-USD_lag_5",
+        "coefficient": 3.3082562862920635,
+        "p_value": 7.422345305315903e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_3",
+        "coefficient": 0.29871104421248934,
+        "p_value": 0.00018878131195522988,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_4",
+        "coefficient": -0.08242774591646265,
+        "p_value": 0.35596384404191983,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_5",
+        "coefficient": -0.33490697509788864,
+        "p_value": 8.620210864710647e-10,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_1",
+        "coefficient": 0.031618276345774125,
+        "p_value": 0.7047109191960419,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-music-capital-inn-branson-USD_lag_2",
+        "coefficient": -0.2936049684257356,
+        "p_value": 0.011804374990470282,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_5",
+        "coefficient": 0.21904199831024565,
+        "p_value": 0.0017122482606134679,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_1",
+        "coefficient": 0.12421566669987881,
+        "p_value": 0.41928458730822626,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lodge-of-the-ozarks-USD_lag_3",
+        "coefficient": 0.25574134776946367,
+        "p_value": 0.007092806838129134,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_2",
+        "coefficient": 0.05768691238945858,
+        "p_value": 0.3884055170803099,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-lodge-of-the-ozarks-USD_lag_1",
+        "coefficient": 0.10449649113554588,
+        "p_value": 0.44222694496552517,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_1",
+        "coefficient": 0.20176690904062664,
+        "p_value": 0.005577434493857416,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-branson-hills-USD_lag_1",
+        "coefficient": 0.03948772810415854,
+        "p_value": 0.4565851670901838,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-center-pointe-inn-branson-USD_lag_2",
+        "coefficient": -0.3089179298391166,
+        "p_value": 0.029608944361686394,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_3",
+        "coefficient": -0.11073381646597641,
+        "p_value": 0.04238932256126846,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_3",
+        "coefficient": 0.08034511872410402,
+        "p_value": 0.10330707026161849,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-residence-inn-by-marriott-branson-USD_lag_4",
+        "coefficient": -0.03245097761119106,
+        "p_value": 0.5348114780937633,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-holiday-inn-express-branson-green-mountain-drive-USD_lag_4",
+        "coefficient": -0.06853719120916375,
+        "p_value": 0.0870091056264201,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-by-marriott-branson-USD_lag_2",
+        "coefficient": -0.16474885616454438,
+        "p_value": 0.07706965493492464,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-chateau-on-the-lake-resort-USD_lag_1",
+        "coefficient": 0.015669982123952975,
+        "p_value": 0.5380054132547316,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-victorian-inn-USD_lag_2",
+        "coefficient": 0.11712627446719337,
+        "p_value": 0.9234988291249597,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_2",
+        "coefficient": -0.1734173429677114,
+        "p_value": 0.028481563744067535,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-branson-on-the-strip-USD_lag_4",
+        "coefficient": -0.10740142366150209,
+        "p_value": 0.17181291092779793,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6250991856134485,
+      "rmse": 24.46951758656221,
+      "mape": 10.660341820551974,
+      "n_features": 43,
+      "n_observations": 669,
+      "mean_price": 174.38565022421525
+    }
+  },
+  {
+    "hotel_id": "Hotel_26",
+    "intercept": 28.7499330858232,
+    "coefficients": [
+      {
+        "feature": "booking-us-kona-coast-resort-USD_lag_5",
+        "coefficient": 0.009603644981956466,
+        "p_value": 0.6087416277743476,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-king-kamehameha-s-kona-beach-USD_lag_1",
+        "coefficient": 0.07847567553635029,
+        "p_value": 0.14310993497344904,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-holiday-inn-express-suites-kailua-kona-USD_lag_2",
+        "coefficient": 0.06276337685053063,
+        "p_value": 0.5216898706947237,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kailua-kona-USD_lag_1",
+        "coefficient": -0.19667281826500452,
+        "p_value": 0.2075403973710076,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kona-coast-resort-at-keauhou-gardens-8204-USD_lag_5",
+        "coefficient": 0.11096074517347985,
+        "p_value": 0.1787028897515175,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 7.094769617429389,
+        "p_value": 0.014741748660999178,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-royal-kona-resort-USD_lag_1",
+        "coefficient": 0.5132730567345828,
+        "p_value": 8.867141998499098e-07,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-outrigger-royal-sea-cliff-resort-USD_lag_1",
+        "coefficient": 0.08497511791680905,
+        "p_value": 0.023087906887311025,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kailua-kona-USD_lag_2",
+        "coefficient": -0.2579394367763068,
+        "p_value": 0.161375074243149,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kona-coast-resort-USD_lag_1",
+        "coefficient": 0.10017800113809938,
+        "p_value": 0.00019996799325349752,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kailua-kona-USD_lag_5",
+        "coefficient": 0.2771221743444579,
+        "p_value": 0.04788338793423568,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-castle-kona-reef-USD_lag_5",
+        "coefficient": 0.015522169621537038,
+        "p_value": 0.6873669520695227,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6514158287574429,
+      "rmse": 31.767224026797695,
+      "mape": 6.5737102923951864,
+      "n_features": 12,
+      "n_observations": 670,
+      "mean_price": 256.17164179104475
+    }
+  },
+  {
+    "hotel_id": "Hotel_27",
+    "intercept": 189.60474911088855,
+    "coefficients": [
+      {
+        "feature": "booking-us-indigo-traverse-city-USD_lag_1",
+        "coefficient": 0.044038617048381884,
+        "p_value": 0.29449789053772824,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_4",
+        "coefficient": -0.09203066048185128,
+        "p_value": 0.04368525078029992,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-west-bay-beach-a-delamar-resort-USD_lag_1",
+        "coefficient": 0.1712754314972762,
+        "p_value": 0.00027934428426552475,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": -0.0015086141287151574,
+        "p_value": 0.0003547287008467869,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_5",
+        "coefficient": -0.1277783580959517,
+        "p_value": 0.009127017509352303,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 6.670112170107563,
+        "p_value": 0.34397439806932606,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-hampton-inn-traverse-city-USD_lag_1",
+        "coefficient": 0.6951014716215012,
+        "p_value": 1.3187283763028132e-13,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -59.52070880042333,
+        "p_value": 4.081895996688946e-06,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -54.53627991669655,
+        "p_value": 5.040996629996141e-08,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-indigo-traverse-city-USD_lag_4",
+        "coefficient": -0.1144929238399237,
+        "p_value": 0.0005775965503107598,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-west-bay-beach-a-delamar-resort-USD_lag_2",
+        "coefficient": -0.1811459453136401,
+        "p_value": 5.094085279414224e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-traverse-city-USD_lag_2",
+        "coefficient": -0.5151975347742944,
+        "p_value": 2.748006327782048e-08,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-beach-resort-traverse-city-USD_lag_3",
+        "coefficient": 0.27091705036434255,
+        "p_value": 0.010477665314896948,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hotel-munson-avenue-us-thirty-one-traverse-city-USD_lag_3",
+        "coefficient": 0.11041363259420633,
+        "p_value": 0.05570906800148445,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-grand-beach-resort-traverse-city-USD_lag_5",
+        "coefficient": 0.20169794621650242,
+        "p_value": 0.03441058476126478,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 9.320874562952618,
+        "p_value": 0.5370380732099398,
+        "significance": "",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7395033813387935,
+      "rmse": 58.13403012777421,
+      "mape": 14.802121077441635,
+      "n_features": 16,
+      "n_observations": 425,
+      "mean_price": 255.56470588235294
+    }
+  },
+  {
+    "hotel_id": "Hotel_28",
+    "intercept": 379.5252081324713,
+    "coefficients": [
+      {
+        "feature": "week_centered",
+        "coefficient": 4.891531495500892,
+        "p_value": 0.5085033243718686,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-at-roomie-EUR_lag_5",
+        "coefficient": -0.34111474655277313,
+        "p_value": 0.26277041972562687,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-restaurant-seebichl-EUR_lag_5",
+        "coefficient": 0.009954641566175213,
+        "p_value": 0.9497555701771792,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gamshof-EUR_lag_1",
+        "coefficient": 1.2583892103633334,
+        "p_value": 0.03386124088238523,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-roomie-EUR_lag_3",
+        "coefficient": -0.2567855441262374,
+        "p_value": 0.3647813763734439,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": 0.002355746179194055,
+        "p_value": 0.030702115896496098,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": 6.44230708416358,
+        "p_value": 0.5618861578338803,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-at-gasthof-eggerwirt-EUR_lag_5",
+        "coefficient": -0.12080227744506539,
+        "p_value": 0.31402747620713645,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": -0.009618871236807673,
+        "p_value": 0.4368535181299297,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": -55.94199385411212,
+        "p_value": 0.020436361810060935,
+        "significance": "*",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-at-roomie-EUR_lag_1",
+        "coefficient": 1.3725029943021505,
+        "p_value": 2.7407907908450085e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-garni-entstrasser-EUR_lag_4",
+        "coefficient": 0.19907771414638228,
+        "p_value": 0.23957055331478538,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 353.7421338106083,
+        "p_value": 0.03999588723503684,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 32.47194330524637,
+        "p_value": 0.6173384910698605,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-at-gasthof-eggerwirt-EUR_lag_4",
+        "coefficient": -0.06402331179148352,
+        "p_value": 0.6391839315842651,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-pension-hinterseer-EUR_lag_1",
+        "coefficient": -1.7639438795536038,
+        "p_value": 0.001652865525841843,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": -2.3737635180667835,
+        "p_value": 0.04270649422681015,
+        "significance": "*",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-at-restaurant-seebichl-EUR_lag_1",
+        "coefficient": -0.22724996834950198,
+        "p_value": 0.4730682988867959,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gamshof-EUR_lag_5",
+        "coefficient": 0.008448633397640393,
+        "p_value": 0.9702223753092077,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gasthof-eggerwirt-EUR_lag_1",
+        "coefficient": -0.2244879398521608,
+        "p_value": 0.2203177056084087,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-pension-hinterseer-EUR_lag_5",
+        "coefficient": 0.33504579489505176,
+        "p_value": 0.16378613737813097,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-restaurant-seebichl-EUR_lag_2",
+        "coefficient": 0.05143533532639531,
+        "p_value": 0.6694930226261195,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-garni-entstrasser-EUR_lag_5",
+        "coefficient": 0.174014461493001,
+        "p_value": 0.21939200490545674,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-pension-hinterseer-EUR_lag_2",
+        "coefficient": 0.07325318768512908,
+        "p_value": 0.7649243440870321,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-restaurant-seebichl-EUR_lag_4",
+        "coefficient": 0.0899449156134964,
+        "p_value": 0.2890737652210349,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-pension-hinterseer-EUR_lag_3",
+        "coefficient": 0.36643831533145127,
+        "p_value": 0.14620137305792857,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-garni-entstrasser-EUR_lag_1",
+        "coefficient": 0.3953508006016403,
+        "p_value": 0.10322184879079134,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-restaurant-seebichl-EUR_lag_3",
+        "coefficient": 0.1134570151825536,
+        "p_value": 0.31662203999190464,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gasthof-eggerwirt-EUR_lag_3",
+        "coefficient": 0.1753991598401769,
+        "p_value": 0.3882781873759348,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-garni-entstrasser-EUR_lag_2",
+        "coefficient": -0.06922940449059789,
+        "p_value": 0.7461183755494996,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gasthof-eggerwirt-EUR_lag_2",
+        "coefficient": -0.013453454218703354,
+        "p_value": 0.9393023487304353,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-pension-hinterseer-EUR_lag_4",
+        "coefficient": 0.10518747860254675,
+        "p_value": 0.6111923948485198,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-at-gamshof-EUR_lag_3",
+        "coefficient": -0.2364231646179282,
+        "p_value": 0.3604817599111596,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 73.53379652947815,
+        "p_value": 0.006703720140348079,
+        "significance": "**",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-at-garni-entstrasser-EUR_lag_3",
+        "coefficient": -0.4077921475487561,
+        "p_value": 0.08165814149488654,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7815239088074029,
+      "rmse": 40.52506022220098,
+      "mape": 18.126807003871388,
+      "n_features": 35,
+      "n_observations": 595,
+      "mean_price": 112.84873949579831
+    }
+  },
+  {
+    "hotel_id": "Hotel_29",
+    "intercept": -55.987639713451614,
+    "coefficients": [
+      {
+        "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_1",
+        "coefficient": -0.23745055092327563,
+        "p_value": 0.005337723956618428,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-jinnang-esports-westlake-culture-square-CNY_lag_3",
+        "coefficient": -0.025662147080942218,
+        "p_value": 0.5467046598755808,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-hefang-wushan-metro-CNY_lag_1",
+        "coefficient": 0.021359149559418755,
+        "p_value": 0.7010942321289952,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_3",
+        "coefficient": -0.1000677011323448,
+        "p_value": 0.2362248575936997,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-homeinn-paiboyun-westlake-culture-square-CNY_lag_5",
+        "coefficient": -0.022533147690778882,
+        "p_value": 0.9243704411120034,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-homeinn-paiboyun-westlake-culture-square-CNY_lag_1",
+        "coefficient": 0.7813963263146051,
+        "p_value": 0.006258971762968357,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-wulin-square-CNY_lag_2",
+        "coefficient": -0.6116962605793189,
+        "p_value": 0.01389827098137221,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 1.0316159807649399,
+        "p_value": 0.8154308103199737,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_2",
+        "coefficient": 0.17927221288570616,
+        "p_value": 0.19925526976841346,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_5",
+        "coefficient": 0.23015466711729576,
+        "p_value": 0.06947414984671836,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_3",
+        "coefficient": 0.09046877419115895,
+        "p_value": 0.4666560154712672,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-hefang-wushan-metro-CNY_lag_5",
+        "coefficient": 0.09103877231605657,
+        "p_value": 0.3742950002202011,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-wulin-square-CNY_lag_1",
+        "coefficient": 1.4400046687580006,
+        "p_value": 7.55199315729754e-16,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-jinnang-esports-westlake-culture-square-CNY_lag_5",
+        "coefficient": -0.13179945886234556,
+        "p_value": 0.07991704308545368,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "ctrip-cn-mcsrh-makka-fun-westlake-CNY_lag_5",
+        "coefficient": -0.09793674884927082,
+        "p_value": 0.12167555401754249,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 25.156412674572152,
+        "p_value": 0.03643695602781326,
+        "significance": "*",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_1",
+        "coefficient": 0.11140860772239788,
+        "p_value": 0.44153212622807947,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.4534437001636308,
+      "rmse": 26.98709013170983,
+      "mape": 11.874634169923919,
+      "n_features": 17,
+      "n_observations": 162,
+      "mean_price": 132.21604938271605
+    }
+  },
+  {
+    "hotel_id": "Hotel_30",
+    "intercept": 38.8636528390776,
+    "coefficients": [
+      {
+        "feature": "booking-fr-villa-sorel-EUR_lag_1",
+        "coefficient": 0.2939293593955132,
+        "p_value": 3.96885866774464e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -8.961697141429598,
+        "p_value": 1.1453141911876524e-05,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-fr-villa-sorel-EUR_lag_5",
+        "coefficient": 0.20696804661864052,
+        "p_value": 3.671401776138286e-08,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-fr-ibis-styles-paris-boulogne-marcel-sembat-EUR_lag_1",
+        "coefficient": 0.0787084170090805,
+        "p_value": 0.177795248625499,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-fr-villa-sorel-EUR_lag_2",
+        "coefficient": 0.0565725282500769,
+        "p_value": 0.17066270748495715,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.2966790077562672,
+      "rmse": 36.772397218292156,
+      "mape": 18.940239786051833,
+      "n_features": 5,
+      "n_observations": 675,
+      "mean_price": 123.18666666666667
+    }
+  },
+  {
+    "hotel_id": "Hotel_31",
+    "intercept": 54.22651182518004,
+    "coefficients": [
+      {
+        "feature": "booking-us-palm-mountain-resort-spa-USD_lag_2",
+        "coefficient": -0.2310820336894917,
+        "p_value": 0.11127265175709793,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_1",
+        "coefficient": 0.33073294328851943,
+        "p_value": 8.86882513967042e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_4",
+        "coefficient": 0.09120702145561418,
+        "p_value": 0.20668481703007302,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_1",
+        "coefficient": 0.10008219715048257,
+        "p_value": 0.24301934803098502,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_quartic",
+        "coefficient": -0.00021441645801096077,
+        "p_value": 0.004858530239373267,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-best-western-las-brisas-palm-springs-USD_lag_4",
+        "coefficient": -0.1560036746812412,
+        "p_value": 0.21553447715617202,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-best-western-las-brisas-palm-springs-USD_lag_2",
+        "coefficient": -0.057235314240475316,
+        "p_value": 0.6917906541460521,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": 0.002576087426333833,
+        "p_value": 0.0004844936639547649,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-ace-and-swim-club-USD_lag_2",
+        "coefficient": -0.21449902502110835,
+        "p_value": 0.055694109261822576,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_1",
+        "coefficient": 0.14418594115424488,
+        "p_value": 0.05262503587058271,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": 1.2494741937462184,
+        "p_value": 0.9524754752341543,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_2",
+        "coefficient": -0.25382834422736394,
+        "p_value": 0.005265375639566102,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-triada-palm-springs-autograph-collection-USD_lag_3",
+        "coefficient": 0.06607909857444921,
+        "p_value": 0.28568670309002564,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_5",
+        "coefficient": 0.25536244275446685,
+        "p_value": 7.686102366719723e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palm-desert-1620-south-indian-trail-USD_lag_3",
+        "coefficient": 0.13521093990171473,
+        "p_value": 0.058397244066609066,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 17.45581551989053,
+        "p_value": 0.19185219355302552,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-ace-and-swim-club-USD_lag_1",
+        "coefficient": 0.3991203778652649,
+        "p_value": 0.0011549930918606356,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palm-mountain-resort-spa-USD_lag_4",
+        "coefficient": -0.09008278505743125,
+        "p_value": 0.4083478758803838,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-ace-and-swim-club-USD_lag_4",
+        "coefficient": -0.2138187636336854,
+        "p_value": 0.016183333785882693,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_4",
+        "coefficient": -0.08214763370547687,
+        "p_value": 0.09559341480471076,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-avalon-hotel-and-bungalows-palm-springs-USD_lag_2",
+        "coefficient": 0.2112669102008869,
+        "p_value": 0.007336349525018925,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": -72.34928442985165,
+        "p_value": 0.008149297736413097,
+        "significance": "**",
+        "category": "Seasonal"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5015035867853135,
+      "rmse": 121.42535062997143,
+      "mape": 28.189713047631482,
+      "n_features": 22,
+      "n_observations": 676,
+      "mean_price": 272.8801775147929
+    }
+  },
+  {
+    "hotel_id": "Hotel_33",
+    "intercept": 175.2956041155209,
+    "coefficients": [
+      {
+        "feature": "booking-us-residence-inn-by-marriott-fredericksburg-USD_lag_5",
+        "coefficient": -0.02663663922920033,
+        "p_value": 0.1807709944958713,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_4",
+        "coefficient": -0.09141430830012634,
+        "p_value": 0.0016206968396494357,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -6.665957771226087,
+        "p_value": 0.0005475878097808933,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-fredericksburg-1080-hospitality-USD_lag_2",
+        "coefficient": -0.21054708095146096,
+        "p_value": 0.006697642467796439,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_5",
+        "coefficient": -0.031603720726691924,
+        "p_value": 0.4319849045056978,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hyatt-place-fredericksburg-at-mary-washington-USD_lag_5",
+        "coefficient": -0.06386948194321268,
+        "p_value": 0.005756000223628208,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hilton-garden-inn-fredericksburg-USD_lag_1",
+        "coefficient": 0.055209064254895655,
+        "p_value": 0.4204267128592446,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fredericksburg-hospitality-lane-USD_lag_1",
+        "coefficient": 0.04089900531531696,
+        "p_value": 0.4776834101581705,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-courtyard-fredericksburg-historic-district-USD_lag_2",
+        "coefficient": -0.11786145857718035,
+        "p_value": 1.6140468712029507e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fredericksburg-1080-hospitality-USD_lag_1",
+        "coefficient": 0.41456865332068643,
+        "p_value": 0.0025138015313542696,
+        "significance": "**",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.2463671187520382,
+      "rmse": 27.80391636145819,
+      "mape": 9.554961332261671,
+      "n_features": 10,
+      "n_observations": 675,
+      "mean_price": 149.6977777777778
+    }
+  },
+  {
+    "hotel_id": "Hotel_35",
+    "intercept": 184.57707866343785,
+    "coefficients": [
+      {
+        "feature": "booking-us-inn-of-the-six-mountains-USD_lag_1",
+        "coefficient": 0.17361620135284392,
+        "p_value": 1.8024878164199482e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kimpton-taconic-hotel-USD_lag_1",
+        "coefficient": 0.061839977216384595,
+        "p_value": 0.004429098972412076,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-kimpton-taconic-hotel-USD_lag_2",
+        "coefficient": -0.044210586943013074,
+        "p_value": 0.0685347443844674,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-talta-lodge-USD_lag_3",
+        "coefficient": 0.11929960103076775,
+        "p_value": 0.00011966736086585276,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-equinox-resort-USD_lag_1",
+        "coefficient": 0.02675872752036865,
+        "p_value": 0.1964311618314477,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palmer-house-manchester-center-USD_lag_2",
+        "coefficient": -0.06439716396670327,
+        "p_value": 0.5759894736321375,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-town-country-resort-at-stowe-USD_lag_1",
+        "coefficient": 0.1525660619601983,
+        "p_value": 1.8693766374887964e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -15.49143460923384,
+        "p_value": 0.00010062842681949297,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-manchester-manchester-vt-USD_lag_1",
+        "coefficient": -0.03096430249460359,
+        "p_value": 0.558580770275403,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-talta-lodge-USD_lag_1",
+        "coefficient": 0.001808309369796308,
+        "p_value": 0.9636983508201737,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-bromley-view-inn-USD_lag_2",
+        "coefficient": -0.2912413178473182,
+        "p_value": 0.000334069649060803,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palmer-house-manchester-center-USD_lag_5",
+        "coefficient": -0.11153476927157537,
+        "p_value": 0.1702784482864117,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-talta-lodge-USD_lag_5",
+        "coefficient": 0.131834284490719,
+        "p_value": 3.454881845289119e-05,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hampton-inn-suites-manchester-manchester-vt-USD_lag_5",
+        "coefficient": -0.08064783756714128,
+        "p_value": 0.21183581048336875,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-palmer-house-manchester-center-USD_lag_4",
+        "coefficient": -0.16455395880281332,
+        "p_value": 0.0005406895662892759,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6528214744948694,
+      "rmse": 32.62652537628175,
+      "mape": 11.121791355978381,
+      "n_features": 15,
+      "n_observations": 393,
+      "mean_price": 214.52162849872772
+    }
+  },
+  {
+    "hotel_id": "Hotel_36",
+    "intercept": 36.92944712847428,
+    "coefficients": [
+      {
+        "feature": "booking-us-the-hostel-USD_lag_1",
+        "coefficient": 0.13562205419850007,
+        "p_value": 0.001164421192483198,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-hostel-USD_lag_5",
+        "coefficient": 0.05367404124848469,
+        "p_value": 0.1621152564145384,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -7.950679660674668,
+        "p_value": 0.00896629903943216,
+        "significance": "**",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -14.181651956654886,
+        "p_value": 2.1124914305781222e-14,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-motel-6-jackson-USD_lag_1",
+        "coefficient": 0.20211854127870973,
+        "p_value": 8.19100545821803e-48,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.64635858413269,
+      "rmse": 29.66930236997863,
+      "mape": 25.646250628805056,
+      "n_features": 5,
+      "n_observations": 675,
+      "mean_price": 124.71703703703703
+    }
+  },
+  {
+    "hotel_id": "Hotel_37",
+    "intercept": 105.027907983318,
+    "coefficients": [
+      {
+        "feature": "booking-us-hotel-main-street-waterville-USD_lag_1",
+        "coefficient": 0.39752306546850263,
+        "p_value": 2.590931644494264e-07,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.23953644804019936,
+      "rmse": 30.621712439797488,
+      "mape": 12.24277095878529,
+      "n_features": 1,
+      "n_observations": 393,
+      "mean_price": 162.14758269720102
+    }
+  },
+  {
+    "hotel_id": "Hotel_38",
+    "intercept": 64.23843821222889,
+    "coefficients": [
+      {
+        "feature": "booking-us-beach-house-suites-USD_lag_1",
+        "coefficient": 0.24591428819856193,
+        "p_value": 4.502607013915901e-06,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-tradewinds-sandpiper-USD_lag_1",
+        "coefficient": 0.15719446379228846,
+        "p_value": 0.051083320801401905,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-don-cesar-USD_lag_5",
+        "coefficient": -0.07294332983065453,
+        "p_value": 0.0074988112543395505,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -34.498586181052985,
+        "p_value": 0.0007496408516365628,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-tradewinds-island-USD_lag_1",
+        "coefficient": 0.028213560432623318,
+        "p_value": 0.6164326822120765,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_5",
+        "coefficient": -0.10123821133207274,
+        "p_value": 0.015041467148499802,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": 32.67738514610945,
+        "p_value": 5.72913387576442e-07,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 34.7108455403011,
+        "p_value": 3.29745816093148e-05,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_2",
+        "coefficient": -0.2982216728259094,
+        "p_value": 4.4207082575895525e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-don-cesar-USD_lag_3",
+        "coefficient": 0.054356675465974634,
+        "p_value": 0.06508372818387928,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-saint-sherman-oaks-USD_lag_1",
+        "coefficient": 0.02074888615352733,
+        "p_value": 0.39391103755400225,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_4",
+        "coefficient": -0.1347787044164779,
+        "p_value": 0.00034135266417862573,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-sirata-beach-resort-and-conference-center-USD_lag_1",
+        "coefficient": 0.2502996440700471,
+        "p_value": 0.004990924525507962,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-beach-house-suites-USD_lag_3",
+        "coefficient": 0.3024946404091769,
+        "p_value": 8.17492599404232e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-hilton-garden-inn-st-pete-beach-USD_lag_1",
+        "coefficient": 0.21729031109065167,
+        "p_value": 0.005247859410912467,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-don-cesar-USD_lag_1",
+        "coefficient": 0.10449088509649102,
+        "p_value": 0.001995473119490141,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-beach-house-suites-USD_lag_2",
+        "coefficient": -0.359587462540584,
+        "p_value": 1.904112582599437e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-tradewinds-sandpiper-USD_lag_5",
+        "coefficient": 0.15877086720671435,
+        "p_value": 0.002944804255581281,
+        "significance": "**",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.6962525832862498,
+      "rmse": 57.64697997352912,
+      "mape": 14.639058757056128,
+      "n_features": 18,
+      "n_observations": 357,
+      "mean_price": 321.64145658263305
+    }
+  },
+  {
+    "hotel_id": "Hotel_39",
+    "intercept": 1606.8977847489452,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": 508.76353722369635,
+        "p_value": 0.0035938318605814247,
+        "significance": "**",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-hk-conrad-hong-kong-HKD_lag_3",
+        "coefficient": 0.03863245972632175,
+        "p_value": 0.4715666529772188,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-the-murray-hong-kong-a-niccolo-HKD_lag_2",
+        "coefficient": -0.009184817375729404,
+        "p_value": 0.7649212665126179,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_2",
+        "coefficient": -0.02838792855526046,
+        "p_value": 0.08692873753306417,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_4",
+        "coefficient": -0.02994080047055616,
+        "p_value": 0.027865794395947805,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-langham-HKD_lag_4",
+        "coefficient": -0.1054185024463318,
+        "p_value": 0.13961089396914622,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-kowloon-shangri-la-HKD_lag_5",
+        "coefficient": -0.14827226229437726,
+        "p_value": 0.00011655437290162545,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_1",
+        "coefficient": -0.035666190455570596,
+        "p_value": 0.05259218563481978,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_3",
+        "coefficient": 0.026754563768525995,
+        "p_value": 0.002452040713344529,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_cubic",
+        "coefficient": 0.01593013084664005,
+        "p_value": 1.304957994313373e-06,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_1",
+        "coefficient": 0.024801782148832975,
+        "p_value": 0.03667650575230339,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_peak_season",
+        "coefficient": -84.02216001467197,
+        "p_value": 0.26878502842917995,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-hk-conrad-hong-kong-HKD_lag_2",
+        "coefficient": 0.0809650045577586,
+        "p_value": 0.25224155189235675,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_5",
+        "coefficient": 0.024729666279026372,
+        "p_value": 0.005811622133761671,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_4",
+        "coefficient": 0.0345930398968146,
+        "p_value": 0.0019021788499755418,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-conrad-hong-kong-HKD_lag_1",
+        "coefficient": 0.12085596283327704,
+        "p_value": 0.055171825194883485,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-regent-hong-kong-HKD_lag_5",
+        "coefficient": 0.05068191470365657,
+        "p_value": 0.09643407896393237,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": 65.06964219599207,
+        "p_value": 0.1415950460301144,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-hk-langham-HKD_lag_2",
+        "coefficient": -0.045466735131661995,
+        "p_value": 0.49119000578002203,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-kowloon-shangri-la-HKD_lag_1",
+        "coefficient": -0.026436414217720996,
+        "p_value": 0.6124229397082703,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-conrad-hong-kong-HKD_lag_4",
+        "coefficient": 0.06588281218851305,
+        "p_value": 0.2144517577129802,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-the-jervois-HKD_lag_2",
+        "coefficient": 0.024870726667954753,
+        "p_value": 0.609426314992668,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": 0.6899893794862214,
+        "p_value": 0.0025670033175087597,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-hk-kowloon-shangri-la-HKD_lag_3",
+        "coefficient": -0.01884407645609984,
+        "p_value": 0.7483545378439288,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_3",
+        "coefficient": -0.013724077600542398,
+        "p_value": 0.2942765756199016,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-langham-HKD_lag_1",
+        "coefficient": -0.06661776538065245,
+        "p_value": 0.5608146840064666,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-langham-HKD_lag_3",
+        "coefficient": -0.07669525136136349,
+        "p_value": 0.45087303389732214,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-regent-hong-kong-HKD_lag_2",
+        "coefficient": -0.025050294422426088,
+        "p_value": 0.3579667330416766,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-conrad-hong-kong-HKD_lag_5",
+        "coefficient": 0.04483571091014482,
+        "p_value": 0.35698255529874234,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-four-seasons-hong-kong-HKD_lag_2",
+        "coefficient": 0.023182545632335134,
+        "p_value": 0.015132653676437867,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-the-murray-hong-kong-a-niccolo-HKD_lag_1",
+        "coefficient": -0.012666023196486397,
+        "p_value": 0.7061885570643509,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-grand-hyatt-hong-kong-HKD_lag_5",
+        "coefficient": -0.024844901338541045,
+        "p_value": 0.14334798903203808,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-hk-hyatt-regency-hong-kong-tsim-sha-tsui-HKD_lag_5",
+        "coefficient": 0.11513770210027809,
+        "p_value": 0.05215681770774589,
+        "significance": "",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.18040743532928727,
+      "rmse": 408.8607047919853,
+      "mape": 8.860612648529763,
+      "n_features": 33,
+      "n_observations": 350,
+      "mean_price": 2610.5142857142855
+    }
+  },
+  {
+    "hotel_id": "Hotel_40",
+    "intercept": 296.84356541769216,
+    "coefficients": [
+      {
+        "feature": "booking-us-boulderado-USD_lag_3",
+        "coefficient": -0.014078783215242044,
+        "p_value": 0.08955370677179257,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-boulderado-USD_lag_5",
+        "coefficient": -0.018251743878656874,
+        "p_value": 0.05424637719700343,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -31.088331305753762,
+        "p_value": 1.3961169403249959e-08,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -18.02581853236411,
+        "p_value": 4.2744316118634185e-06,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-econo-lodge-estes-park-USD_lag_4",
+        "coefficient": -0.07286499106825961,
+        "p_value": 0.00859785936694485,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-boulderado-USD_lag_1",
+        "coefficient": 0.016480538940095952,
+        "p_value": 0.08920098562285542,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-econo-lodge-estes-park-USD_lag_5",
+        "coefficient": -0.11025798620911613,
+        "p_value": 0.0005396028511124813,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-boulderado-USD_lag_4",
+        "coefficient": -0.01877089887424367,
+        "p_value": 0.0059211069710903745,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-origin-red-rocks-USD_lag_1",
+        "coefficient": 0.0023617467963755064,
+        "p_value": 0.11464582090692005,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-twin-owls-motor-lodge-USD_lag_3",
+        "coefficient": -0.06624097355482915,
+        "p_value": 0.0007904764792490817,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-silver-moon-inn-USD_lag_1",
+        "coefficient": 0.28766587965256263,
+        "p_value": 8.278539097167243e-10,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_summer",
+        "coefficient": 9.493272361476913,
+        "p_value": 0.04690282820634963,
+        "significance": "*",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-econo-lodge-estes-park-USD_lag_2",
+        "coefficient": -0.15740992450559968,
+        "p_value": 3.241337024665885e-06,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.5642893323785309,
+      "rmse": 26.247448148373593,
+      "mape": 7.3564340820187795,
+      "n_features": 13,
+      "n_observations": 441,
+      "mean_price": 280.3378684807256
+    }
+  },
+  {
+    "hotel_id": "Hotel_41",
+    "intercept": 205.20512520814367,
+    "coefficients": [
+      {
+        "feature": "is_summer",
+        "coefficient": 41.081088013898274,
+        "p_value": 1.0237140290068347e-10,
+        "significance": "***",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-the-prospect-berkshires-USD_lag_4",
+        "coefficient": -0.0698585731698954,
+        "p_value": 0.12595494929283355,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "is_holiday",
+        "coefficient": -11.116863807523838,
+        "p_value": 0.1263967123249962,
+        "significance": "",
+        "category": "Seasonal"
+      },
+      {
+        "feature": "booking-us-the-prospect-berkshires-USD_lag_1",
+        "coefficient": 0.3037649680013558,
+        "p_value": 1.12853848687262e-09,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-suites-by-marriott-williamstown-USD_lag_1",
+        "coefficient": 0.11303467679482306,
+        "p_value": 0.021369042462031147,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_4",
+        "coefficient": -0.06825282558636328,
+        "p_value": 0.18054923673521406,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-williams-inn-williamstown-USD_lag_4",
+        "coefficient": -0.050313954132627584,
+        "p_value": 0.29733080277501844,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-inness-accord-USD_lag_3",
+        "coefficient": 0.05610397366450739,
+        "p_value": 0.00021225305631881935,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "cos_week",
+        "coefficient": -41.107596214309815,
+        "p_value": 0.00984858198710764,
+        "significance": "**",
+        "category": "Temporal"
+      },
+      {
+        "feature": "sin_week",
+        "coefficient": -29.919607659939487,
+        "p_value": 2.0668881618787283e-06,
+        "significance": "***",
+        "category": "Temporal"
+      },
+      {
+        "feature": "week_squared",
+        "coefficient": 0.09040457131354962,
+        "p_value": 0.09298500442211673,
+        "significance": "",
+        "category": "Temporal"
+      },
+      {
+        "feature": "booking-us-williams-inn-williamstown-USD_lag_1",
+        "coefficient": 0.13009475081127242,
+        "p_value": 0.003501078909026761,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-berkshire-valley-inn-williamstown-USD_lag_1",
+        "coefficient": 0.32311916263276175,
+        "p_value": 0.0004517799979664499,
+        "significance": "***",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_2",
+        "coefficient": -0.1644372264084857,
+        "p_value": 0.0010938381462179303,
+        "significance": "**",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-prospect-berkshires-USD_lag_3",
+        "coefficient": -0.06536671731205786,
+        "p_value": 0.1930592305208173,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-porches-inn-at-mass-moca-USD_lag_5",
+        "coefficient": -0.046330990248961965,
+        "p_value": 0.10240769039262447,
+        "significance": "",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-fairfield-inn-suites-by-marriott-williamstown-USD_lag_3",
+        "coefficient": 0.09304038025210075,
+        "p_value": 0.015738447863099643,
+        "significance": "*",
+        "category": "Competitor"
+      },
+      {
+        "feature": "booking-us-the-prospect-berkshires-USD_lag_2",
+        "coefficient": -0.21481717076340978,
+        "p_value": 0.0001590630838580225,
+        "significance": "***",
+        "category": "Competitor"
+      }
+    ],
+    "metrics": {
+      "adj_r2": 0.7559405161548298,
+      "rmse": 33.58984745043413,
+      "mape": 7.600908671468891,
+      "n_features": 18,
+      "n_observations": 425,
+      "mean_price": 311.2823529411765
+    }
+  }
+]

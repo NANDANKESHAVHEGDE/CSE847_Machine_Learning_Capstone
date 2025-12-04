@@ -1,0 +1,168 @@
+{
+  "hotel_id": "Hotel_32",
+  "intercept": 741.3671670962369,
+  "coefficients": [
+    {
+      "feature": "booking-us-healdsburg-25-matheson-street-USD_lag_3",
+      "coefficient": -0.3511537876725092,
+      "p_value": 0.04230540540657821,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-stavrand-USD_lag_2",
+      "coefficient": 0.36998849657403854,
+      "p_value": 0.05372809174157771,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-timber-cove-inn-USD_lag_1",
+      "coefficient": -0.2593446385331766,
+      "p_value": 0.009171541202656543,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": 0.0016969643565164837,
+      "p_value": 0.00013112416961126382,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-the-madrona-USD_lag_3",
+      "coefficient": -0.012201924659294622,
+      "p_value": 0.9359972055729742,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-bodega-bay-lodge-USD_lag_1",
+      "coefficient": 0.28066320668917416,
+      "p_value": 0.06061711262434891,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-stavrand-USD_lag_4",
+      "coefficient": 0.3606227845640176,
+      "p_value": 0.04492683440843354,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-stavrand-USD_lag_1",
+      "coefficient": 0.6917847171327586,
+      "p_value": 0.0008525595951392725,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-madrona-USD_lag_4",
+      "coefficient": -0.0982725971654953,
+      "p_value": 0.5442716286282393,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-healdsburg-25-matheson-street-USD_lag_4",
+      "coefficient": -0.24178495771461025,
+      "p_value": 0.20546790534238513,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-stavrand-USD_lag_3",
+      "coefficient": 0.15596125098504943,
+      "p_value": 0.4387472640010863,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-madrona-USD_lag_2",
+      "coefficient": -0.06809284842031867,
+      "p_value": 0.6414437087475121,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-the-madrona-USD_lag_5",
+      "coefficient": -0.1930034076950846,
+      "p_value": 0.21099579941757918,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-healdsburg-25-matheson-street-USD_lag_1",
+      "coefficient": -0.42834154569732696,
+      "p_value": 0.006232643912461793,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_cubic",
+      "coefficient": -0.01245557464054782,
+      "p_value": 0.19708769434741857,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-healdsburg-25-matheson-street-USD_lag_5",
+      "coefficient": -0.3697219413396745,
+      "p_value": 0.04392876251068353,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_centered",
+      "coefficient": 11.423004169478148,
+      "p_value": 0.0006281256281539883,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-the-stavrand-USD_lag_5",
+      "coefficient": 0.4949760179539131,
+      "p_value": 0.01362753374474761,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -271.61533183047334,
+      "p_value": 2.5374407596481926e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": -243.20932255440914,
+      "p_value": 7.930779065335148e-09,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-timber-cove-inn-USD_lag_5",
+      "coefficient": -0.10182721813405443,
+      "p_value": 0.2919231938275877,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-healdsburg-25-matheson-street-USD_lag_2",
+      "coefficient": -0.44327477001884596,
+      "p_value": 0.014331351061442095,
+      "significance": "*",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.37211832429630676,
+    "rmse": 263.5271243526096,
+    "mape": 92323474917569.34,
+    "n_features": 22,
+    "n_observations": 597,
+    "mean_price": 360.08040201005025
+  }
+}

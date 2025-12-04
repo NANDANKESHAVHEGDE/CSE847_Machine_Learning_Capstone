@@ -1,0 +1,12 @@
+{
+  "hotel_id": "Hotel_37",
+  "approach": "detrending",
+  "cv_folds": 1,
+  "mean_r2": 0.3978559242945757,
+  "std_r2": 0.0,
+  "min_r2": 0.3978559242945757,
+  "max_r2": 0.3978559242945757,
+  "mean_mape": 14.237771375497216,
+  "mean_rmse": 32.24454021220759,
+  "generalization_quality": "GOOD"
+}

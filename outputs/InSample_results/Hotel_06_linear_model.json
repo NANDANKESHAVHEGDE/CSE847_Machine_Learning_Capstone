@@ -1,0 +1,42 @@
+{
+  "hotel_id": "Hotel_06",
+  "intercept": 100.73965297322373,
+  "coefficients": [
+    {
+      "feature": "is_summer",
+      "coefficient": -37.101845337648236,
+      "p_value": 8.337771636745969e-13,
+      "significance": "***",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-sedona-1200-highway-69a-USD_lag_1",
+      "coefficient": 0.14646519799601287,
+      "p_value": 0.000919443172764118,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-sedona-village-of-oak-creek-USD",
+      "coefficient": 0.7873584804482954,
+      "p_value": 1.060053938052907e-22,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-sedona-real-inn-amp-suites-USD_lag_1",
+      "coefficient": 0.10998361851281983,
+      "p_value": 0.03483640842713131,
+      "significance": "*",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7309039530044521,
+    "rmse": 42.04308069774099,
+    "mape": 9.124443566161064,
+    "n_features": 4,
+    "n_observations": 373,
+    "mean_price": 327.33780160857907
+  }
+}

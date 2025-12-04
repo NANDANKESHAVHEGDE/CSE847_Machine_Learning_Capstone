@@ -1,0 +1,133 @@
+{
+  "hotel_id": "Hotel_29",
+  "intercept": -55.987639713451614,
+  "coefficients": [
+    {
+      "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_1",
+      "coefficient": -0.23745055092327563,
+      "p_value": 0.005337723956618428,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-jinnang-esports-westlake-culture-square-CNY_lag_3",
+      "coefficient": -0.025662147080942218,
+      "p_value": 0.5467046598755808,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-hefang-wushan-metro-CNY_lag_1",
+      "coefficient": 0.021359149559418755,
+      "p_value": 0.7010942321289952,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_3",
+      "coefficient": -0.1000677011323448,
+      "p_value": 0.2362248575936997,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-homeinn-paiboyun-westlake-culture-square-CNY_lag_5",
+      "coefficient": -0.022533147690778882,
+      "p_value": 0.9243704411120034,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-homeinn-paiboyun-westlake-culture-square-CNY_lag_1",
+      "coefficient": 0.7813963263146051,
+      "p_value": 0.006258971762968357,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-wulin-square-CNY_lag_2",
+      "coefficient": -0.6116962605793189,
+      "p_value": 0.01389827098137221,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": 1.0316159807649399,
+      "p_value": 0.8154308103199737,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_2",
+      "coefficient": 0.17927221288570616,
+      "p_value": 0.19925526976841346,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-hengyi-boutique-westlake-culture-square-CNY_lag_5",
+      "coefficient": 0.23015466711729576,
+      "p_value": 0.06947414984671836,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_3",
+      "coefficient": 0.09046877419115895,
+      "p_value": 0.4666560154712672,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-hefang-wushan-metro-CNY_lag_5",
+      "coefficient": 0.09103877231605657,
+      "p_value": 0.3742950002202011,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-wulin-square-CNY_lag_1",
+      "coefficient": 1.4400046687580006,
+      "p_value": 7.55199315729754e-16,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-jinnang-esports-westlake-culture-square-CNY_lag_5",
+      "coefficient": -0.13179945886234556,
+      "p_value": 0.07991704308545368,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "ctrip-cn-mcsrh-makka-fun-westlake-CNY_lag_5",
+      "coefficient": -0.09793674884927082,
+      "p_value": 0.12167555401754249,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 25.156412674572152,
+      "p_value": 0.03643695602781326,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "ctrip-cn-pod-inn-huanglong-wensan-metro-CNY_lag_1",
+      "coefficient": 0.11140860772239788,
+      "p_value": 0.44153212622807947,
+      "significance": "",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.4534437001636308,
+    "rmse": 26.98709013170983,
+    "mape": 11.874634169923919,
+    "n_features": 17,
+    "n_observations": 162,
+    "mean_price": 132.21604938271605
+  }
+}

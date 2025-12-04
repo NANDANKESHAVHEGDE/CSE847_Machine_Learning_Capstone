@@ -1,0 +1,245 @@
+{
+  "hotel_id": "Hotel_10",
+  "intercept": 209.54884514272536,
+  "coefficients": [
+    {
+      "feature": "week_centered",
+      "coefficient": -0.044441598008223795,
+      "p_value": 0.5261016283171469,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-es-palau-fugit-EUR_lag_2",
+      "coefficient": -0.014482105072638508,
+      "p_value": 0.2307981987976323,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-nord-1901-EUR_lag_4",
+      "coefficient": -0.00692993572740897,
+      "p_value": 0.5387732965631036,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-lacomuna-city-oasis-EUR_lag_2",
+      "coefficient": -0.25031974163080084,
+      "p_value": 0.018470397865240212,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-apartament-home-bike-girona-EUR_lag_3",
+      "coefficient": 0.041611423499898825,
+      "p_value": 0.06406895447373773,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-palau-fugit-EUR_lag_4",
+      "coefficient": -0.012278587807763554,
+      "p_value": 0.2819837094566334,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_quartic",
+      "coefficient": -3.4883142825510416e-06,
+      "p_value": 0.8804080579104914,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-es-palau-fugit-EUR_lag_1",
+      "coefficient": -0.01810487162084417,
+      "p_value": 0.10937777574322545,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-cort-reial-7-EUR_lag_5",
+      "coefficient": 0.05661660770426346,
+      "p_value": 0.024103848253424584,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_holiday",
+      "coefficient": -3.558905667041962,
+      "p_value": 0.0018486575044499387,
+      "significance": "**",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-es-nord-1901-EUR_lag_3",
+      "coefficient": 0.013319788776226884,
+      "p_value": 0.24980680259847776,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-nord-1901-EUR_lag_1",
+      "coefficient": 0.03673949818586237,
+      "p_value": 0.001437116864258295,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-bravissimo-calderers-12-EUR_lag_3",
+      "coefficient": -0.06712008801325396,
+      "p_value": 0.05908801137120984,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_peak_season",
+      "coefficient": 4.537572197335436,
+      "p_value": 0.05330247050790661,
+      "significance": "",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-es-apartament-home-bike-girona-EUR_lag_1",
+      "coefficient": 0.19193770966946525,
+      "p_value": 5.02427883808102e-16,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-lacomuna-city-oasis-EUR_lag_4",
+      "coefficient": -0.10056869681150694,
+      "p_value": 0.2985129671593034,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -2.441846605570584,
+      "p_value": 0.12338944281680411,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-es-flateli-barca-11-EUR_lag_2",
+      "coefficient": 0.05311468058049114,
+      "p_value": 0.5611378844178032,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-cort-reial-7-EUR_lag_3",
+      "coefficient": -0.05238974519814514,
+      "p_value": 0.13692514368409475,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-nord-1901-EUR_lag_2",
+      "coefficient": 5.589390854359843e-05,
+      "p_value": 0.9959860401706013,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "week_squared",
+      "coefficient": -0.012370436363725043,
+      "p_value": 0.35347860417017496,
+      "significance": "",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-es-nord-1901-EUR_lag_5",
+      "coefficient": 0.010962056546549486,
+      "p_value": 0.2909148257378734,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-cort-reial-7-EUR_lag_1",
+      "coefficient": -0.08539360581022795,
+      "p_value": 0.010813953849817561,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-barca-11-EUR_lag_4",
+      "coefficient": 0.10127003465032094,
+      "p_value": 0.16180447207338078,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-bravissimo-calderers-12-EUR_lag_5",
+      "coefficient": -0.17929483008755662,
+      "p_value": 4.6380320465272006e-10,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-bravissimo-calderers-12-EUR_lag_1",
+      "coefficient": -0.30914267560738856,
+      "p_value": 1.541811753982974e-15,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-barca-11-EUR_lag_3",
+      "coefficient": 0.0838540592044986,
+      "p_value": 0.3314953549036689,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-apartament-home-bike-girona-EUR_lag_5",
+      "coefficient": 0.09735322185562062,
+      "p_value": 9.631447900460835e-08,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-palau-fugit-EUR_lag_5",
+      "coefficient": -0.0034347212772324774,
+      "p_value": 0.75942628496628,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-palau-fugit-EUR_lag_3",
+      "coefficient": -0.0018619370920472727,
+      "p_value": 0.8703312737439423,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-barca-11-EUR_lag_1",
+      "coefficient": 0.37894354371118616,
+      "p_value": 1.0454848992341087e-07,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-es-flateli-barca-11-EUR_lag_5",
+      "coefficient": 0.12036486687016905,
+      "p_value": 0.05512614204867335,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": -6.29884573549186,
+      "p_value": 0.01124162561043851,
+      "significance": "*",
+      "category": "Seasonal"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.7938605719400202,
+    "rmse": 8.664158646851927,
+    "mape": 3.3130717761717374,
+    "n_features": 33,
+    "n_observations": 602,
+    "mean_price": 164.18272425249168
+  }
+}

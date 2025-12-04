@@ -1,0 +1,84 @@
+{
+  "hotel_id": "Hotel_24",
+  "intercept": -36.34984795479829,
+  "coefficients": [
+    {
+      "feature": "booking-us-ewa-waikiki-USD_lag_3",
+      "coefficient": -0.1919673141372905,
+      "p_value": 1.1641993656228269e-06,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-white-sands-honolulu-USD_lag_5",
+      "coefficient": 0.05241400584979101,
+      "p_value": 0.11332256625348777,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aqua-aloha-surf-spa-USD_lag_1",
+      "coefficient": 0.0683531814769651,
+      "p_value": 0.13712255485026512,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-waikiki-sand-villa-USD_lag_3",
+      "coefficient": -0.0853797604677724,
+      "p_value": 0.0005086600588075403,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ohana-east-oahu-USD_lag_1",
+      "coefficient": 0.09945040729824825,
+      "p_value": 0.14156262904231928,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": 10.81180584598815,
+      "p_value": 1.2445934079971007e-09,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-white-sands-honolulu-USD_lag_1",
+      "coefficient": 0.13786905896380813,
+      "p_value": 0.0206580864786998,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-ohana-waikiki-malia-USD_lag_1",
+      "coefficient": 0.10407376613997739,
+      "p_value": 0.07802070068130335,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-aqua-aloha-surf-spa-USD_lag_5",
+      "coefficient": 0.09575566877934541,
+      "p_value": 0.04139054854283489,
+      "significance": "*",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-waikiki-resort-USD_lag_1",
+      "coefficient": 0.15927391853433884,
+      "p_value": 9.408053573693093e-05,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5501878373293949,
+    "rmse": 30.20459514702224,
+    "mape": 18.36530840960665,
+    "n_features": 10,
+    "n_observations": 609,
+    "mean_price": 115.42857142857143
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "hotel_id": "Hotel_40",
+  "intercept": 296.84356541769216,
+  "coefficients": [
+    {
+      "feature": "booking-us-boulderado-USD_lag_3",
+      "coefficient": -0.014078783215242044,
+      "p_value": 0.08955370677179257,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-boulderado-USD_lag_5",
+      "coefficient": -0.018251743878656874,
+      "p_value": 0.05424637719700343,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "cos_week",
+      "coefficient": -31.088331305753762,
+      "p_value": 1.3961169403249959e-08,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "sin_week",
+      "coefficient": -18.02581853236411,
+      "p_value": 4.2744316118634185e-06,
+      "significance": "***",
+      "category": "Temporal"
+    },
+    {
+      "feature": "booking-us-econo-lodge-estes-park-USD_lag_4",
+      "coefficient": -0.07286499106825961,
+      "p_value": 0.00859785936694485,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-boulderado-USD_lag_1",
+      "coefficient": 0.016480538940095952,
+      "p_value": 0.08920098562285542,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-econo-lodge-estes-park-USD_lag_5",
+      "coefficient": -0.11025798620911613,
+      "p_value": 0.0005396028511124813,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-boulderado-USD_lag_4",
+      "coefficient": -0.01877089887424367,
+      "p_value": 0.0059211069710903745,
+      "significance": "**",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-origin-red-rocks-USD_lag_1",
+      "coefficient": 0.0023617467963755064,
+      "p_value": 0.11464582090692005,
+      "significance": "",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-twin-owls-motor-lodge-USD_lag_3",
+      "coefficient": -0.06624097355482915,
+      "p_value": 0.0007904764792490817,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "booking-us-silver-moon-inn-USD_lag_1",
+      "coefficient": 0.28766587965256263,
+      "p_value": 8.278539097167243e-10,
+      "significance": "***",
+      "category": "Competitor"
+    },
+    {
+      "feature": "is_summer",
+      "coefficient": 9.493272361476913,
+      "p_value": 0.04690282820634963,
+      "significance": "*",
+      "category": "Seasonal"
+    },
+    {
+      "feature": "booking-us-econo-lodge-estes-park-USD_lag_2",
+      "coefficient": -0.15740992450559968,
+      "p_value": 3.241337024665885e-06,
+      "significance": "***",
+      "category": "Competitor"
+    }
+  ],
+  "metrics": {
+    "adj_r2": 0.5642893323785309,
+    "rmse": 26.247448148373593,
+    "mape": 7.3564340820187795,
+    "n_features": 13,
+    "n_observations": 441,
+    "mean_price": 280.3378684807256
+  }
+}
